@@ -8,23 +8,74 @@ Combat-heavy scenes, especially in **Luciphilus**, may transition into a separat
 
 ---
 
+## Artwork-Grounded Location Rule
+
+The story should be written around what the current artwork can actually support.
+
+The current artwork is strong for:
+
+- shrine-town hubs,
+- roads and crossroads,
+- forest paths and glades,
+- caves and rocky underways,
+- sewers / under-town routes,
+- cursed chapels,
+- shrine ruins,
+- undead / cursed lands,
+- occult dungeons,
+- trap rooms,
+- guild halls,
+- blacksmith workshops,
+- herbalist huts,
+- glassblower workshops,
+- markets,
+- taverns,
+- homes,
+- mage towers / ritual rooms,
+- training arenas / guard yards,
+- small fishing village / dock edges.
+
+The story should **not** depend early on full castles, full palaces, huge capital cities, deserts, snowfields, volcanoes, large swamps, open oceans, or modern / sci-fi facilities.
+
+The **Crystal Courts** may exist in the setting, but until new art exists they should appear through:
+
+- ruined court gates,
+- crystal-law checkpoints,
+- tower annexes,
+- archives,
+- chapel-court hybrids,
+- guard yards,
+- sealed thresholds,
+- old road charters,
+- court relics.
+
+Avoid promising a full explorable castle in the first region.
+
+For the production matrix, see:
+
+- `docs/design/VIA_OCCULTA_AREA_FEASIBILITY_FROM_ARTWORK.md`
+
+---
+
 ## Core Story Premise
 
 The old roads have vanished from the maps.
 
-For centuries, the kingdoms of the surface world survived by traveling the **Viae Occultae**: hidden sacred roads that passed through shrines, caves, drowned chapels, forest gates, sewers, moonlit ruins, and sealed underways. These roads were not merely paths. They were a living network of oaths, crystals, ritual locks, guild charters, and monster-bound disguises.
+For centuries, the kingdoms of the surface world survived by traveling the **Viae Occultae**: hidden sacred roads that passed through shrines, caves, drowned chapels, forest gates, sewers, moonlit ruins, sealed underways, guild cellars, and market doors that only opened under the correct rite.
+
+These roads were not merely paths. They were a living network of oaths, crystals, ritual locks, guild charters, crafted keys, road lanterns, and monster-bound disguises.
 
 Now the shrines are failing.
 
-The crystals no longer hold their light. Trade routes break without warning. Towns wake to find bridges replaced by fog, wells opening into catacombs, and chapel doors leading to places that should not exist. Monsters do not simply invade from the wilderness; they appear from inside the road-network itself, wearing the shapes of old local spirits, guild guardians, and forgotten dead.
+The crystals no longer hold their light. Trade routes break without warning. Towns wake to find bridges replaced by fog, wells opening into catacombs, and chapel doors leading to rooms that should not exist. Monsters do not simply invade from the wilderness; they appear from inside the road-network itself, wearing the shapes of old local spirits, guild guardians, and forgotten dead.
 
 The world is not ending all at once. It is being quietly rerouted.
 
-To survive, three kinds of people become necessary:
+To survive, three kinds of work become necessary:
 
-- **Tenebrio** — the weak shriner who enters forbidden routes, maps what others cannot see, and survives through rites, disguise, and transformation.
-- **Luciphilus** — the adventurer who clears dungeon threats, recovers relics, fights monsters, and confronts crystal-era conflicts.
-- **Opiphilus** — the crafter and guild worker who repairs towns, restores workshops, builds tools, fulfills orders, and turns recovered fragments into usable civilization.
+- **Tenebrio** — the weak shriner enters forbidden routes, maps what others cannot see, and survives through rites, disguise, and transformation.
+- **Luciphilus** — the adventurer clears dungeon threats, recovers relics, fights monsters, and confronts crystal-era conflicts.
+- **Opiphilus** — the crafter and guild worker repairs towns, restores workshops, builds tools, fulfills orders, and turns recovered fragments into usable civilization.
 
 Together, they do not merely save the world by defeating a final boss. They rebuild the hidden infrastructure of the world one shrine, road, workshop, and guild project at a time.
 
@@ -245,13 +296,16 @@ Associated with:
 
 Old political and magical authorities whose legitimacy came from controlling crystal boundaries. They claim to protect the world, but may have hidden the real cause of the collapse.
 
+In the early game, the Crystal Courts should be represented through **court gates, tower annexes, archives, sealed thresholds, court relics, guard yards, crystal-law inscriptions, and ruined checkpoints**, not a full castle.
+
 Associated with:
 
-- old kingdoms,
 - crystal law,
 - sealed ruins,
 - forbidden archives,
-- court knights,
+- court gates,
+- mage towers,
+- training yards,
 - lunar omens.
 
 ### The Road-Bound
@@ -307,16 +361,19 @@ Associated with:
 
 ## The First Region: The Pilgrim Verge
 
-The first playable region should be small and readable.
+The first playable region should be small, readable, and grounded in available art.
 
 ### Core locations
 
-- **Greybell Shrine** — shared shrine-town hub.
-- **The Broken Road** — exterior route leading away from town.
-- **Mistfall Chapel** — cursed shrine/church ruin.
-- **The Underwell** — sewer/cave entrance under the town.
-- **The Guild Hearth** — workshop and guild-hall interior.
-- **The Old Crystal Gate** — locked route to the next region.
+| Location | Area Type | Production Rationale |
+|---|---|---|
+| **Greybell Shrine** | shrine-town hub | supported by chapel, shrine, road, market, and guild-adjacent art |
+| **The Broken Road** | road / forest approach | supported by road, path, grassland, rocks, trees, bushes, bridges |
+| **Mistfall Chapel** | cursed chapel / shrine ruin | supported by chapel, cursed land, undead, ruins, priest / monk support |
+| **The Underwell** | sewer / cave under-route | supported by sewer, cave, rocky, glowing-cave, and under-town assets |
+| **The Chapel Undercrypt** | occult dungeon | supported by dungeon tiles, traps, cursed props, magic book effects |
+| **The Guild Hearth** | guild hall / workshop | supported by guild hall, blacksmith, herbalist, glassblower, market support |
+| **The Old Crystal Gate** | composed court gate / ruin threshold | feasible from ruins, dungeon props, mage tower flavor, and crystal-law story framing |
 
 ### First story arc
 
@@ -325,10 +382,54 @@ The town of Greybell survives beside a shrine that no longer rings its road-bell
 The player loop:
 
 1. Tenebrio maps the changed route beneath Mistfall Chapel.
-2. Luciphilus clears the Wraith of the Drowned Gate.
+2. Luciphilus clears the Wraith of the Drowned Gate in the Chapel Undercrypt.
 3. Opiphilus restores the Guild Hearth forge and repairs the shrine bell casing.
 4. The town reopens the Old Crystal Gate.
 5. The next region becomes reachable.
+
+---
+
+## Area Types To Use First
+
+Use these frequently in early story arcs:
+
+- shrines,
+- chapels,
+- roads,
+- forests,
+- glades,
+- caves,
+- sewers,
+- under-town passages,
+- cursed lands,
+- undead ruins,
+- occult dungeons,
+- guild halls,
+- blacksmiths,
+- herbalists,
+- glassblowers,
+- markets,
+- taverns,
+- homes,
+- mage towers,
+- training yards,
+- fishing village / dock edges.
+
+## Area Types To Avoid As First-Region Anchors
+
+Do not use these as required first-region areas unless new art is added:
+
+- full castles,
+- full palaces,
+- large fortified keeps,
+- large capital cities,
+- deserts,
+- snowfields,
+- volcanoes,
+- large swamps,
+- open oceans,
+- modern facilities,
+- sci-fi facilities.
 
 ---
 
