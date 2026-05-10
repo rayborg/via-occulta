@@ -10,6 +10,8 @@ The world is designed as three linked game lines sharing one setting, economy, a
 - **Luciphilus** — the main adventurer RPG about dungeon expeditions, battle-screen combat, relic recovery, monsters, and crystal-era conflict.
 - **Opiphilus** — the crafter / guild game about workshops, town interiors, trade orders, ritual support, and world-restoration projects.
 
+---
+
 ## Camera / Format Decision
 
 Via Occulta should be described precisely as:
@@ -18,16 +20,150 @@ Via Occulta should be described precisely as:
 
 This is not a Tibia-style real-time top-down MMO and not a generic open-world MMO. It is a classic JRPG world structure adapted into a linked online / MMO-lite format.
 
+---
+
 ## Core Direction
 
 > **A 1-bit occult shared-world JRPG: Tenebrio discovers, Luciphilus fights, Opiphilus builds.**
 
 The earlier “online FF4-style structure + guild economy + instanced dungeons” idea remains useful, but the artwork direction points toward something more distinctive than a generic FF4 clone: a monochrome occult world where exploration, dungeon combat, crafting, shrine restoration, maps, and guild projects reinforce each other.
 
-## Current Documents
+---
 
-- [Via Occulta — World Story Bible](docs/story/VIA_OCCULTA_WORLD_STORY.md)
-- [Via Occulta — Online FF4-Style MMO-Lite Design Concept](docs/design/VIA_OCCULTA_ONLINE_FF4_CONCEPT.md)
+## Start Here
+
+Recommended reading order:
+
+1. **This README** — high-level format, repo navigation, and production constraints.
+2. [`docs/design/VIA_OCCULTA_AREA_FEASIBILITY_FROM_ARTWORK.md`](docs/design/VIA_OCCULTA_AREA_FEASIBILITY_FROM_ARTWORK.md) — what areas the current artwork can actually support.
+3. [`docs/story/VIA_OCCULTA_WORLD_STORY.md`](docs/story/VIA_OCCULTA_WORLD_STORY.md) — the current world story bible.
+4. [`docs/design/VIA_OCCULTA_ONLINE_FF4_CONCEPT.md`](docs/design/VIA_OCCULTA_ONLINE_FF4_CONCEPT.md) — the earlier MMO-lite / FF4-style design concept.
+
+The companion artwork repo is:
+
+- `rayborg/via_occulta_artwork`
+
+Use that repo as the asset-source and worldkit reference. Use this repo as the **clean design, story, and game-direction repo**.
+
+---
+
+## Repository Layout
+
+```text
+via-occulta/
+├── README.md
+└── docs/
+    ├── design/
+    │   ├── VIA_OCCULTA_AREA_FEASIBILITY_FROM_ARTWORK.md
+    │   └── VIA_OCCULTA_ONLINE_FF4_CONCEPT.md
+    └── story/
+        └── VIA_OCCULTA_WORLD_STORY.md
+```
+
+### What Belongs Here
+
+This repo should contain:
+
+- world story bible
+- design direction
+- area feasibility notes
+- gameplay loop docs
+- prototype scope docs
+- terminology decisions
+- repo navigation and planning notes
+
+### What Belongs In `via_occulta_artwork`
+
+The artwork repo should contain:
+
+- monochrome derived PNGs
+- asset manifests
+- casting reports
+- world-builder MVP
+- per-game asset folders
+- normalization notes
+- art-source provenance and copy-policy docs
+
+Do not duplicate large art assets into this repo.
+
+---
+
+## What Areas Can Be Built With The Current Artwork?
+
+The current artwork strongly supports a compact 1-bit occult JRPG world made of:
+
+### Build Now
+
+- shrine-town hubs
+- roads and crossroads
+- forest paths and glades
+- caves and rocky underways
+- sewers / under-town routes
+- cursed chapels
+- shrine ruins
+- undead / cursed lands
+- occult dungeons
+- trap rooms
+- guild halls
+- blacksmith workshops
+- herbalist huts
+- glassblower workshops
+- markets
+- taverns
+- homes
+- mage towers / ritual rooms
+- training arenas / guard yards
+- small fishing village / dock edges
+
+### Feasible With Composition
+
+- Crystal Court outposts
+- ruined court gates
+- old keep thresholds
+- drowned sanctuaries
+- monster dens
+- ritual archives / forbidden libraries
+
+### Defer Until New Art Exists
+
+- full castles
+- full palaces
+- large fortified keeps
+- large capital cities
+- snow regions
+- deserts
+- volcano regions
+- large swamps
+- open ocean maps
+- modern or sci-fi facilities
+
+Important production rule:
+
+> **Do not design the first playable region around castles. Design it around shrines, roads, guild halls, caves, sewers, cursed chapels, ruins, workshops, and dungeons.**
+
+For the detailed matrix, see:
+
+- [`docs/design/VIA_OCCULTA_AREA_FEASIBILITY_FROM_ARTWORK.md`](docs/design/VIA_OCCULTA_AREA_FEASIBILITY_FROM_ARTWORK.md)
+
+---
+
+## Recommended First Region
+
+The first region should be **The Pilgrim Verge**, a compact shrine-town region that uses only well-supported art categories.
+
+| Area | Type | Why It Fits The Art |
+|---|---|---|
+| **Greybell Shrine** | shrine-town hub | chapel, shrine support, road, market, and guild-adjacent assets |
+| **The Broken Road** | road / forest approach | path, grassland, rocks, trees, bushes, bridges |
+| **Mistfall Chapel** | cursed chapel / shrine ruin | chapel, cursed land, undead, ruins, priest/monk support |
+| **The Underwell** | sewer / cave under-route | cave, sewer, rocky, glowing-cave, under-town assets |
+| **The Chapel Undercrypt** | occult dungeon | dungeon tiles, traps, cursed props, magic book effects |
+| **The Guild Hearth** | guild hall / workshop | guild hall, blacksmith, herbalist, glassblower, market support |
+| **The Old Crystal Gate** | composed court gate / ruin threshold | ruins, dungeon props, mage tower flavor, crystal-law story framing |
+
+This region avoids unsupported castle/palace promises while still feeling like a complete JRPG opening zone.
+
+---
 
 ## Design Pillars
 
@@ -37,17 +173,21 @@ The earlier “online FF4-style structure + guild economy + instanced dungeons�
 4. **Guilds shape the world** — players restore shrines, reopen routes, build workshops, craft equipment, recover relics, and unlock new expeditions.
 5. **Occult story first** — the world is built around hidden roads, failing shrines, forbidden maps, monster disguises, cursed ruins, guild politics, and a veiled lunar / underworld threat.
 
+---
+
 ## First Prototype Goal
 
 Build a vertical slice that proves the shared-world loop at small scale.
 
 Minimum loop:
 
-1. A player starts in a shared shrine-town hub.
-2. Tenebrio-style exploration reveals a hidden route or shrine fragment.
-3. Luciphilus-style adventuring clears a small dungeon threat or boss encounter.
-4. Opiphilus-style crafting converts recovered materials into a useful item, repair, or guild upgrade.
-5. The restored object unlocks a new route, room, recipe, or shrine function.
+1. A player starts in **Greybell Shrine**.
+2. Tenebrio-style exploration reveals a hidden route or shrine fragment in **Mistfall Chapel** or **The Underwell**.
+3. Luciphilus-style adventuring clears a small dungeon threat or boss encounter in **The Chapel Undercrypt**.
+4. Opiphilus-style crafting converts recovered materials into a useful item, repair, or guild upgrade at **The Guild Hearth**.
+5. The restored object unlocks **The Old Crystal Gate** or a new route off **The Broken Road**.
+
+---
 
 ## First Playable Target
 
@@ -59,6 +199,8 @@ The first playable target should be a **400x240 one-screen top-down tile-map are
 - one small instanced dungeon room,
 - one workshop or guild-hall contribution screen,
 - and a clean monochrome visual language suitable for the existing Via Occulta artwork direction.
+
+---
 
 ## Guiding Summary
 
