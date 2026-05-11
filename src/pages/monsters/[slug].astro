@@ -1,4 +1,5 @@
 ---
+import SpriteStrip from '../../components/SpriteStrip.astro';
 import VariantGrid from '../../components/VariantGrid.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { monsterPages } from '../../data/showcase';
@@ -20,18 +21,32 @@ const { page } = Astro.props;
 const primaryThread = page.tags[0] ?? 'Road-Bound';
 const largestNativeEdge = Math.max(...page.entries.map((entry) => Math.max(entry.width, entry.height)));
 const galleryScale: 2 | 3 = largestNativeEdge > 56 ? 2 : 3;
+const dossierPreview = page.entries.slice(0, Math.min(page.entries.length, 4));
 ---
 
 <BaseLayout title={`${page.title} | Via Occulta Monsters`} description={page.summary}>
-  <section class="page-hero">
-    <div class="shell">
-      <a class="breadcrumb" href={withBase('/monsters')}>Monsters</a>
-      <p class="eyebrow">Bestiary dossier</p>
-      <h1>{page.title}</h1>
-      <p>{page.summary}</p>
-      <div class="tag-row">
-        {page.tags.map((tag) => <span class="tag">{tag}</span>)}
+  <section class="page-hero dossier-hero-section">
+    <div class="shell dossier-hero">
+      <div class="dossier-hero__copy">
+        <a class="breadcrumb" href={withBase('/monsters')}>Monsters</a>
+        <p class="eyebrow">Bestiary dossier</p>
+        <h1>{page.title}</h1>
+        <p>{page.summary}</p>
+        <div class="tag-row">
+          {page.tags.map((tag) => <span class="tag">{tag}</span>)}
+        </div>
       </div>
+      <aside class="dossier-plate dossier-plate--threat panel" aria-label={`${page.title} threat plate`}>
+        <div class="dossier-plate__header">
+          <span>Threat plate</span>
+          <strong>{primaryThread}</strong>
+        </div>
+        <SpriteStrip entries={dossierPreview} label={`${page.title} threat plate`} scale={galleryScale} density="hero" showLabels={false} rhythm="subtle" />
+        <div class="dossier-plate__footer">
+          <span>{page.entries.length} sightings logged</span>
+          <span>Encounter role: route pressure</span>
+        </div>
+      </aside>
     </div>
   </section>
 
@@ -64,8 +79,8 @@ const galleryScale: 2 | 3 = largestNativeEdge > 56 ? 2 : 3;
 
   <section class="section">
     <div class="shell">
-      <p class="eyebrow">Observed sightings</p>
-      <h2>Field silhouettes</h2>
+      <p class="eyebrow">Sighting record</p>
+      <h2>Silhouettes logged as evidence of route failure.</h2>
       <VariantGrid entries={page.entries} label={`${page.title} bestiary sightings`} scale={galleryScale} />
     </div>
   </section>

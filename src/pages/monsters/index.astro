@@ -16,26 +16,32 @@ const bestiaryRibbon = ['ghost', 'goblin', 'slime-boss']
   title="Monsters | Via Occulta"
   description="Via Occulta bestiary dossiers for undead, slimes, infernal forms, forest threats, constructs, and dungeon ecology."
 >
-  <section class="page-hero">
-    <div class="shell">
-      <p class="eyebrow">Monsters</p>
-      <h1>Threats from the roads that no longer stay where they belong.</h1>
-      <p>
-        The Via Occulta bestiary gathers undead remnants, infernal trespassers, alchemical
-        spillover, constructed guardians, forest hunger, and familiar fantasy dangers bent toward
-        the hidden-road collapse.
-      </p>
-      <div class="pill-row">
-        <span class="pill">{monsterPages.length} families</span>
-        <span class="pill">{entryCount} logged sightings</span>
-        <span class="pill">Crypt, forest, dungeon, and under-route threats</span>
+  <section class="page-hero codex-hero-section">
+    <div class="shell codex-hero">
+      <div class="codex-hero__copy">
+        <p class="eyebrow">Bestiary codex</p>
+        <h1>Threats from the roads that no longer stay where they belong.</h1>
+        <p>
+          Monsters are not random encounters pasted onto a map. They are evidence: undead remnants,
+          infernal trespassers, alchemical spillover, forest hunger, and failed guardians showing where
+          the Viae Occultae have broken.
+        </p>
+        <div class="pill-row">
+          <span class="pill">{monsterPages.length} threat families</span>
+          <span class="pill">{entryCount} logged sightings</span>
+          <span class="pill">Route failure made visible</span>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section section-tight">
-    <div class="shell ribbon-panel panel">
-      <SpriteStrip entries={bestiaryRibbon} scale={2} label="Monster family preview" density="compact" showLabels={false} />
+      <aside class="codex-slate codex-slate--threat panel" aria-label="Bestiary codex preview">
+        <div class="codex-slate__header">
+          <span>Threat register</span>
+          <strong>Crypt / Forest / Underway</strong>
+        </div>
+        <SpriteStrip entries={bestiaryRibbon} scale={2} label="Monster family preview" density="hero" showLabels={false} />
+        <div class="codex-slate__note">
+          <p>Each sighting is framed by what it tells the player about a broken route, a failed rite, or a dungeon ecology pushing into town life.</p>
+        </div>
+      </aside>
     </div>
   </section>
 
@@ -59,7 +65,7 @@ const bestiaryRibbon = ['ghost', 'goblin', 'slime-boss']
   <section class="section">
     <div class="shell">
       <p class="eyebrow">Dossiers</p>
-      <h2>Monster families</h2>
+      <h2>Bestiary files from unstable routes.</h2>
       <div class="showcase-list">
         {monsterPages.map((page) => <ShowcaseCard page={page} href={`monsters/${page.slug}`} />)}
       </div>

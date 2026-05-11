@@ -16,25 +16,32 @@ const characterRibbon = ['swordsman', 'priest', 'blacksmith']
   title="Characters | Via Occulta"
   description="Via Occulta character dossiers for shriners, adventurers, guild workers, townsfolk, mages, trainers, and social interiors."
 >
-  <section class="page-hero">
-    <div class="shell">
-      <p class="eyebrow">Characters</p>
-      <h1>People who keep the hidden-road world legible.</h1>
-      <p>
-        The Via Occulta cast is organized around shrine orders, player baselines, guild labor,
-        markets, workshops, taverns, under-town survivors, and training-yard roles.
-      </p>
-      <div class="pill-row">
-        <span class="pill">{characterPages.length} groups</span>
-        <span class="pill">{entryCount} field profiles</span>
-        <span class="pill">Shrine, guild, town, and dungeon support</span>
+  <section class="page-hero codex-hero-section">
+    <div class="shell codex-hero">
+      <div class="codex-hero__copy">
+        <p class="eyebrow">Character codex</p>
+        <h1>People who keep the hidden-road world legible.</h1>
+        <p>
+          Via Occulta is not carried by heroes alone. Shrine orders, guild laborers, market citizens,
+          tavern watchers, under-town survivors, and training-yard roles all explain how a town survives
+          when the map beneath it changes.
+        </p>
+        <div class="pill-row">
+          <span class="pill">{characterPages.length} dossier groups</span>
+          <span class="pill">{entryCount} logged profiles</span>
+          <span class="pill">Institutions over chosen ones</span>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section section-tight">
-    <div class="shell ribbon-panel panel">
-      <SpriteStrip entries={characterRibbon} scale={2} label="Character role preview" density="compact" showLabels={false} />
+      <aside class="codex-slate panel" aria-label="Character codex preview">
+        <div class="codex-slate__header">
+          <span>Personnel register</span>
+          <strong>Shrine / Guild / Road</strong>
+        </div>
+        <SpriteStrip entries={characterRibbon} scale={2} label="Character role preview" density="hero" showLabels={false} />
+        <div class="codex-slate__note">
+          <p>Readable silhouettes are treated as field identities: what job they do, what room they belong in, and how they keep the road-world functioning.</p>
+        </div>
+      </aside>
     </div>
   </section>
 
@@ -58,7 +65,7 @@ const characterRibbon = ['swordsman', 'priest', 'blacksmith']
   <section class="section">
     <div class="shell">
       <p class="eyebrow">Dossiers</p>
-      <h2>Character groups</h2>
+      <h2>Personnel files from a failing map.</h2>
       <div class="showcase-list">
         {characterPages.map((page) => <ShowcaseCard page={page} href={`characters/${page.slug}`} />)}
       </div>
