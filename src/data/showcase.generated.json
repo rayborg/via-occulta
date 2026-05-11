@@ -521,7 +521,7 @@
       "key" : "monster:beholder1",
       "label" : "Beholder 1",
       "slug" : "beholder-1",
-      "sourcePath" : "games/luciphilus/player_roles/caster_dd/sprite_edges_64x64/beholder1/without_shadow/frames/idle/front/beholder1_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/beholder1/without_shadow/frames/idle/front/beholder1_idle_front_01_64x64_edges.png",
       "width" : 43
     },
     {
@@ -530,7 +530,7 @@
       "key" : "monster:beholder2",
       "label" : "Beholder 2",
       "slug" : "beholder-2",
-      "sourcePath" : "games/luciphilus/player_roles/caster_dd/sprite_edges_64x64/beholder2/without_shadow/frames/idle/front/beholder2_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/beholder2/without_shadow/frames/idle/front/beholder2_idle_front_01_64x64_edges.png",
       "width" : 49
     },
     {
@@ -539,35 +539,35 @@
       "key" : "monster:beholder3",
       "label" : "Beholder 3",
       "slug" : "beholder-3",
-      "sourcePath" : "games/luciphilus/player_roles/caster_dd/sprite_edges_64x64/beholder3/without_shadow/frames/idle/front/beholder3_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/beholder3/without_shadow/frames/idle/front/beholder3_idle_front_01_64x64_edges.png",
       "width" : 62
     },
     {
-      "height" : 60,
+      "height" : 32,
       "image" : "/showcase/monsters/demon-1.png",
       "key" : "monster:demon1",
       "label" : "Demon 1",
       "slug" : "demon-1",
-      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/demon1/without_shadow/frames/idle/front/demon1_idle_front_01_128x128_edges_native.png",
-      "width" : 37
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/demon1/without_shadow/frames/idle/front/demon1_idle_front_01_64x64_edges.png",
+      "width" : 20
     },
     {
-      "height" : 54,
+      "height" : 29,
       "image" : "/showcase/monsters/demon-2.png",
       "key" : "monster:demon2",
       "label" : "Demon 2",
       "slug" : "demon-2",
-      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/demon2/without_shadow/frames/idle/front/demon2_idle_front_01_128x128_edges_native.png",
-      "width" : 39
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/demon2/without_shadow/frames/idle/front/demon2_idle_front_01_64x64_edges.png",
+      "width" : 21
     },
     {
-      "height" : 86,
+      "height" : 55,
       "image" : "/showcase/monsters/demon-3.png",
       "key" : "monster:demon3",
       "label" : "Demon 3",
       "slug" : "demon-3",
-      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/demon3/without_shadow/frames/idle/front/demon3_idle_front_01_128x128_edges_native.png",
-      "width" : 75
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/demon3/without_shadow/frames/idle/front/demon3_idle_front_01_64x64_edges.png",
+      "width" : 50
     },
     {
       "height" : 53,
@@ -575,7 +575,7 @@
       "key" : "monster:ent1",
       "label" : "Ent 1",
       "slug" : "ent-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/ent1/without_shadow/frames/idle/front/ent1_idle_front_01_128x128_edges_native.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/ent1/without_shadow/frames/idle/front/ent1_idle_front_01_128x128_edges_native.png",
       "width" : 43
     },
     {
@@ -584,7 +584,7 @@
       "key" : "monster:ent2",
       "label" : "Ent 2",
       "slug" : "ent-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/ent2/without_shadow/frames/idle/front/ent2_idle_front_01_128x128_edges_native.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/ent2/without_shadow/frames/idle/front/ent2_idle_front_01_128x128_edges_native.png",
       "width" : 52
     },
     {
@@ -593,7 +593,7 @@
       "key" : "monster:ent3",
       "label" : "Ent 3",
       "slug" : "ent-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/ent3/without_shadow/frames/idle/front/ent3_idle_front_01_128x128_edges_native.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/ent3/without_shadow/frames/idle/front/ent3_idle_front_01_128x128_edges_native.png",
       "width" : 83
     },
     {
@@ -602,7 +602,7 @@
       "key" : "monster:free_slime1",
       "label" : "Free Slime 1",
       "slug" : "free-slime-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/free_slime1/without_shadow/frames/idle/front/free_slime1_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/free_slime1/without_shadow/frames/idle/front/free_slime1_idle_front_01_64x64_edges.png",
       "width" : 23
     },
     {
@@ -611,7 +611,7 @@
       "key" : "monster:free_slime2",
       "label" : "Free Slime 2",
       "slug" : "free-slime-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/free_slime2/without_shadow/frames/idle/front/free_slime2_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/free_slime2/without_shadow/frames/idle/front/free_slime2_idle_front_01_64x64_edges.png",
       "width" : 27
     },
     {
@@ -620,7 +620,7 @@
       "key" : "monster:free_slime3",
       "label" : "Free Slime 3",
       "slug" : "free-slime-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/free_slime3/without_shadow/frames/idle/front/free_slime3_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/free_slime3/without_shadow/frames/idle/front/free_slime3_idle_front_01_64x64_edges.png",
       "width" : 21
     },
     {
@@ -629,7 +629,7 @@
       "key" : "monster:ghost1",
       "label" : "Ghost 1",
       "slug" : "ghost-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/ghost1/without_shadow/frames/idle/front/ghost1_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/ghost1/without_shadow/frames/idle/front/ghost1_idle_front_01_64x64_edges.png",
       "width" : 24
     },
     {
@@ -638,7 +638,7 @@
       "key" : "monster:ghost2",
       "label" : "Ghost 2",
       "slug" : "ghost-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/ghost2/without_shadow/frames/idle/front/ghost2_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/ghost2/without_shadow/frames/idle/front/ghost2_idle_front_01_64x64_edges.png",
       "width" : 24
     },
     {
@@ -647,7 +647,7 @@
       "key" : "monster:ghost3",
       "label" : "Ghost 3",
       "slug" : "ghost-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/ghost3/without_shadow/frames/idle/front/ghost3_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/ghost3/without_shadow/frames/idle/front/ghost3_idle_front_01_64x64_edges.png",
       "width" : 34
     },
     {
@@ -656,7 +656,7 @@
       "key" : "monster:giant_rat1",
       "label" : "Giant Rat 1",
       "slug" : "giant-rat-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/giant_rat1/without_shadow/frames/idle/front/giant_rat1_idle_front_01_128x128_edges_native.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/giant_rat1/without_shadow/frames/idle/front/giant_rat1_idle_front_01_128x128_edges_native.png",
       "width" : 34
     },
     {
@@ -665,7 +665,7 @@
       "key" : "monster:giant_rat2",
       "label" : "Giant Rat 2",
       "slug" : "giant-rat-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/giant_rat2/without_shadow/frames/idle/front/giant_rat2_idle_front_01_128x128_edges_native.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/giant_rat2/without_shadow/frames/idle/front/giant_rat2_idle_front_01_128x128_edges_native.png",
       "width" : 41
     },
     {
@@ -674,7 +674,7 @@
       "key" : "monster:giant_rat3",
       "label" : "Giant Rat 3",
       "slug" : "giant-rat-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/giant_rat3/without_shadow/frames/idle/front/giant_rat3_idle_front_01_128x128_edges_native.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/giant_rat3/without_shadow/frames/idle/front/giant_rat3_idle_front_01_128x128_edges_native.png",
       "width" : 35
     },
     {
@@ -683,7 +683,7 @@
       "key" : "monster:gnoll1",
       "label" : "Gnoll 1",
       "slug" : "gnoll-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/gnoll1/without_shadow/frames/idle/front/gnoll1_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/gnoll1/without_shadow/frames/idle/front/gnoll1_idle_front_01_64x64_edges.png",
       "width" : 39
     },
     {
@@ -692,7 +692,7 @@
       "key" : "monster:gnoll2",
       "label" : "Gnoll 2",
       "slug" : "gnoll-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/gnoll2/without_shadow/frames/idle/front/gnoll2_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/gnoll2/without_shadow/frames/idle/front/gnoll2_idle_front_01_64x64_edges.png",
       "width" : 39
     },
     {
@@ -701,7 +701,7 @@
       "key" : "monster:gnoll3",
       "label" : "Gnoll 3",
       "slug" : "gnoll-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/gnoll3/without_shadow/frames/idle/front/gnoll3_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/gnoll3/without_shadow/frames/idle/front/gnoll3_idle_front_01_64x64_edges.png",
       "width" : 39
     },
     {
@@ -710,7 +710,7 @@
       "key" : "monster:goblin1",
       "label" : "Goblin 1",
       "slug" : "goblin-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/goblin1/without_shadow/frames/idle/front/goblin1_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/goblin1/without_shadow/frames/idle/front/goblin1_idle_front_01_64x64_edges.png",
       "width" : 25
     },
     {
@@ -719,7 +719,7 @@
       "key" : "monster:goblin2",
       "label" : "Goblin 2",
       "slug" : "goblin-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/goblin2/without_shadow/frames/idle/front/goblin2_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/goblin2/without_shadow/frames/idle/front/goblin2_idle_front_01_64x64_edges.png",
       "width" : 23
     },
     {
@@ -728,7 +728,7 @@
       "key" : "monster:goblin3",
       "label" : "Goblin 3",
       "slug" : "goblin-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/goblin3/without_shadow/frames/idle/front/goblin3_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/goblin3/without_shadow/frames/idle/front/goblin3_idle_front_01_64x64_edges.png",
       "width" : 25
     },
     {
@@ -737,7 +737,7 @@
       "key" : "monster:golem1",
       "label" : "Golem 1",
       "slug" : "golem-1",
-      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/golem1/without_shadow/frames/idle/front/golem1_idle_front_01_128x128_edges_native.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/golem1/without_shadow/frames/idle/front/golem1_idle_front_01_128x128_edges_native.png",
       "width" : 50
     },
     {
@@ -746,7 +746,7 @@
       "key" : "monster:golem2",
       "label" : "Golem 2",
       "slug" : "golem-2",
-      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/golem2/without_shadow/frames/idle/front/golem2_idle_front_01_128x128_edges_native.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/golem2/without_shadow/frames/idle/front/golem2_idle_front_01_128x128_edges_native.png",
       "width" : 56
     },
     {
@@ -755,7 +755,7 @@
       "key" : "monster:golem3",
       "label" : "Golem 3",
       "slug" : "golem-3",
-      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/golem3/without_shadow/frames/idle/front/golem3_idle_front_01_128x128_edges_native.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/golem3/without_shadow/frames/idle/front/golem3_idle_front_01_128x128_edges_native.png",
       "width" : 55
     },
     {
@@ -764,7 +764,7 @@
       "key" : "monster:imp1",
       "label" : "Imp 1",
       "slug" : "imp-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/imp1/without_shadow/frames/idle/front/imp1_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/imp1/without_shadow/frames/idle/front/imp1_idle_front_01_64x64_edges.png",
       "width" : 38
     },
     {
@@ -773,7 +773,7 @@
       "key" : "monster:imp2",
       "label" : "Imp 2",
       "slug" : "imp-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/imp2/without_shadow/frames/idle/front/imp2_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/imp2/without_shadow/frames/idle/front/imp2_idle_front_01_64x64_edges.png",
       "width" : 39
     },
     {
@@ -782,7 +782,7 @@
       "key" : "monster:imp3",
       "label" : "Imp 3",
       "slug" : "imp-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/imp3/without_shadow/frames/idle/front/imp3_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/imp3/without_shadow/frames/idle/front/imp3_idle_front_01_64x64_edges.png",
       "width" : 41
     },
     {
@@ -791,7 +791,7 @@
       "key" : "monster:lich1",
       "label" : "Lich 1",
       "slug" : "lich-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/lich1/without_shadow/frames/idle/front/lich1_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/lich1/without_shadow/frames/idle/front/lich1_idle_front_01_64x64_edges.png",
       "width" : 25
     },
     {
@@ -800,7 +800,7 @@
       "key" : "monster:lich2",
       "label" : "Lich 2",
       "slug" : "lich-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/lich2/without_shadow/frames/idle/front/lich2_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/lich2/without_shadow/frames/idle/front/lich2_idle_front_01_64x64_edges.png",
       "width" : 30
     },
     {
@@ -809,8 +809,35 @@
       "key" : "monster:lich3",
       "label" : "Lich 3",
       "slug" : "lich-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/lich3/without_shadow/frames/idle/front/lich3_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/lich3/without_shadow/frames/idle/front/lich3_idle_front_01_64x64_edges.png",
       "width" : 33
+    },
+    {
+      "height" : 37,
+      "image" : "/showcase/monsters/lizardman-1.png",
+      "key" : "monster:lizardman1",
+      "label" : "Lizardman 1",
+      "slug" : "lizardman-1",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/lizardman1/without_shadow/frames/idle/front/lizardman1_idle_front_01_64x64_edges.png",
+      "width" : 29
+    },
+    {
+      "height" : 42,
+      "image" : "/showcase/monsters/lizardman-2.png",
+      "key" : "monster:lizardman2",
+      "label" : "Lizardman 2",
+      "slug" : "lizardman-2",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/lizardman2/without_shadow/frames/idle/front/lizardman2_idle_front_01_64x64_edges.png",
+      "width" : 30
+    },
+    {
+      "height" : 43,
+      "image" : "/showcase/monsters/lizardman-3.png",
+      "key" : "monster:lizardman3",
+      "label" : "Lizardman 3",
+      "slug" : "lizardman-3",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/lizardman3/without_shadow/frames/idle/front/lizardman3_idle_front_01_64x64_edges.png",
+      "width" : 35
     },
     {
       "height" : 33,
@@ -818,7 +845,7 @@
       "key" : "monster:mushroom1",
       "label" : "Mushroom 1",
       "slug" : "mushroom-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/mushroom1/without_shadow/frames/idle/front/mushroom1_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/mushroom1/without_shadow/frames/idle/front/mushroom1_idle_front_01_64x64_edges.png",
       "width" : 27
     },
     {
@@ -827,7 +854,7 @@
       "key" : "monster:mushroom2",
       "label" : "Mushroom 2",
       "slug" : "mushroom-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/mushroom2/without_shadow/frames/idle/front/mushroom2_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/mushroom2/without_shadow/frames/idle/front/mushroom2_idle_front_01_64x64_edges.png",
       "width" : 30
     },
     {
@@ -836,7 +863,7 @@
       "key" : "monster:mushroom3",
       "label" : "Mushroom 3",
       "slug" : "mushroom-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/mushroom3/without_shadow/frames/idle/front/mushroom3_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/mushroom3/without_shadow/frames/idle/front/mushroom3_idle_front_01_64x64_edges.png",
       "width" : 41
     },
     {
@@ -845,7 +872,7 @@
       "key" : "monster:orc1",
       "label" : "Orc 1",
       "slug" : "orc-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/orc1/without_shadow/frames/idle/front/orc1_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/orc1/without_shadow/frames/idle/front/orc1_idle_front_01_64x64_edges.png",
       "width" : 38
     },
     {
@@ -854,7 +881,7 @@
       "key" : "monster:orc2",
       "label" : "Orc 2",
       "slug" : "orc-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/orc2/without_shadow/frames/idle/front/orc2_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/orc2/without_shadow/frames/idle/front/orc2_idle_front_01_64x64_edges.png",
       "width" : 40
     },
     {
@@ -863,7 +890,7 @@
       "key" : "monster:orc3",
       "label" : "Orc 3",
       "slug" : "orc-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/orc3/without_shadow/frames/idle/front/orc3_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/orc3/without_shadow/frames/idle/front/orc3_idle_front_01_64x64_edges.png",
       "width" : 42
     },
     {
@@ -872,7 +899,7 @@
       "key" : "monster:predator_plant1",
       "label" : "Predator Plant 1",
       "slug" : "predator-plant-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/predator_plant1/without_shadow/frames/idle/front/predator_plant1_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/predator_plant1/without_shadow/frames/idle/front/predator_plant1_idle_front_01_64x64_edges.png",
       "width" : 33
     },
     {
@@ -881,7 +908,7 @@
       "key" : "monster:predator_plant2",
       "label" : "Predator Plant 2",
       "slug" : "predator-plant-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/predator_plant2/without_shadow/frames/idle/front/predator_plant2_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/predator_plant2/without_shadow/frames/idle/front/predator_plant2_idle_front_01_64x64_edges.png",
       "width" : 34
     },
     {
@@ -890,7 +917,7 @@
       "key" : "monster:predator_plant3",
       "label" : "Predator Plant 3",
       "slug" : "predator-plant-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/predator_plant3/without_shadow/frames/idle/front/predator_plant3_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/predator_plant3/without_shadow/frames/idle/front/predator_plant3_idle_front_01_64x64_edges.png",
       "width" : 29
     },
     {
@@ -899,7 +926,7 @@
       "key" : "monster:skeleton1",
       "label" : "Skeleton 1",
       "slug" : "skeleton-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/skeleton1/without_shadow/frames/idle/front/skeleton1_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/skeleton1/without_shadow/frames/idle/front/skeleton1_idle_front_01_64x64_edges.png",
       "width" : 28
     },
     {
@@ -908,7 +935,7 @@
       "key" : "monster:skeleton2",
       "label" : "Skeleton 2",
       "slug" : "skeleton-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/skeleton2/without_shadow/frames/idle/front/skeleton2_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/skeleton2/without_shadow/frames/idle/front/skeleton2_idle_front_01_64x64_edges.png",
       "width" : 31
     },
     {
@@ -917,7 +944,7 @@
       "key" : "monster:skeleton3",
       "label" : "Skeleton 3",
       "slug" : "skeleton-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/skeleton3/without_shadow/frames/idle/front/skeleton3_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/skeleton3/without_shadow/frames/idle/front/skeleton3_idle_front_01_64x64_edges.png",
       "width" : 31
     },
     {
@@ -926,7 +953,7 @@
       "key" : "monster:slime_boss1",
       "label" : "Slime Boss 1",
       "slug" : "slime-boss-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/slime_boss1/without_shadow/frames/idle/front/slime_boss1_idle_front_01_128x128_edges_native.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/slime_boss1/without_shadow/frames/idle/front/slime_boss1_idle_front_01_128x128_edges_native.png",
       "width" : 38
     },
     {
@@ -935,7 +962,7 @@
       "key" : "monster:slime_boss2",
       "label" : "Slime Boss 2",
       "slug" : "slime-boss-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/slime_boss2/without_shadow/frames/idle/front/slime_boss2_idle_front_01_128x128_edges_native.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/slime_boss2/without_shadow/frames/idle/front/slime_boss2_idle_front_01_128x128_edges_native.png",
       "width" : 45
     },
     {
@@ -944,8 +971,35 @@
       "key" : "monster:slime_boss3",
       "label" : "Slime Boss 3",
       "slug" : "slime-boss-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/slime_boss3/without_shadow/frames/idle/front/slime_boss3_idle_front_01_128x128_edges_native.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/slime_boss3/without_shadow/frames/idle/front/slime_boss3_idle_front_01_128x128_edges_native.png",
       "width" : 39
+    },
+    {
+      "height" : 19,
+      "image" : "/showcase/monsters/slime-enemy-1.png",
+      "key" : "monster:slime_enemy1",
+      "label" : "Slime Enemy 1",
+      "slug" : "slime-enemy-1",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/slime_enemy1/without_shadow/frames/idle/front/slime_enemy1_idle_front_01_64x64_edges.png",
+      "width" : 21
+    },
+    {
+      "height" : 8,
+      "image" : "/showcase/monsters/slime-enemy-2.png",
+      "key" : "monster:slime_enemy2",
+      "label" : "Slime Enemy 2",
+      "slug" : "slime-enemy-2",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/slime_enemy2/without_shadow/frames/idle/front/slime_enemy2_idle_front_01_64x64_edges.png",
+      "width" : 14
+    },
+    {
+      "height" : 24,
+      "image" : "/showcase/monsters/slime-enemy-3.png",
+      "key" : "monster:slime_enemy3",
+      "label" : "Slime Enemy 3",
+      "slug" : "slime-enemy-3",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/slime_enemy3/without_shadow/frames/idle/front/slime_enemy3_idle_front_01_64x64_edges.png",
+      "width" : 24
     },
     {
       "height" : 21,
@@ -953,7 +1007,7 @@
       "key" : "monster:slime_monster1",
       "label" : "Slime Monster 1",
       "slug" : "slime-monster-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/slime_monster1/without_shadow/frames/idle/front/slime_monster1_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/slime_monster1/without_shadow/frames/idle/front/slime_monster1_idle_front_01_64x64_edges.png",
       "width" : 21
     },
     {
@@ -962,7 +1016,7 @@
       "key" : "monster:slime_monster2",
       "label" : "Slime Monster 2",
       "slug" : "slime-monster-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/slime_monster2/without_shadow/frames/idle/front/slime_monster2_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/slime_monster2/without_shadow/frames/idle/front/slime_monster2_idle_front_01_64x64_edges.png",
       "width" : 23
     },
     {
@@ -971,7 +1025,7 @@
       "key" : "monster:slime_monster3",
       "label" : "Slime Monster 3",
       "slug" : "slime-monster-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/slime_monster3/without_shadow/frames/idle/front/slime_monster3_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/slime_monster3/without_shadow/frames/idle/front/slime_monster3_idle_front_01_64x64_edges.png",
       "width" : 26
     },
     {
@@ -980,7 +1034,7 @@
       "key" : "monster:vampire1",
       "label" : "Vampire 1",
       "slug" : "vampire-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/vampire1/without_shadow/frames/idle/front/vampire1_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/vampire1/without_shadow/frames/idle/front/vampire1_idle_front_01_64x64_edges.png",
       "width" : 27
     },
     {
@@ -989,7 +1043,7 @@
       "key" : "monster:vampire2",
       "label" : "Vampire 2",
       "slug" : "vampire-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/vampire2/without_shadow/frames/idle/front/vampire2_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/vampire2/without_shadow/frames/idle/front/vampire2_idle_front_01_64x64_edges.png",
       "width" : 31
     },
     {
@@ -998,7 +1052,7 @@
       "key" : "monster:vampire3",
       "label" : "Vampire 3",
       "slug" : "vampire-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/vampire3/without_shadow/frames/idle/front/vampire3_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/vampire3/without_shadow/frames/idle/front/vampire3_idle_front_01_64x64_edges.png",
       "width" : 43
     },
     {
@@ -1007,7 +1061,7 @@
       "key" : "monster:zombie1",
       "label" : "Zombie 1",
       "slug" : "zombie-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/zombie1/without_shadow/frames/idle/front/zombie1_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/zombie1/without_shadow/frames/idle/front/zombie1_idle_front_01_64x64_edges.png",
       "width" : 23
     },
     {
@@ -1016,7 +1070,7 @@
       "key" : "monster:zombie2",
       "label" : "Zombie 2",
       "slug" : "zombie-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/zombie2/without_shadow/frames/idle/front/zombie2_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/zombie2/without_shadow/frames/idle/front/zombie2_idle_front_01_64x64_edges.png",
       "width" : 22
     },
     {
@@ -1025,7 +1079,7 @@
       "key" : "monster:zombie3",
       "label" : "Zombie 3",
       "slug" : "zombie-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/zombie3/without_shadow/frames/idle/front/zombie3_idle_front_01_64x64_edges.png",
+      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/zombie3/without_shadow/frames/idle/front/zombie3_idle_front_01_64x64_edges.png",
       "width" : 23
     }
   ]

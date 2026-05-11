@@ -1695,37 +1695,68 @@ button:focus-visible {
 }
 
 .showcase-card[data-kind="monster"] {
-  grid-template-columns: minmax(15rem, 0.38fr) minmax(0, 1fr);
+  grid-template-columns: minmax(24rem, 0.52fr) minmax(0, 1fr);
 }
 
 .showcase-card[data-kind="monster"] .showcase-card__art {
-  min-height: 9.25rem;
+  min-height: 11.75rem;
 }
 
 .showcase-card[data-kind="monster"] .sprite-strip--compact {
-  display: flex;
-  gap: 0.45rem;
-  align-items: end;
-  padding: 0.55rem 0.65rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+  align-items: stretch;
+  padding: 0.75rem;
 }
 
 .showcase-card[data-kind="monster"] .sprite-strip--compact .sprite-strip__slot {
-  flex: 1 1 4.75rem;
-  min-width: 4.2rem;
+  display: grid;
+  min-width: 0;
+  overflow: visible;
 }
 
 .showcase-card[data-kind="monster"] .sprite-strip--compact[data-scale="2x"] .sprite-strip__stage {
-  min-height: 9.75rem;
-  padding: 0.45rem 0.25rem 0.25rem;
+  min-height: 10.5rem;
+  padding: 0.55rem 0.35rem 0.35rem;
 }
 
 .showcase-card[data-kind="monster"] .sprite-strip--compact[data-scale="3x"] .sprite-strip__stage {
-  min-height: 8.25rem;
-  padding: 0.35rem 0.25rem 0.2rem;
+  min-height: 9rem;
+  padding: 0.5rem 0.35rem 0.3rem;
 }
 
 .showcase-card[data-kind="monster"] .sprite-strip--compact .sprite-image {
-  max-height: 9.5rem;
+  max-height: 10.25rem;
+}
+
+.showcase-card[data-kind="monster"][data-preview-size="large"],
+.showcase-card[data-kind="monster"][data-preview-size="huge"] {
+  grid-template-columns: minmax(27rem, 0.62fr) minmax(0, 1fr);
+}
+
+.showcase-card[data-kind="monster"][data-preview-size="large"] .showcase-card__art {
+  min-height: 14rem;
+}
+
+.showcase-card[data-kind="monster"][data-preview-size="large"] .sprite-strip--compact[data-scale="2x"] .sprite-strip__stage {
+  min-height: 12.25rem;
+}
+
+.showcase-card[data-kind="monster"][data-preview-size="large"] .sprite-strip--compact .sprite-image {
+  max-height: 11.25rem;
+}
+
+.showcase-card[data-kind="monster"][data-preview-size="huge"] .showcase-card__art {
+  min-height: 14.5rem;
+}
+
+.showcase-card[data-kind="monster"][data-preview-size="huge"] .sprite-strip--compact[data-scale="2x"] .sprite-strip__stage {
+  min-height: 12.75rem;
+}
+
+.showcase-card[data-kind="monster"][data-preview-size="huge"] .sprite-strip--compact .sprite-image {
+  max-height: 12.25rem;
 }
 
 @media (max-width: 1020px) {
@@ -1759,6 +1790,11 @@ button:focus-visible {
   }
 
   .showcase-card[data-kind="monster"] {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-card[data-kind="monster"][data-preview-size="large"],
+  .showcase-card[data-kind="monster"][data-preview-size="huge"] {
     grid-template-columns: 1fr;
   }
 

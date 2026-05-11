@@ -15,9 +15,18 @@ const typeLabel = page.kind === 'monster' ? 'Bestiary dossier' : 'Character doss
 const countLabel = page.kind === 'monster' ? 'sightings logged' : 'profiles logged';
 const largestPreviewEdge = previewEntries.length > 0 ? Math.max(...previewEntries.map((entry) => Math.max(entry.width, entry.height))) : 0;
 const previewScale = page.kind === 'character' || largestPreviewEdge <= 45 ? 3 : 2;
+const previewSize = page.kind === 'monster'
+  ? largestPreviewEdge >= 80
+    ? 'huge'
+    : largestPreviewEdge >= 64
+      ? 'large'
+      : largestPreviewEdge >= 48
+        ? 'medium'
+        : 'small'
+  : 'standard';
 ---
 
-<a class="showcase-card panel" href={withBase(href)} data-kind={page.kind}>
+<a class="showcase-card panel" href={withBase(href)} data-kind={page.kind} data-preview-size={previewSize}>
   <div class="showcase-card__art">
     <SpriteStrip entries={previewEntries} scale={previewScale} label={`${page.title} dossier preview`} density="compact" showLabels={false} rhythm="subtle" />
   </div>

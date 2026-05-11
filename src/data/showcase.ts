@@ -407,6 +407,17 @@ const monsterPageDefs = [
     entrySlugs: ['lich-1', 'lich-2', 'lich-3']
   },
   {
+    slug: 'lizardman',
+    title: 'Lizardman',
+    summary: 'Scaled under-route fighters that add a harsher reptilian martial line to the shared bestiary.',
+    description: [
+      'Lizardmen make the bestiary feel less exclusively undead, infernal, or alchemical. They suggest old wet routes, cave margins, and territorial violence with enough intelligence to read as organized danger.',
+      'They are useful shared monsters because their silhouettes sit between beast and soldier: readable in combat, but still strange enough for the hidden-road world.'
+    ],
+    tags: ['Underway', 'Martial Monster'],
+    entrySlugs: ['lizardman-1', 'lizardman-2', 'lizardman-3']
+  },
+  {
     slug: 'mushroom',
     title: 'Mushroom',
     summary: 'Fungal bodies that connect damp growth, decay, and uncanny life to the dungeon ecology.',
@@ -460,6 +471,17 @@ const monsterPageDefs = [
     ],
     tags: ['Boss Form', 'Corruption Mass'],
     entrySlugs: ['slime-boss-1', 'slime-boss-2', 'slime-boss-3']
+  },
+  {
+    slug: 'slime-enemy',
+    title: 'Slime Enemy',
+    summary: 'A separate slime line for lower-tier encounters, alchemical spillover, and dungeon ecology variety.',
+    description: [
+      'The Slime Enemy variants give the shared monster pool another compact corruption form without forcing every slime encounter to use the same silhouette language.',
+      'They fit sewers, caves, failed workshops, and early dungeon routes where the threat should feel unstable but immediately legible.'
+    ],
+    tags: ['Slime', 'Alchemical'],
+    entrySlugs: ['slime-enemy-1', 'slime-enemy-2', 'slime-enemy-3']
   },
   {
     slug: 'slime-monster',
