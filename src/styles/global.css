@@ -734,11 +734,19 @@ button:focus-visible {
 }
 
 .sprite-strip__slot {
+  --slot-pad-x: 1.6rem;
+  --slot-pad-y: 1.7rem;
+  --slot-min-w: 12rem;
+  --slot-min-h: 9.25rem;
+  --slot-max-w: 20rem;
+  --slot-w: max(var(--slot-min-w), calc(var(--sprite-w) + var(--slot-pad-x)));
+  --slot-h: max(var(--slot-min-h), calc(var(--sprite-h) + var(--slot-pad-y)));
+
   display: grid;
-  grid-template-rows: minmax(9.25rem, auto) auto;
-  flex: 1 1 13.5rem;
-  min-width: min(100%, 12rem);
-  max-width: 20rem;
+  grid-template-rows: minmax(var(--slot-h), auto) auto;
+  flex: 1 1 var(--slot-w);
+  min-width: min(100%, var(--slot-w));
+  max-width: min(100%, max(var(--slot-max-w), var(--slot-w)));
   margin: 0;
   overflow: hidden;
   border: 1px solid rgba(238, 229, 207, 0.1);
@@ -746,9 +754,9 @@ button:focus-visible {
   background: rgba(244, 239, 227, 0.025);
 }
 
-.sprite-strip__slot[data-cadence="1"] { flex-basis: 11.5rem; }
-.sprite-strip__slot[data-cadence="2"] { flex-basis: 15rem; }
-.sprite-strip__slot[data-cadence="3"] { flex-basis: 12.5rem; }
+.sprite-strip__slot[data-cadence="1"] { --slot-min-w: 11.5rem; }
+.sprite-strip__slot[data-cadence="2"] { --slot-min-w: 15rem; }
+.sprite-strip__slot[data-cadence="3"] { --slot-min-w: 12.5rem; }
 
 .sprite-strip__slot[data-cadence="1"] .sprite-image,
 .sprite-strip__slot[data-cadence="3"] .sprite-image {
@@ -761,7 +769,7 @@ button:focus-visible {
   align-items: end;
   justify-items: center;
   min-width: 0;
-  min-height: 9.25rem;
+  min-height: var(--slot-h);
   padding: 0.95rem 0.8rem 0.75rem;
 }
 
@@ -786,17 +794,20 @@ button:focus-visible {
 }
 
 .sprite-strip--compact .sprite-strip__slot {
-  grid-template-rows: minmax(5.8rem, auto) auto;
-  flex: 0 1 5rem;
-  min-width: 4.4rem;
-  max-width: 6.4rem;
+  --slot-pad-x: 0.64rem;
+  --slot-pad-y: 0.7rem;
+  --slot-min-w: 4.4rem;
+  --slot-min-h: 5.8rem;
+  --slot-max-w: 6.4rem;
+
+  flex: 0 1 var(--slot-w);
   border: 0;
   border-radius: 0;
   background: transparent;
 }
 
 .sprite-strip--compact .sprite-strip__stage {
-  min-height: 5.8rem;
+  min-height: var(--slot-h);
   padding: 0.35rem 0.32rem;
 }
 
@@ -807,16 +818,19 @@ button:focus-visible {
 }
 
 .sprite-strip--hero .sprite-strip__slot {
-  grid-template-rows: minmax(11.5rem, auto) auto;
-  flex: 0 1 7rem;
-  min-width: 5.8rem;
-  max-width: 8.6rem;
+  --slot-pad-x: 1rem;
+  --slot-pad-y: 1.65rem;
+  --slot-min-w: 5.8rem;
+  --slot-min-h: 11.5rem;
+  --slot-max-w: 8.6rem;
+
+  flex: 0 1 var(--slot-w);
   border-color: rgba(238, 229, 207, 0.08);
   background: rgba(244, 239, 227, 0.02);
 }
 
 .sprite-strip--hero .sprite-strip__stage {
-  min-height: 11.5rem;
+  min-height: var(--slot-h);
   padding: 0.9rem 0.5rem 0.75rem;
 }
 
@@ -826,14 +840,14 @@ button:focus-visible {
 }
 
 .variant-grid .sprite-strip__slot {
-  flex-basis: 15rem;
-  max-width: 24rem;
+  --slot-min-w: 15rem;
+  --slot-max-w: 24rem;
 }
 
 .sprite-image {
-  width: auto;
+  width: var(--sprite-w);
   height: auto;
-  max-width: none;
+  max-width: 100%;
   image-rendering: crisp-edges;
   image-rendering: pixelated;
 }
@@ -1282,15 +1296,11 @@ button:focus-visible {
 
 .codex-slate .sprite-strip--hero .sprite-strip__slot,
 .dossier-plate .sprite-strip--hero .sprite-strip__slot {
-  flex-basis: clamp(7rem, 28%, 10.5rem);
-  min-width: 6.8rem;
-  max-width: 11.25rem;
-  overflow: visible;
-}
+  --slot-min-w: 6.8rem;
+  --slot-min-h: 12rem;
+  --slot-max-w: 11.25rem;
 
-.codex-slate .sprite-strip--hero .sprite-strip__stage,
-.dossier-plate .sprite-strip--hero .sprite-strip__stage {
-  min-height: 12rem;
+  overflow: visible;
 }
 
 .dossier-plate--character .sprite-strip--hero {
@@ -1298,13 +1308,12 @@ button:focus-visible {
 }
 
 .dossier-plate--character .sprite-strip--hero .sprite-strip__slot {
-  flex-basis: clamp(5.75rem, 22%, 8.25rem);
-  min-width: 5.25rem;
-  max-width: 8.75rem;
+  --slot-min-w: 5.25rem;
+  --slot-min-h: 9.25rem;
+  --slot-max-w: 8.75rem;
 }
 
 .dossier-plate--character .sprite-strip--hero .sprite-strip__stage {
-  min-height: 9.25rem;
   padding: 0.55rem 0.35rem 0.45rem;
 }
 
@@ -1402,12 +1411,12 @@ button:focus-visible {
 }
 
 .character-lineup-section .variant-grid .sprite-strip__slot {
-  flex-basis: clamp(7rem, 16vw, 11rem);
-  max-width: 13rem;
+  --slot-min-w: clamp(7rem, 16vw, 11rem);
+  --slot-min-h: 8.6rem;
+  --slot-max-w: 13rem;
 }
 
 .character-lineup-section .variant-grid .sprite-strip__stage {
-  min-height: 8.6rem;
   padding: 0.65rem 0.5rem 0.45rem;
 }
 
@@ -1622,14 +1631,15 @@ button:focus-visible {
 }
 
 .sprite-strip--compact .sprite-strip__slot {
-  flex: 1 1 8rem;
-  min-width: min(100%, 6.5rem);
-  max-width: 11.5rem;
+  --slot-min-w: 6.5rem;
+  --slot-min-h: 10.75rem;
+  --slot-max-w: 11.5rem;
+
   overflow: visible;
 }
 
 .sprite-strip--compact .sprite-strip__stage {
-  min-height: 10.75rem;
+  min-height: var(--slot-h);
   padding: 0.65rem 0.4rem;
 }
 
@@ -1642,27 +1652,25 @@ button:focus-visible {
 }
 
 .showcase-card .sprite-strip--compact {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.55rem;
   align-items: end;
+  align-content: center;
+  justify-content: center;
 }
 
 .showcase-card .sprite-strip--compact .sprite-strip__slot {
-  min-width: 0;
-  max-width: none;
+  --slot-min-h: 9.5rem;
+
+  flex: 0 1 var(--slot-w);
+  min-width: min(100%, var(--slot-w));
+  max-width: min(100%, var(--slot-w));
   overflow: visible;
 }
 
 .showcase-card .sprite-strip--compact .sprite-strip__stage {
-  min-height: 9.5rem;
-}
-
-.showcase-card .sprite-strip--compact .sprite-image {
-  width: auto !important;
-  height: auto !important;
-  max-width: 100%;
-  max-height: 9rem;
+  min-height: var(--slot-h);
 }
 
 .showcase-card[data-kind="character"] {
@@ -1681,17 +1689,12 @@ button:focus-visible {
 }
 
 .showcase-card[data-kind="character"] .sprite-strip--compact .sprite-strip__slot {
-  flex: 1 1 5rem;
-  min-width: 4.6rem;
+  --slot-min-w: 4.6rem;
+  --slot-min-h: 8rem;
 }
 
 .showcase-card[data-kind="character"] .sprite-strip--compact .sprite-strip__stage {
-  min-height: 8rem;
   padding: 0.35rem 0.25rem 0.25rem;
-}
-
-.showcase-card[data-kind="character"] .sprite-strip--compact .sprite-image {
-  max-height: 8rem;
 }
 
 .showcase-card[data-kind="monster"] {
@@ -1703,31 +1706,34 @@ button:focus-visible {
 }
 
 .showcase-card[data-kind="monster"] .sprite-strip--compact {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.65rem;
-  align-items: stretch;
+  align-items: end;
+  align-content: center;
+  justify-content: center;
   padding: 0.75rem;
 }
 
 .showcase-card[data-kind="monster"] .sprite-strip--compact .sprite-strip__slot {
   display: grid;
-  min-width: 0;
   overflow: visible;
 }
 
+.showcase-card[data-kind="monster"] .sprite-strip--compact[data-scale="2x"] .sprite-strip__slot {
+  --slot-min-h: 10.5rem;
+}
+
 .showcase-card[data-kind="monster"] .sprite-strip--compact[data-scale="2x"] .sprite-strip__stage {
-  min-height: 10.5rem;
   padding: 0.55rem 0.35rem 0.35rem;
 }
 
-.showcase-card[data-kind="monster"] .sprite-strip--compact[data-scale="3x"] .sprite-strip__stage {
-  min-height: 9rem;
-  padding: 0.5rem 0.35rem 0.3rem;
+.showcase-card[data-kind="monster"] .sprite-strip--compact[data-scale="3x"] .sprite-strip__slot {
+  --slot-min-h: 9rem;
 }
 
-.showcase-card[data-kind="monster"] .sprite-strip--compact .sprite-image {
-  max-height: 10.25rem;
+.showcase-card[data-kind="monster"] .sprite-strip--compact[data-scale="3x"] .sprite-strip__stage {
+  padding: 0.5rem 0.35rem 0.3rem;
 }
 
 .showcase-card[data-kind="monster"][data-preview-size="large"],
@@ -1739,24 +1745,16 @@ button:focus-visible {
   min-height: 14rem;
 }
 
-.showcase-card[data-kind="monster"][data-preview-size="large"] .sprite-strip--compact[data-scale="2x"] .sprite-strip__stage {
-  min-height: 12.25rem;
-}
-
-.showcase-card[data-kind="monster"][data-preview-size="large"] .sprite-strip--compact .sprite-image {
-  max-height: 11.25rem;
+.showcase-card[data-kind="monster"][data-preview-size="large"] .sprite-strip--compact[data-scale="2x"] .sprite-strip__slot {
+  --slot-min-h: 12.25rem;
 }
 
 .showcase-card[data-kind="monster"][data-preview-size="huge"] .showcase-card__art {
   min-height: 14.5rem;
 }
 
-.showcase-card[data-kind="monster"][data-preview-size="huge"] .sprite-strip--compact[data-scale="2x"] .sprite-strip__stage {
-  min-height: 12.75rem;
-}
-
-.showcase-card[data-kind="monster"][data-preview-size="huge"] .sprite-strip--compact .sprite-image {
-  max-height: 12.25rem;
+.showcase-card[data-kind="monster"][data-preview-size="huge"] .sprite-strip--compact[data-scale="2x"] .sprite-strip__slot {
+  --slot-min-h: 12.75rem;
 }
 
 @media (max-width: 1020px) {
@@ -1895,22 +1893,21 @@ button:focus-visible {
   .status-grid div:last-child { border-bottom: 0; }
 
   .sprite-strip__slot {
-    grid-template-rows: minmax(8.5rem, auto) auto;
-    flex-basis: 100%;
-    max-width: none;
+    --slot-min-h: 8.5rem;
+    --slot-max-w: 100%;
   }
 
   .sprite-strip__stage {
-    min-height: 8.5rem;
+    min-height: var(--slot-h);
   }
 
   .sprite-strip--compact .sprite-strip__slot {
-    flex-basis: 8rem;
-    max-width: 11.5rem;
+    --slot-min-w: 8rem;
+    --slot-max-w: 11.5rem;
   }
 
   .sprite-strip--hero .sprite-strip__slot {
-    grid-template-rows: minmax(10.8rem, auto) auto;
-    min-width: 5.2rem;
+    --slot-min-w: 5.2rem;
+    --slot-min-h: 10.8rem;
   }
 }

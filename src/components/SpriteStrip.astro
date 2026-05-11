@@ -27,7 +27,12 @@ const {
 
 <div class:list={["sprite-strip", `sprite-strip--${density}`]} role="list" aria-label={label} data-scale={`${scale}x`}>
   {entries.map((entry, index) => (
-    <figure class="sprite-strip__slot" role="listitem" data-cadence={rhythm === 'subtle' ? index % 4 : undefined}>
+    <figure
+      class="sprite-strip__slot"
+      role="listitem"
+      data-cadence={rhythm === 'subtle' ? index % 4 : undefined}
+      style={`--sprite-w:${entry.width * scale}px;--sprite-h:${entry.height * scale}px;`}
+    >
       <div class="sprite-strip__stage">
         <SpriteImage entry={entry} scale={scale} loading={loading} />
       </div>
