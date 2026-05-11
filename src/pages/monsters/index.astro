@@ -47,7 +47,7 @@ const entryCount = monsterPages.reduce((total, page) => total + page.entries.len
       <p class="eyebrow">Browse families</p>
       <h2>Monster families and forms</h2>
       <div class="card-grid">
-        {monsterPages.map((page) => <ShowcaseCard page={page} href={`/monsters/${page.slug}`} />)}
+        {monsterPages.map((page) => <ShowcaseCard page={page} href={`monsters/${page.slug}`} />)}
       </div>
     </div>
   </section>

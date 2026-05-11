@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { withBase } from '../paths';
 
 type Props = {
   title: string;
@@ -16,17 +17,17 @@ const { title, description = 'A 1-bit occult shared-world JRPG where hidden road
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="icon" href="/showcase/monsters/goblin-1.png" />
+    <link rel="icon" href={withBase('/showcase/monsters/goblin-1.png')} />
   </head>
   <body>
     <header class="site-header">
       <div class="shell header-inner">
-        <a class="brand" href="/">Via Occulta</a>
+        <a class="brand" href={withBase()}>Via Occulta</a>
         <nav class="main-nav">
-          <a href="/world">World</a>
-          <a href="/games">Games</a>
-          <a href="/characters">Characters</a>
-          <a href="/monsters">Monsters</a>
+          <a href={withBase('/world')}>World</a>
+          <a href={withBase('/games')}>Games</a>
+          <a href={withBase('/characters')}>Characters</a>
+          <a href={withBase('/monsters')}>Monsters</a>
         </nav>
       </div>
     </header>

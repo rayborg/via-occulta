@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../paths';
 
 const areas = [
   {
@@ -46,7 +47,7 @@ const areas = [
 >
   <section class="page-hero">
     <div class="shell">
-      <a class="breadcrumb" href="/world">World</a>
+      <a class="breadcrumb" href={withBase('/world')}>World</a>
       <p class="eyebrow">First region</p>
       <h1>The Pilgrim Verge</h1>
       <p>

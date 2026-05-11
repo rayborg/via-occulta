@@ -1,5 +1,6 @@
 ---
 import type { ShowcasePage } from '../data/showcase';
+import { withBase } from '../paths';
 
 type Props = {
   page: ShowcasePage;
@@ -10,7 +11,7 @@ const { page, href } = Astro.props;
 const preview = page.entries[0];
 ---
 
-<a class="showcase-card" href={href}>
+<a class="showcase-card" href={withBase(href)}>
   <div class="card-art"><img src={preview.image} alt={preview.label} loading="lazy" /></div>
   <div class="card-copy">
     <p class="card-kicker">{page.kind === 'monster' ? 'Monster Family' : 'Character Group'}</p>

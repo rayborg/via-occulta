@@ -2,6 +2,7 @@
 import VariantGrid from '../../components/VariantGrid.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { characterPages } from '../../data/showcase';
+import { withBase } from '../../paths';
 import type { ShowcasePage } from '../../data/showcase';
 
 type Props = {
@@ -21,7 +22,7 @@ const { page } = Astro.props;
 <BaseLayout title={`${page.title} | Via Occulta Characters`} description={page.summary}>
   <section class="page-hero">
     <div class="shell">
-      <a class="breadcrumb" href="/characters">Characters</a>
+      <a class="breadcrumb" href={withBase('/characters')}>Characters</a>
       <p class="eyebrow">Character group</p>
       <h1>{page.title}</h1>
       <p>{page.summary}</p>
@@ -39,7 +40,7 @@ const { page } = Astro.props;
         <ul>
           <li>Catalog type: character group</li>
           <li>Primary tag: {page.tags[0]}</li>
-          <li>Public route: /characters/{page.slug}</li>
+          <li>Public route: {withBase(`/characters/${page.slug}`)}</li>
         </ul>
       </div>
       <div class="prose">

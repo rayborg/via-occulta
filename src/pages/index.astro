@@ -23,8 +23,8 @@ import { homepageFeaturedCharacters, homepageFeaturedMonsters } from '../data/sh
       </div>
       <div class="hero-sheet">
         <div class="feature-grid">
-          {homepageFeaturedCharacters.slice(0, 2).map((page) => <ShowcaseCard page={page} href={`/characters/${page.slug}`} />)}
-          {homepageFeaturedMonsters.slice(0, 2).map((page) => <ShowcaseCard page={page} href={`/monsters/${page.slug}`} />)}
+          {homepageFeaturedCharacters.slice(0, 2).map((page) => <ShowcaseCard page={page} href={`characters/${page.slug}`} />)}
+          {homepageFeaturedMonsters.slice(0, 2).map((page) => <ShowcaseCard page={page} href={`monsters/${page.slug}`} />)}
         </div>
       </div>
     </div>
@@ -98,8 +98,8 @@ import { homepageFeaturedCharacters, homepageFeaturedMonsters } from '../data/sh
       <p class="eyebrow">Browse the cast</p>
       <h2>Representative characters and monster families</h2>
       <div class="card-grid">
-        {homepageFeaturedCharacters.map((page) => <ShowcaseCard page={page} href={`/characters/${page.slug}`} />)}
-        {homepageFeaturedMonsters.map((page) => <ShowcaseCard page={page} href={`/monsters/${page.slug}`} />)}
+        {homepageFeaturedCharacters.map((page) => <ShowcaseCard page={page} href={`characters/${page.slug}`} />)}
+        {homepageFeaturedMonsters.map((page) => <ShowcaseCard page={page} href={`monsters/${page.slug}`} />)}
       </div>
     </div>
   </section>

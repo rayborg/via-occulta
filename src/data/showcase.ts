@@ -1,4 +1,5 @@
 import generated from './showcase.generated.json';
+import { withBase } from '../paths';
 
 export type FlatEntry = {
   key: string;
@@ -18,8 +19,14 @@ export type ShowcasePage = {
   entries: FlatEntry[];
 };
 
-const characterEntries = generated.characters as FlatEntry[];
-const monsterEntries = generated.monsters as FlatEntry[];
+const characterEntries = (generated.characters as FlatEntry[]).map((entry) => ({
+  ...entry,
+  image: withBase(entry.image)
+}));
+const monsterEntries = (generated.monsters as FlatEntry[]).map((entry) => ({
+  ...entry,
+  image: withBase(entry.image)
+}));
 const entryIndex = new Map<string, FlatEntry>([...characterEntries, ...monsterEntries].map((entry) => [entry.slug, entry]));
 
 function resolveEntries(slugs: readonly string[]): FlatEntry[] {

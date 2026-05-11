@@ -47,7 +47,7 @@ const entryCount = characterPages.reduce((total, page) => total + page.entries.l
       <p class="eyebrow">Browse groups</p>
       <h2>Character groups and forms</h2>
       <div class="card-grid">
-        {characterPages.map((page) => <ShowcaseCard page={page} href={`/characters/${page.slug}`} />)}
+        {characterPages.map((page) => <ShowcaseCard page={page} href={`characters/${page.slug}`} />)}
       </div>
     </div>
   </section>
