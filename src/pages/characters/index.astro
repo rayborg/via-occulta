@@ -11,6 +11,27 @@ const characterRibbon = ['swordsman-l9', 'priest', 'tower-reader']
   .map((slug) => characterEntries.find((entry) => entry.slug === slug))
   .filter((entry): entry is FlatEntry => Boolean(entry))
   .slice(0, 3);
+
+const castAnchors = [
+  {
+    game: 'Tenebrio',
+    hero: 'Weak shriner / forbidden-route mapper',
+    candidates: 'Base male/female unarmed; later sword variants only as defensive or disguise-capable states.',
+    support: 'Priests, monks, shrine keepers, pilgrims, road-bound spirits, disguised monsters, cursed locals.'
+  },
+  {
+    game: 'Luciphilus',
+    hero: 'Adventurer / escort / monster-clearer',
+    candidates: 'Swordsman line as the clearest active player hero.',
+    support: 'Guards, fighters, archers, expedition members, lantern-company adventurers, monster hunters, mages, dungeon parties.'
+  },
+  {
+    game: 'Opiphilus',
+    hero: 'Guild worker / crafter / trade traveler',
+    candidates: 'Smith, Herbalist, Priest support, Guild Mage, Monk, Glassblower / Blacksmith worker where animation supports it.',
+    support: 'Shopkeepers, traders, market workers, guild clerks, blacksmiths, herbalists, glassblowers, villagers, escorted clients.'
+  }
+];
 ---
 
 <BaseLayout
@@ -59,6 +80,23 @@ const characterRibbon = ['swordsman-l9', 'priest', 'tower-reader']
         <p>
           These groups make the setting feel inhabited: a world of people preparing, arguing, repairing, teaching, watching, and surviving while the roads beneath them change.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow">World cast anchors</p>
+      <h2>Three kinds of people keep the road alive.</h2>
+      <div class="card-grid">
+        {castAnchors.map((anchor) => (
+          <article class="info-card panel">
+            <p class="card-kicker">{anchor.game}</p>
+            <h3>{anchor.hero}</h3>
+            <p><strong>Main candidates:</strong> {anchor.candidates}</p>
+            <p class="play-beat"><strong>Support:</strong> {anchor.support}</p>
+          </article>
+        ))}
       </div>
     </div>
   </section>

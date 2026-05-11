@@ -6,6 +6,10 @@
 
 Combat-heavy scenes, especially in **Luciphilus**, may transition into a separate side-view or dedicated battle-screen presentation. The world itself remains primarily tile-based and overhead.
 
+Via Occulta uses **one canonical shared world map / area graph**. Tenebrio, Luciphilus, and Opiphilus are role lenses on the same towns, roads, gates, villages, guild halls, caves, ruins, and dungeons, not separate overworlds or duplicate per-game maps.
+
+A location has one canonical identity in the shared world. Each game line changes what is visible, risky, useful, or available there: actors, jobs, prompts, routes, combat, escort requests, shops, guild services, repairs, and unlock states.
+
 ---
 
 ## Artwork-Grounded Location Rule
@@ -74,8 +78,8 @@ The world is not ending all at once. It is being quietly rerouted.
 To survive, three kinds of work become necessary:
 
 - **Tenebrio** — the weak shriner enters forbidden routes, maps what others cannot see, and survives through rites, disguise, and transformation.
-- **Luciphilus** — the adventurer clears dungeon threats, recovers relics, fights monsters, and confronts crystal-era conflicts.
-- **Opiphilus** — the crafter and guild worker repairs towns, restores workshops, builds tools, fulfills orders, and turns recovered fragments into usable civilization.
+- **Luciphilus** — the adventurer clears dungeon threats, guards discovered routes, accepts paid escort work, recovers relics, fights monsters, and confronts crystal-era conflicts.
+- **Opiphilus** — the crafter and guild worker repairs towns, restores workshops, posts escort requests, travels to destination villages for shops and jobs, and turns recovered fragments into usable civilization.
 
 Together, they do not merely save the world by defeating a final boss. They rebuild the hidden infrastructure of the world one shrine, road, workshop, and guild project at a time.
 
@@ -103,15 +107,21 @@ The central fantasy is:
 
 ---
 
-## The Three Linked Game Lines
+## The Three Role Lenses
 
-### Tenebrio — The Shriner Exploration Game
+Via Occulta uses **one canonical shared world map / area graph**.
+
+Tenebrio, Luciphilus, and Opiphilus are not separate maps or separate continuities. They are role lenses on the same shrine towns, roads, gates, villages, guild halls, caves, ruins, and dungeons.
+
+### Tenebrio — The Shriner Exploration Lens
 
 **Role in the shared world:** discovery, mapping, shrine rites, hidden routes, transformation, disguise.
 
 Tenebrio is about weakness, fear, stealth, ritual knowledge, and forbidden access.
 
 The Tenebrio player is not a classic sword hero. They begin as a vulnerable human attached to shrines, chapels, pilgrim houses, or road-keeping orders. They survive by understanding local spirits and monsters well enough to pass among them.
+
+Tenebrio discovers routes before the rest of the world can safely use them. Shriners reveal hidden roads, map unstable passages, identify monster disguises, recover shrine keys, and bring back proof that a path exists.
 
 Tenebrio contributes:
 
@@ -128,11 +138,13 @@ Core fantasy:
 
 > **You are weak, but you know the rites.**
 
-### Luciphilus — The Adventurer RPG
+### Luciphilus — The Adventurer / Escort Lens
 
-**Role in the shared world:** combat, dungeon expeditions, boss threats, relic recovery, crystal conflict.
+**Role in the shared world:** combat, dungeon expeditions, route clearing, guarding, escort work, relic recovery.
 
 Luciphilus is the most traditional JRPG-facing game line. It follows adventurers, guards, monster hunters, relic seekers, and guild expedition parties who enter dangerous dungeons once Tenebrio has found or opened the way.
+
+Luciphilus makes discovered routes survivable. Adventurers clear threats, guard unstable roads, escort fragile travelers, and get paid through guild contracts, road charters, bounty work, village requests, and route reputation.
 
 Luciphilus contributes:
 
@@ -143,7 +155,9 @@ Luciphilus contributes:
 - combat records,
 - dungeon rewards,
 - recovered weapons,
-- proof that an area is safe enough for rebuilding.
+- proof that an area is safe enough for rebuilding,
+- escort contracts,
+- guarded passage for Opiphilus travelers.
 
 Core fantasy:
 
@@ -155,6 +169,10 @@ Core fantasy:
 
 Opiphilus is about the people who make survival possible. Blacksmiths, herbalists, glassblowers, market workers, guild clerks, ritual assistants, and shrine-town residents convert dangerous discoveries into usable civilization.
 
+Opiphilus characters are strong inside settlements, guild halls, shops, workshops, markets, and villages, but fragile outside settled safe zones. They do not normally roam dangerous roads alone. When Opiphilus needs to reach another village, buy local goods, access a workshop, open a guild job, or move craft cargo, they post an escort request at a guild, gate, market, or village notice point.
+
+When a Luciphilus player accepts the request, the Opiphilus traveler becomes visible at the origin guild or gate and can be escorted through the shared route. On arrival, Opiphilus gains access to destination-specific shops, guild jobs, crafting stations, orders, recipes, repairs, and restoration projects.
+
 Opiphilus contributes:
 
 - weapons,
@@ -164,8 +182,10 @@ Opiphilus contributes:
 - ritual glass,
 - shrine repair kits,
 - guild orders,
+- escort requests,
 - town upgrades,
 - workshop unlocks,
+- village shop access,
 - market circulation.
 
 Core fantasy:
@@ -174,18 +194,143 @@ Core fantasy:
 
 ---
 
+## Hero And Character Roles
+
+Each game line should have a distinct heroic identity while still belonging to the same world. The strongest trio concept is:
+
+> **Tenebrio = shriner scout. Luciphilus = paid adventurer escort. Opiphilus = guild crafter / trader.**
+
+### Tenebrio Hero Set
+
+**Hero type:** weak shriner / forbidden-route mapper.
+
+Tenebrio is a fragile shriner, pilgrim, or road-keeper who survives by knowing rites rather than winning fights directly.
+
+Main artwork candidates:
+
+- base male unarmed,
+- base female unarmed,
+- base male sword as a later defensive or disguise-capable variant,
+- base female sword as a later defensive or disguise-capable variant.
+
+Primary character roles:
+
+- weak shriner,
+- forbidden-route mapper,
+- disguise bearer,
+- monster-form learner,
+- shrine key carrier,
+- cursed relic identifier.
+
+Supporting cast:
+
+- priests,
+- monks,
+- shrine keepers,
+- pilgrims,
+- road-bound spirits,
+- disguised monsters,
+- cursed locals.
+
+Identity:
+
+- survives through rites, maps, disguise, transformation, and forbidden knowledge.
+
+### Luciphilus Hero Set
+
+**Hero type:** adventurer / escort / monster-clearer.
+
+Luciphilus is a paid adventurer, escort, guard, or monster-clearer who turns discovered routes into survivable passage.
+
+Main artwork candidate:
+
+- the Swordsman line as the clearest active player hero.
+
+Primary character roles:
+
+- swordsman,
+- lantern-company adventurer,
+- paid escort,
+- guard,
+- monster hunter,
+- dungeon expedition member,
+- boss-threat clearer,
+- relic recoverer.
+
+Supporting cast:
+
+- guards,
+- fighters,
+- archers,
+- expedition members,
+- lantern-company adventurers,
+- monster hunters,
+- mages,
+- dungeon parties.
+
+Identity:
+
+- accepts contracts, clears threats, escorts fragile travelers, fights bosses, and recovers relics.
+
+### Opiphilus Hero Set
+
+**Hero type:** guild worker / crafter / trade traveler.
+
+Opiphilus is a guild worker, crafter, trader, or village specialist who is valuable inside civilization but vulnerable on dangerous roads.
+
+Main artwork candidates:
+
+- Smith,
+- Herbalist,
+- Priest / ritual support,
+- Guild Mage,
+- Monk,
+- Glassblower / Blacksmith worker where animation supports it.
+
+Primary character roles:
+
+- blacksmith,
+- herbalist,
+- glassblower,
+- guild mage,
+- ritual assistant,
+- market buyer,
+- repair worker,
+- trade client.
+
+Supporting cast:
+
+- shopkeepers,
+- traders,
+- market workers,
+- guild clerks,
+- blacksmiths,
+- herbalists,
+- glassblowers,
+- villagers,
+- escorted clients.
+
+Identity:
+
+- fragile outside settlements, posts escort requests, travels to villages for shops and craft jobs, repairs and rebuilds civilization.
+
+---
+
 ## Shared-World Loop
 
 The three game lines should reinforce one another.
 
 1. **Tenebrio discovers** a hidden shrine route, forbidden door, monster disguise, or map fragment.
-2. **Luciphilus clears** the combat threat inside the revealed dungeon, ruin, or cave.
-3. **Opiphilus builds** the tools, repairs, recipes, charms, and guild infrastructure needed to hold the route open.
-4. The world unlocks a new room, road, recipe, guild project, or story chapter.
+2. **Opiphilus creates demand** for the route through a delivery, repair, trade order, village shop need, guild job, craft request, or settlement reopening.
+3. **Opiphilus posts an escort request** at a guild board, gate board, market board, or village notice point.
+4. **Luciphilus accepts the request** and the Opiphilus traveler becomes visible at the origin guild or gate.
+5. **Luciphilus clears, guards, or escorts** through the revealed route and receives guild pay, bounty rewards, road fees, route standing, materials, or village payment.
+6. **Opiphilus travels, crafts, and rebuilds** by reaching destination villages, fulfilling guild jobs, restoring workshops, restocking shops, and stabilizing routes.
+7. The shared world unlocks a new room, road, recipe, guild project, village service, shop inventory, or story chapter.
 
 Short version:
 
-> **Tenebrio discovers. Luciphilus fights. Opiphilus builds.**
+> **Tenebrio discovers. Luciphilus secures. Opiphilus gives the road a reason to exist.**
 
 ---
 
@@ -247,6 +392,19 @@ A road can be opened by:
 
 This gives the world a natural reason for maps, crafting, rituals, boss drops, and guild projects to matter.
 
+A route is not fully alive just because it has been discovered. It becomes useful when someone has a reason to travel it. Escort requests are one of the main ways hidden roads become part of the living economy.
+
+Useful route states include:
+
+- unknown,
+- discovered,
+- posted for escort,
+- accepted,
+- in transit,
+- cleared,
+- economically active,
+- stabilized.
+
 ---
 
 ## Factions
@@ -269,6 +427,8 @@ Associated with:
 
 Practical organizations that keep towns alive. They control workshops, markets, expeditions, inventories, repair contracts, and road charters.
 
+Guild Houses post and validate escort contracts. They decide when a route has enough economic purpose to justify sending Opiphilus workers, traders, repairers, buyers, or craft cargo through it.
+
 Associated with:
 
 - Opiphilus,
@@ -282,6 +442,8 @@ Associated with:
 ### The Lantern Companies
 
 Adventuring companies that enter routes after they are discovered. They clear threats, retrieve relics, and confirm whether a route can be used safely.
+
+Lantern Companies and Luciphilus parties accept escort requests, guard fragile clients, clear roadside threats, certify routes for continued use, and collect pay through guild contracts and village requests.
 
 Associated with:
 
@@ -382,10 +544,12 @@ The town of Greybell survives beside a shrine that no longer rings its road-bell
 The player loop:
 
 1. Tenebrio maps the changed route beneath Mistfall Chapel.
-2. Luciphilus clears the Wraith of the Drowned Gate in the Chapel Undercrypt.
-3. Opiphilus restores the Guild Hearth forge and repairs the shrine bell casing.
-4. The town reopens the Old Crystal Gate.
-5. The next region becomes reachable.
+2. Opiphilus posts a request to move bell-repair materials, lantern glass, and a guild craft worker from Greybell to the Guild Hearth or Old Crystal Gate worksite.
+3. Luciphilus accepts the escort at the Greybell guild or gate board, making the Opiphilus traveler visible at the departure point.
+4. Luciphilus escorts the traveler across The Broken Road and clears the Wraith of the Drowned Gate in the Chapel Undercrypt.
+5. Opiphilus restores the Guild Hearth forge, repairs the shrine bell casing, and unlocks destination services such as local shops, guild jobs, craft stations, and repair work.
+6. The town reopens the Old Crystal Gate.
+7. The next region becomes reachable.
 
 ---
 
@@ -446,6 +610,10 @@ Ritual objects that open roads only when used in the correct place, form, or pha
 ### Road Charters
 
 Guild documents that legally and magically authorize travel through certain restored roads.
+
+### Escort Requests
+
+Guild, gate, market, or village notices posted when Opiphilus needs safe passage to another settlement, shop, workshop, worksite, or guild counter. Luciphilus accepts these as paid contracts, escorts the client or cargo, and turns route danger into a shared-world economy loop.
 
 ### Crystal Shards
 
@@ -530,11 +698,11 @@ Enter Mistfall Chapel and recover a map fragment from a room that only appears w
 
 ### Luciphilus task
 
-Use the recovered map fragment to enter the chapel undercrypt and defeat the Wraith of the Drowned Gate.
+Use the recovered map fragment to accept a paid escort request, guard an Opiphilus traveler across The Broken Road, enter the chapel undercrypt, and defeat the Wraith of the Drowned Gate.
 
 ### Opiphilus task
 
-Use ghost silk, iron, lantern glass, and crystal dust to repair the bell housing and craft the first Road Lantern.
+Post an escort request from Greybell, travel under Luciphilus guard to the Guild Hearth worksite, buy or trade for local materials, then use ghost silk, iron, lantern glass, and crystal dust to repair the bell housing and craft the first Road Lantern.
 
 ### Resolution
 
@@ -548,4 +716,4 @@ Via Occulta should not be framed as a generic MMO.
 
 It should be framed as:
 
-> **A 1-bit top-down tile-based occult JRPG shared world where hidden roads are discovered by shriners, cleared by adventurers, and rebuilt by guild crafters.**
+> **A 1-bit top-down tile-based occult JRPG shared world where hidden roads are discovered by shriners, secured by paid adventurers, and rebuilt by guild crafters traveling under escort.**

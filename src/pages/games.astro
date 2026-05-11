@@ -4,22 +4,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const gameLines = [
   {
     name: 'Tenebrio',
-    kicker: 'Shriner exploration',
-    role: 'Disguise rites let a weak shriner pass as Road-Bound dead, local spirits, or failed guardians long enough to recover forbidden map fragments.',
+    kicker: 'Shriner scout',
+    role: 'A weak shriner maps forbidden routes and survives through rites, maps, disguise, transformation, and forbidden knowledge.',
+    cast: 'Main candidates: base male unarmed and base female unarmed, with sword variants reserved for later defensive or disguise-capable states. Support: priests, monks, shrine keepers, pilgrims, road-bound spirits, disguised monsters, and cursed locals.',
     fantasy: 'You are weak, but you know the rites.',
     contributes: ['Map fragments', 'Shrine keys', 'Disguise rites', 'Occult warnings', 'Route unlocks']
   },
   {
     name: 'Luciphilus',
-    kicker: 'Adventurer RPG',
-    role: 'Dungeon expeditions, battle-screen pressure, relic recovery, monsters, and crystal-era conflict.',
+    kicker: 'Paid adventurer escort',
+    role: 'An adventurer, escort, and monster-clearer accepts contracts, clears threats, escorts fragile travelers, fights bosses, and recovers relics.',
+    cast: 'Main candidate: the Swordsman line as the clearest active player hero. Support: guards, fighters, archers, expedition members, lantern-company adventurers, monster hunters, mages, and dungeon parties.',
     fantasy: 'You carry the light into the road after someone else has found it.',
     contributes: ['Cleared routes', 'Boss relics', 'Monster parts', 'Recovered weapons', 'Proof an area can be rebuilt']
   },
   {
     name: 'Opiphilus',
-    kicker: 'Crafter and guild work',
-    role: 'Workshops, town interiors, trade orders, ritual support, repairs, and restoration projects.',
+    kicker: 'Guild crafter / trader',
+    role: 'A guild worker, crafter, or trade traveler is fragile outside settlements, posts escort requests, travels for shops and craft jobs, and rebuilds civilization.',
+    cast: 'Main candidates: Smith, Herbalist, Priest / ritual support, Guild Mage, Monk, and Glassblower / Blacksmith worker where animation supports it. Support: shopkeepers, traders, market workers, guild clerks, blacksmiths, herbalists, glassblowers, villagers, and escorted clients.',
     fantasy: 'You make the tools that let the town endure the abyss.',
     contributes: ['Road lanterns', 'Shrine repair kits', 'Guild orders', 'Town upgrades', 'Market circulation']
   }
@@ -88,6 +91,8 @@ const forces = [
             <h3>{line.name}</h3>
             <p>{line.role}</p>
             <p class="role-card__quote">{line.fantasy}</p>
+            <h4>Cast anchor</h4>
+            <p>{line.cast}</p>
             <h4>Contributes</h4>
             <ul>
               {line.contributes.map((item) => <li>{item}</li>)}

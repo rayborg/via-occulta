@@ -4,11 +4,11 @@
 
 This is more specific than simply saying “top-down.” The intended feel is a classic tile-based JRPG world: players move through readable overhead maps, enter towns and interiors, discover routes, investigate shrines, and enter dungeons. Combat-heavy scenes, especially in **Luciphilus**, may shift into a separate side-view ATB / turn-based battle screen.
 
-The world is designed as three linked game lines sharing one setting, economy, and restoration arc:
+The world is designed as three linked role lenses sharing one setting, economy, and restoration arc:
 
 - **Tenebrio** — a weak shriner exploration game about mapping forbidden places, shrine rites, disguise, and monster transformation.
-- **Luciphilus** — the main adventurer RPG about dungeon expeditions, battle-screen combat, relic recovery, monsters, and crystal-era conflict.
-- **Opiphilus** — the crafter / guild game about workshops, town interiors, trade orders, ritual support, and world-restoration projects.
+- **Luciphilus** — the adventurer / escort lens about clearing threats, guarding routes, escorting fragile travelers, getting paid, recovering relics, and fighting monsters.
+- **Opiphilus** — the crafter / guild lens about fragile travel outside settlements, posting escort requests, reaching villages, accessing shops and guild jobs, crafting, repairs, trade orders, and restoration projects.
 
 ---
 
@@ -24,9 +24,29 @@ This is not a Tibia-style real-time top-down MMO and not a generic open-world MM
 
 ## Core Direction
 
-> **A 1-bit occult shared-world JRPG: Tenebrio discovers, Luciphilus fights, Opiphilus builds.**
+> **A 1-bit occult shared-world JRPG: Tenebrio discovers, Luciphilus secures, Opiphilus rebuilds.**
 
 The earlier “online FF4-style structure + guild economy + instanced dungeons” idea remains useful, but the artwork direction points toward something more distinctive than a generic FF4 clone: a monochrome occult world where exploration, dungeon combat, crafting, shrine restoration, maps, and guild projects reinforce each other.
+
+## Shared Map Decision
+
+Via Occulta uses **one canonical shared world map / area graph**.
+
+Tenebrio, Luciphilus, and Opiphilus are role lenses on the same world, not separate maps. A shrine road, guild gate, village, cave, chapel, dungeon, or workshop exists once in the shared world and is used differently depending on role.
+
+Short version:
+
+> **One world graph. Three ways to survive it.**
+
+## Hero Roles
+
+- **Tenebrio hero:** weak shriner / forbidden-route mapper. Main candidates are base male unarmed and base female unarmed, with sword variants reserved for later defensive or disguise-capable states.
+- **Luciphilus hero:** adventurer / escort / monster-clearer. The Swordsman line is the clearest active player hero, supported by guards, fighters, archers, expedition members, mages, and dungeon parties.
+- **Opiphilus hero:** guild worker / crafter / trade traveler. Main candidates include Smith, Herbalist, Priest / ritual support, Guild Mage, Monk, and Glassblower / Blacksmith worker where animation supports it.
+
+Short trio:
+
+> **Tenebrio = shriner scout. Luciphilus = paid adventurer escort. Opiphilus = guild crafter / trader.**
 
 ---
 
@@ -168,7 +188,7 @@ This region avoids unsupported castle/palace promises while still feeling like a
 ## Design Pillars
 
 1. **Tile-based JRPG readability** — clear overhead maps, strong 1-bit silhouettes, readable interiors, clean UI, and minimal clutter.
-2. **Three linked game roles** — Tenebrio discovers routes and shrine secrets; Luciphilus clears combat threats; Opiphilus crafts, repairs, and organizes guild logistics.
+2. **Three role lenses on one map** — Tenebrio discovers routes and shrine secrets; Luciphilus clears, guards, and escorts through them for pay; Opiphilus posts escort requests, travels to villages, and turns access into crafting, guild jobs, repairs, and restoration.
 3. **Online without chaos** — shared towns and guild spaces, but private party-based dungeons, story rooms, shrine trials, and key combat encounters.
 4. **Guilds shape the world** — players restore shrines, reopen routes, build workshops, craft equipment, recover relics, and unlock new expeditions.
 5. **Occult story first** — the world is built around hidden roads, failing shrines, forbidden maps, monster disguises, cursed ruins, guild politics, and a veiled lunar / underworld threat.
@@ -183,9 +203,10 @@ Minimum loop:
 
 1. A player starts in **Greybell Shrine**.
 2. Tenebrio-style exploration reveals a hidden route or shrine fragment in **Mistfall Chapel** or **The Underwell**.
-3. Luciphilus-style adventuring clears a small dungeon threat or boss encounter in **The Chapel Undercrypt**.
-4. Opiphilus-style crafting converts recovered materials into a useful item, repair, or guild upgrade at **The Guild Hearth**.
-5. The restored object unlocks **The Old Crystal Gate** or a new route off **The Broken Road**.
+3. Luciphilus-style adventuring clears a small dungeon threat, guards the route, or accepts an escort request.
+4. An Opiphilus character becomes visible at the guild or gate when the escort is accepted.
+5. The escort reaches a destination village, where Opiphilus accesses local shops, guild jobs, crafting stations, repairs, or restoration work.
+6. The restored object unlocks **The Old Crystal Gate** or a new route off **The Broken Road**.
 
 ---
 
@@ -206,4 +227,4 @@ The first playable target should be a **400x240 one-screen top-down tile-map are
 
 Via Occulta should be framed as:
 
-> **A 1-bit tile-based top-down occult JRPG shared world where hidden roads are discovered by shriners, cleared by adventurers, and rebuilt by guild crafters.**
+> **A 1-bit tile-based top-down occult JRPG shared world where hidden roads are discovered by shriners, secured by paid adventurers, and rebuilt by guild crafters traveling under escort.**

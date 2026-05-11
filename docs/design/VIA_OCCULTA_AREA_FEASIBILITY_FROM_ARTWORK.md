@@ -40,6 +40,8 @@ Interpretation:
 - **Luciphilus** is very strong for overworld routes, town hubs, dungeons, caves, occult ruins, and battle-adventure staging.
 - **Opiphilus** is strong for town interiors, guild services, workshops, markets, shrine support, and crafting/shop spaces.
 
+These are gameplay lenses on one canonical shared world map, not separate duplicate maps. A `Best game lines` entry means the area type strongly supports that role's interactions, actors, services, hazards, contracts, and unlocks.
+
 ---
 
 # Interior vs. Exterior Support Summary
@@ -84,6 +86,8 @@ The current art does **not** support every place equally inside and outside. Som
 
 These areas are directly supported by named current art groups and should be safe for early prototypes.
 
+Area feasibility should assume **one canonical shared map / area graph**. Tenebrio, Luciphilus, and Opiphilus differences should usually be stored as lens data over the same area geometry. When the fiction requires different geometry, model it as a separate canonical shared area, such as a chapel surface versus an undercrypt, not as a per-game duplicate map.
+
 ### 1. Shrine-Town Hub
 
 **Recommended story name:** Greybell Shrine
@@ -100,6 +104,8 @@ Best use:
 - road-bell plaza
 - small chapel edge/interior
 - guild notice board
+- guild / gate escort board
+- accepted Opiphilus traveler spawn point
 - route entrance
 
 Supported by:
@@ -109,6 +115,23 @@ Supported by:
 - guild hall packs
 - market and town support loops
 - road/path/grassland/tree/bush/bridge assets
+
+Gameplay fit:
+
+- player spawn
+- party formation
+- shrine rite tutorial
+- map board
+- guild contribution board
+- route contract pickup
+- origin settlement for escort requests
+- first route unlock
+
+Best game lines:
+
+- Tenebrio
+- Luciphilus
+- Opiphilus
 
 ---
 
@@ -137,6 +160,24 @@ Supported by:
 - trees and bushes
 - bridges
 - road/camp/town-edge kits
+
+Gameplay fit:
+
+- route discovery
+- low-risk exploration
+- ambush marker
+- resource gathering
+- entrance to forest/cave/chapel
+- Luciphilus escort route
+- accepted Opiphilus client traversal
+- route defense / route clearing
+- delivery and trade-route activation after Tenebrio discovery
+
+Best game lines:
+
+- Tenebrio
+- Luciphilus
+- Opiphilus as escorted economic purpose, not solo traversal
 
 ---
 
@@ -305,6 +346,23 @@ Supported by:
 - market square pack
 - guild hall mages
 
+Gameplay fit:
+
+- Opiphilus crafting loop
+- guild project contribution
+- Opiphilus escort request creation
+- repair and delivery contracts
+- route-linked craft jobs
+- post-arrival service unlocks
+- weapon/armor crafting
+- lantern glass crafting
+- shrine repair kit assembly
+
+Best game lines:
+
+- Opiphilus
+- Luciphilus support hub
+
 ---
 
 ### 9. Markets, Shops, Taverns, Homes
@@ -333,6 +391,23 @@ Supported by:
 - tavern NPCs
 - main character home pack
 - fishing village NPCs where suitable
+
+Gameplay fit:
+
+- buying/selling
+- guild order pickup
+- destination village economy unlock
+- local shop inventory unlocked after successful escort
+- local guild/craft job board unlock
+- trade demand generation for future escort requests
+- rumor system
+- companion recruitment
+- economy tutorial
+
+Best game lines:
+
+- Opiphilus
+- Luciphilus
 
 ---
 
@@ -410,6 +485,21 @@ Supported by:
 - fishing village pack
 - docks / boats / interiors support
 - fishing village NPCs
+
+Gameplay fit:
+
+- trade-route recovery
+- destination village for escort contracts
+- dock shop and local guild counter unlock
+- fishing supply orders
+- boat repair jobs
+- side region
+- water-adjacent road instability
+
+Best game lines:
+
+- Luciphilus
+- Opiphilus
 
 ---
 
@@ -570,6 +660,9 @@ Use area names and worldbuilding that fit the available art:
 - **Castles, palaces, giant capitals, deserts, snowfields, volcanoes, and open seas** should be rare, off-screen, implied, or deferred until new art exists.
 - The Crystal Courts should first appear as **archives, gates, tower annexes, ruined checkpoints, and court shrines**, not as a full castle.
 - The first playable arc should happen in a compact shrine-town region, not a kingdom-scale overworld.
+- **Opiphilus** uses escorting as an economy loop: move workers, buyers, tools, goods, and craft cargo safely to villages, shops, guild counters, and repair sites.
+- **Luciphilus** uses escorting as paid contracts: guard fragile clients, caravans, relic couriers, supply runs, and route workers for guild standing and combat rewards.
+- Destination villages should unlock shops, crafting stations, guild services, repair boards, and local jobs through completed routes, escorts, deliveries, and guild contributions.
 
 ---
 
@@ -586,6 +679,8 @@ The current `world_builder` system already thinks in curated environment kits:
 | `town_guild` | Guild Hearth, workshop, market, service interior | interior/service-first with town frontage support |
 
 Early development should use these kits before expanding into the full art library.
+
+Build each area once in the canonical shared map. Export shared geometry once, then export per-game lens data for visible actors, prompts, rewards, services, hazards, contracts, economy, and unlocks. If geometry truly differs, create another canonical shared area rather than a duplicate per-game map.
 
 ---
 
