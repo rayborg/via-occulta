@@ -3,21 +3,27 @@ import ShowcaseCard from '../../components/ShowcaseCard.astro';
 import SpriteStrip from '../../components/SpriteStrip.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { monsterPages } from '../../data/showcase';
+import type { FlatEntry } from '../../data/showcase';
 
 const entryCount = monsterPages.reduce((total, page) => total + page.entries.length, 0);
-const bestiaryPreview = monsterPages.flatMap((page) => page.entries.slice(0, 1));
+const bestiaryRibbon = ['ghost', 'goblin', 'slime-boss']
+  .map((slug) => monsterPages.find((page) => page.slug === slug)?.entries[0])
+  .filter((entry): entry is FlatEntry => Boolean(entry))
+  .slice(0, 3);
 ---
 
 <BaseLayout
   title="Monsters | Via Occulta"
-  description="Grouped Via Occulta monster catalog for undead, slimes, infernal forms, forest threats, constructs, and dungeon ecology."
+  description="Via Occulta bestiary dossiers for undead, slimes, infernal forms, forest threats, constructs, and dungeon ecology."
 >
   <section class="page-hero">
     <div class="shell">
-      <p class="eyebrow">Monster catalog</p>
+      <p class="eyebrow">Monsters</p>
       <h1>Threats from the roads that no longer stay where they belong.</h1>
       <p>
-        The Via Occulta bestiary is grouped into public-facing monster families: undead remnants, infernal trespassers, alchemical spillover, constructed guardians, forest hunger, and familiar fantasy dangers bent toward the hidden-road collapse.
+        The Via Occulta bestiary gathers undead remnants, infernal trespassers, alchemical
+        spillover, constructed guardians, forest hunger, and familiar fantasy dangers bent toward
+        the hidden-road collapse.
       </p>
       <div class="pill-row">
         <span class="pill">{monsterPages.length} families</span>
@@ -28,9 +34,8 @@ const bestiaryPreview = monsterPages.flatMap((page) => page.entries.slice(0, 1))
   </section>
 
   <section class="section section-tight">
-    <div class="shell catalog-strip-window jrpg-window">
-      <div class="window-title">Bestiary Strip</div>
-      <SpriteStrip entries={bestiaryPreview} label="Monster family representatives" />
+    <div class="shell ribbon-panel panel">
+      <SpriteStrip entries={bestiaryRibbon} scale={2} label="Monster family preview" density="compact" showLabels={false} />
     </div>
   </section>
 
@@ -53,8 +58,8 @@ const bestiaryPreview = monsterPages.flatMap((page) => page.entries.slice(0, 1))
 
   <section class="section">
     <div class="shell">
-      <p class="eyebrow">Browse families</p>
-      <h2>Monster families and forms</h2>
+      <p class="eyebrow">Dossiers</p>
+      <h2>Monster families</h2>
       <div class="showcase-list">
         {monsterPages.map((page) => <ShowcaseCard page={page} href={`monsters/${page.slug}`} />)}
       </div>

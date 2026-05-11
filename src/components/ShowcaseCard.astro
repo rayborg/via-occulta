@@ -9,18 +9,18 @@ type Props = {
 };
 
 const { page, href } = Astro.props;
-const previewEntries = page.entries.slice(0, 5);
-const typeLabel = page.kind === 'monster' ? 'Bestiary family' : 'Roster group';
+const previewEntries = page.entries.slice(0, 3);
+const typeLabel = page.kind === 'monster' ? 'Bestiary dossier' : 'Character dossier';
 ---
 
-<a class="showcase-card jrpg-window" href={withBase(href)}>
+<a class="showcase-card panel" href={withBase(href)}>
   <div class="showcase-card__art">
-    <SpriteStrip entries={previewEntries} label={`${page.title} representative sprites`} density="compact" />
+    <SpriteStrip entries={previewEntries} scale={2} label={`${page.title} representative forms`} density="compact" showLabels={false} />
   </div>
   <div class="showcase-card__copy">
     <p class="card-kicker">{typeLabel}</p>
     <h3>{page.title}</h3>
     <p>{page.summary}</p>
-    <p class="card-meta">{page.entries.length} {page.entries.length === 1 ? 'form' : 'forms'} logged</p>
+    <p class="card-meta">{page.entries.length} {page.entries.length === 1 ? 'form' : 'forms'} observed</p>
   </div>
 </a>

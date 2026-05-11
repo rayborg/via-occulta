@@ -3,41 +3,45 @@ import ShowcaseCard from '../../components/ShowcaseCard.astro';
 import SpriteStrip from '../../components/SpriteStrip.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { characterPages } from '../../data/showcase';
+import type { FlatEntry } from '../../data/showcase';
 
 const entryCount = characterPages.reduce((total, page) => total + page.entries.length, 0);
-const rosterPreview = characterPages.flatMap((page) => page.entries.slice(0, 1));
+const characterRibbon = ['swordsman', 'priest', 'blacksmith']
+  .map((slug) => characterPages.find((page) => page.slug === slug)?.entries[0])
+  .filter((entry): entry is FlatEntry => Boolean(entry))
+  .slice(0, 3);
 ---
 
 <BaseLayout
   title="Characters | Via Occulta"
-  description="Grouped Via Occulta character catalog for shriners, adventurers, guild workers, townsfolk, mages, trainers, and social interiors."
+  description="Via Occulta character dossiers for shriners, adventurers, guild workers, townsfolk, mages, trainers, and social interiors."
 >
   <section class="page-hero">
     <div class="shell">
-      <p class="eyebrow">Character catalog</p>
+      <p class="eyebrow">Characters</p>
       <h1>People who keep the hidden-road world legible.</h1>
       <p>
-        The Via Occulta cast is grouped by readable public-facing identities: shrine orders, player baselines, guild labor, markets, workshops, taverns, under-town survivors, and training-yard roles.
+        The Via Occulta cast is organized around shrine orders, player baselines, guild labor,
+        markets, workshops, taverns, under-town survivors, and training-yard roles.
       </p>
       <div class="pill-row">
         <span class="pill">{characterPages.length} groups</span>
-        <span class="pill">{entryCount} representative sprites</span>
+        <span class="pill">{entryCount} drawn forms</span>
         <span class="pill">Shrine, guild, town, and dungeon support</span>
       </div>
     </div>
   </section>
 
   <section class="section section-tight">
-    <div class="shell catalog-strip-window jrpg-window">
-      <div class="window-title">Public Roster Strip</div>
-      <SpriteStrip entries={rosterPreview} label="Character group representatives" />
+    <div class="shell ribbon-panel panel">
+      <SpriteStrip entries={characterRibbon} scale={2} label="Character role preview" density="compact" showLabels={false} />
     </div>
   </section>
 
   <section class="section">
     <div class="shell split">
       <div>
-        <p class="eyebrow">Public roster</p>
+        <p class="eyebrow">World role</p>
         <h2>Not only heroes. Also institutions.</h2>
       </div>
       <div class="prose">
@@ -53,8 +57,8 @@ const rosterPreview = characterPages.flatMap((page) => page.entries.slice(0, 1))
 
   <section class="section">
     <div class="shell">
-      <p class="eyebrow">Browse groups</p>
-      <h2>Character groups and forms</h2>
+      <p class="eyebrow">Dossiers</p>
+      <h2>Character groups</h2>
       <div class="showcase-list">
         {characterPages.map((page) => <ShowcaseCard page={page} href={`characters/${page.slug}`} />)}
       </div>

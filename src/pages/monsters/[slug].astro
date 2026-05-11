@@ -34,13 +34,13 @@ const { page } = Astro.props;
 
   <section class="section">
     <div class="shell split">
-      <div class="summary-panel">
-        <p class="eyebrow">Field notes</p>
-        <h3>{page.entries.length} {page.entries.length === 1 ? 'form' : 'forms'} in this family</h3>
+      <div class="summary-panel panel">
+        <p class="eyebrow">Dossier</p>
+        <h3>How this threat reads</h3>
         <ul>
-          <li>Catalog type: monster family</li>
-          <li>Primary tag: {page.tags[0]}</li>
-          <li>Public route: {withBase(`/monsters/${page.slug}`)}</li>
+          <li>{page.entries.length} {page.entries.length === 1 ? 'form' : 'forms'} gathered here</li>
+          <li>Primary thread: {page.tags[0]}</li>
+          <li>Role: road-bound pressure or dungeon threat</li>
         </ul>
       </div>
       <div class="prose">
@@ -51,8 +51,8 @@ const { page } = Astro.props;
 
   <section class="section">
     <div class="shell">
-      <p class="eyebrow">Variants and forms</p>
-      <h2>Bestiary strip</h2>
+      <p class="eyebrow">Form study</p>
+      <h2>Grouped forms</h2>
       <VariantGrid entries={page.entries} />
     </div>
   </section>

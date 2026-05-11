@@ -1,7 +1,7 @@
 ---
 import type { FlatEntry } from '../data/showcase';
 
-type SpriteScale = 4;
+type SpriteScale = 2 | 3 | 4;
 
 type Props = {
   entry: FlatEntry;
@@ -9,11 +9,7 @@ type Props = {
   loading?: 'eager' | 'lazy';
 };
 
-const { entry, scale = 4, loading = 'lazy' } = Astro.props;
-
-if (scale !== 4) {
-  throw new Error(`Unsupported sprite scale: ${scale}. Website sprites must render at fixed 4x.`);
-}
+const { entry, scale = 3, loading = 'lazy' } = Astro.props;
 
 const width = entry.width * scale;
 const height = entry.height * scale;
