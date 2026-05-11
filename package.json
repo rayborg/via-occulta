@@ -1,0 +1,36 @@
+{
+  "name": "via-occulta",
+  "version": "0.1.0",
+  "description": "Public-facing website for Via Occulta, a 1-bit occult shared-world JRPG.",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayborg/via-occulta.git"
+  },
+  "keywords": [
+    "astro",
+    "jrpg",
+    "game-showcase",
+    "pixel-art",
+    "via-occulta"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/rayborg/via-occulta/issues"
+  },
+  "homepage": "https://www.viaocculta.com",
+  "dependencies": {
+    "astro": "^6.3.1",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9"
+  }
+}

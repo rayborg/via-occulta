@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ShowcaseCard from '../components/ShowcaseCard.astro';
+import { homepageFeaturedCharacters, homepageFeaturedMonsters } from '../data/showcase';
+---
+
+<BaseLayout title="Via Occulta | A 1-bit occult shared-world JRPG">
+  <section class="hero">
+    <div class="shell hero-grid">
+      <div>
+        <p class="eyebrow">A 1-bit occult shared-world JRPG</p>
+        <h1>Hidden roads, shrine bells, guild fire, and the things waiting below them.</h1>
+        <p>
+          Via Occulta is a monochrome dark-fantasy JRPG world built around overhead exploration,
+          cursed routes, dungeon expeditions, workshop labor, and the slow restoration of a world
+          that is quietly being rerouted from underneath itself.
+        </p>
+        <div class="pill-row">
+          <span class="pill">Tenebrio discovers</span>
+          <span class="pill">Luciphilus fights</span>
+          <span class="pill">Opiphilus builds</span>
+        </div>
+      </div>
+      <div class="hero-sheet">
+        <div class="feature-grid">
+          {homepageFeaturedCharacters.slice(0, 2).map((page) => <ShowcaseCard page={page} href={`/characters/${page.slug}`} />)}
+          {homepageFeaturedMonsters.slice(0, 2).map((page) => <ShowcaseCard page={page} href={`/monsters/${page.slug}`} />)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow">The world premise</p>
+      <h2>The old roads have vanished from the maps.</h2>
+      <div class="three-up">
+        <article class="info-card">
+          <h3>The Viae Occultae</h3>
+          <p>
+            The hidden roads once linked shrines, caves, chapels, guild cellars, market doors, and
+            sealed underways through a compact of rites, crystals, charters, and remembered names.
+          </p>
+        </article>
+        <article class="info-card">
+          <h3>The Quiet Collapse</h3>
+          <p>
+            The world is not ending in a single blaze. Its routes are being quietly rewritten.
+            Towns wake to find wells opening into catacombs and chapel doors leading to rooms that
+            should not exist.
+          </p>
+        </article>
+        <article class="info-card">
+          <h3>The Shared-World Loop</h3>
+          <p>
+            Tenebrio finds the road, Luciphilus survives what guards it, and Opiphilus turns the
+            recovered fragments into something a town can use again.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell split">
+      <div class="summary-panel">
+        <p class="eyebrow">First region</p>
+        <h3>The Pilgrim Verge</h3>
+        <p>
+          The first region is a compact shrine-town frontier: Greybell Shrine, The Broken Road,
+          Mistfall Chapel, The Underwell, The Chapel Undercrypt, The Guild Hearth, and The Old
+          Crystal Gate.
+        </p>
+        <ul>
+          <li>Greybell Shrine: the failing road-bell hub</li>
+          <li>Mistfall Chapel: a cursed shrine ruin</li>
+          <li>The Guild Hearth: the craft heart of the town</li>
+          <li>The Old Crystal Gate: the first recovered threshold</li>
+        </ul>
+      </div>
+      <div class="prose">
+        <p>
+          The opening arc, <strong>The Bell That Forgot the Road</strong>, is the cleanest way to
+          understand Via Occulta. A shrine bell stops ringing. The roads beyond town become
+          unreliable. A weak shriner finds the hidden route, an adventurer clears the danger, and a
+          guild worker rebuilds the object that lets the town remember how to travel again.
+        </p>
+        <p>
+          This is the heart of the project: not chosen-one conquest, but the recovery of hidden
+          infrastructure. The fantasy is survival, proof, repair, and collective memory.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow">Browse the cast</p>
+      <h2>Representative characters and monster families</h2>
+      <div class="card-grid">
+        {homepageFeaturedCharacters.map((page) => <ShowcaseCard page={page} href={`/characters/${page.slug}`} />)}
+        {homepageFeaturedMonsters.map((page) => <ShowcaseCard page={page} href={`/monsters/${page.slug}`} />)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

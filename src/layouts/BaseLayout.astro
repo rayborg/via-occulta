@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+
+type Props = {
+  title: string;
+  description?: string;
+};
+
+const { title, description = 'A 1-bit occult shared-world JRPG where hidden roads are discovered by shriners, cleared by adventurers, and rebuilt by guild crafters.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/showcase/monsters/goblin-1.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="/">Via Occulta</a>
+        <nav class="main-nav">
+          <a href="/world">World</a>
+          <a href="/games">Games</a>
+          <a href="/characters">Characters</a>
+          <a href="/monsters">Monsters</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p>Via Occulta is a 1-bit occult shared-world JRPG built around hidden roads, shrine rites, dungeon expeditions, and guild restoration.</p>
+        <p><a href="https://github.com/rayborg/via-occulta">Design repo</a> and curated sprite showcases exported from the companion artwork worldkit.</p>
+      </div>
+    </footer>
+  </body>
+  </html>

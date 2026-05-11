@@ -1,0 +1,21 @@
+---
+import type { ShowcasePage } from '../data/showcase';
+
+type Props = {
+  page: ShowcasePage;
+  href: string;
+};
+
+const { page, href } = Astro.props;
+const preview = page.entries[0];
+---
+
+<a class="showcase-card" href={href}>
+  <div class="card-art"><img src={preview.image} alt={preview.label} loading="lazy" /></div>
+  <div class="card-copy">
+    <p class="card-kicker">{page.kind === 'monster' ? 'Monster Family' : 'Character Group'}</p>
+    <h3>{page.title}</h3>
+    <p>{page.summary}</p>
+    <p class="card-meta">{page.entries.length} {page.entries.length === 1 ? 'entry' : 'entries'}</p>
+  </div>
+</a>

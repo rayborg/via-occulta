@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const areas = [
+  {
+    name: 'Greybell Shrine',
+    type: 'Shrine-town hub',
+    copy: 'The starting hub: a road-bell plaza, chapel edge, market threshold, guild notice board, and first route entrance.'
+  },
+  {
+    name: 'The Broken Road',
+    type: 'Road and forest approach',
+    copy: 'A readable overworld route of path, grassland, rocks, trees, bridges, and suspicious crossings where the map begins to fail.'
+  },
+  {
+    name: 'Mistfall Chapel',
+    type: 'Cursed chapel and shrine ruin',
+    copy: 'The first major shrine failure: undead pressure, corrupted rites, ruined chapel space, and the first hidden-road proof.'
+  },
+  {
+    name: 'The Underwell',
+    type: 'Sewer, cave, and under-town route',
+    copy: 'A damp under-route where town infrastructure, occult passage, vermin, and low-level monster ecology cross over.'
+  },
+  {
+    name: 'The Chapel Undercrypt',
+    type: 'Occult dungeon',
+    copy: 'A compact dungeon layer of traps, cursed props, grave-road logic, and the first serious Luciphilus clearance objective.'
+  },
+  {
+    name: 'The Guild Hearth',
+    type: 'Guild hall and workshop cluster',
+    copy: 'The Opiphilus center: blacksmith work, herbalist remedies, glass, orders, repairs, and the social proof that restoration is labor.'
+  },
+  {
+    name: 'The Old Crystal Gate',
+    type: 'Ruin threshold',
+    copy: 'A composed court-gate ruin using crystal-law story framing without promising a full castle or palace region too early.'
+  }
+];
+---
+
+<BaseLayout
+  title="The Pilgrim Verge | Via Occulta"
+  description="The first Via Occulta region: Greybell Shrine, The Broken Road, Mistfall Chapel, The Underwell, The Chapel Undercrypt, The Guild Hearth, and The Old Crystal Gate."
+>
+  <section class="page-hero">
+    <div class="shell">
+      <a class="breadcrumb" href="/world">World</a>
+      <p class="eyebrow">First region</p>
+      <h1>The Pilgrim Verge</h1>
+      <p>
+        The Pilgrim Verge is a compact shrine-town frontier built around the strongest current art support: shrines, roads, guild halls, caves, sewers, cursed chapels, ruins, workshops, markets, taverns, and occult dungeons.
+      </p>
+      <div class="pill-row">
+        <span class="pill">Greybell Shrine</span>
+        <span class="pill">Mistfall Chapel</span>
+        <span class="pill">The Guild Hearth</span>
+        <span class="pill">The Old Crystal Gate</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell split">
+      <div class="summary-panel">
+        <p class="eyebrow">Opening arc</p>
+        <h3>The Bell That Forgot the Road</h3>
+        <ul>
+          <li>A shrine bell stops ringing.</li>
+          <li>The roads beyond town become unreliable.</li>
+          <li>A Tenebrio shriner finds the hidden route.</li>
+          <li>A Luciphilus adventurer clears what guards it.</li>
+          <li>An Opiphilus guild worker rebuilds the object that lets the town travel again.</li>
+        </ul>
+      </div>
+      <div class="prose">
+        <p>
+          The Pilgrim Verge is intentionally small. It avoids unsupported early promises like full castles, huge capitals, deserts, snowfields, volcano regions, large swamps, or open oceans.
+        </p>
+        <p>
+          The region still feels complete because Via Occulta is not about scale first. It is about route failure, local institutions, hidden infrastructure, and the recovery of a world one shrine, workshop, and threshold at a time.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow">Region map</p>
+      <h2>Seven supported spaces for the first public slice.</h2>
+      <div class="card-grid">
+        {areas.map((area) => (
+          <article class="info-card">
+            <p class="card-kicker">{area.type}</p>
+            <h3>{area.name}</h3>
+            <p>{area.copy}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

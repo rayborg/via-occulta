@@ -1,0 +1,58 @@
+---
+import VariantGrid from '../../components/VariantGrid.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { monsterPages } from '../../data/showcase';
+import type { ShowcasePage } from '../../data/showcase';
+
+type Props = {
+  page: ShowcasePage;
+};
+
+export function getStaticPaths() {
+  return monsterPages.map((page) => ({
+    params: { slug: page.slug },
+    props: { page }
+  }));
+}
+
+const { page } = Astro.props;
+---
+
+<BaseLayout title={`${page.title} | Via Occulta Monsters`} description={page.summary}>
+  <section class="page-hero">
+    <div class="shell">
+      <a class="breadcrumb" href="/monsters">Monsters</a>
+      <p class="eyebrow">Monster family</p>
+      <h1>{page.title}</h1>
+      <p>{page.summary}</p>
+      <div class="tag-row">
+        {page.tags.map((tag) => <span class="tag">{tag}</span>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell split">
+      <div class="summary-panel">
+        <p class="eyebrow">Field notes</p>
+        <h3>{page.entries.length} {page.entries.length === 1 ? 'form' : 'forms'} in this family</h3>
+        <ul>
+          <li>Catalog type: monster family</li>
+          <li>Primary tag: {page.tags[0]}</li>
+          <li>Public route: /monsters/{page.slug}</li>
+        </ul>
+      </div>
+      <div class="prose">
+        {page.description.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow">Variants and forms</p>
+      <h2>All grouped monster artwork</h2>
+      <VariantGrid entries={page.entries} />
+    </div>
+  </section>
+</BaseLayout>

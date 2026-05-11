@@ -1,0 +1,54 @@
+---
+import ShowcaseCard from '../../components/ShowcaseCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { characterPages } from '../../data/showcase';
+
+const entryCount = characterPages.reduce((total, page) => total + page.entries.length, 0);
+---
+
+<BaseLayout
+  title="Characters | Via Occulta"
+  description="Grouped Via Occulta character catalog for shriners, adventurers, guild workers, townsfolk, mages, trainers, and social interiors."
+>
+  <section class="page-hero">
+    <div class="shell">
+      <p class="eyebrow">Character catalog</p>
+      <h1>People who keep the hidden-road world legible.</h1>
+      <p>
+        The Via Occulta cast is grouped by readable public-facing identities: shrine orders, player baselines, guild labor, markets, workshops, taverns, under-town survivors, and training-yard roles.
+      </p>
+      <div class="pill-row">
+        <span class="pill">{characterPages.length} groups</span>
+        <span class="pill">{entryCount} representative sprites</span>
+        <span class="pill">Shrine, guild, town, and dungeon support</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell split">
+      <div>
+        <p class="eyebrow">Public roster</p>
+        <h2>Not only heroes. Also institutions.</h2>
+      </div>
+      <div class="prose">
+        <p>
+          Via Occulta depends on social bodies as much as combat bodies. A priest, trader, herbalist, smith, reader, or tavern patron can carry as much world logic as an armored adventurer.
+        </p>
+        <p>
+          These groups make the setting feel inhabited: a world of people preparing, arguing, repairing, teaching, watching, and surviving while the roads beneath them change.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow">Browse groups</p>
+      <h2>Character groups and forms</h2>
+      <div class="card-grid">
+        {characterPages.map((page) => <ShowcaseCard page={page} href={`/characters/${page.slug}`} />)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

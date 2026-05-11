@@ -1,0 +1,54 @@
+---
+import ShowcaseCard from '../../components/ShowcaseCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { monsterPages } from '../../data/showcase';
+
+const entryCount = monsterPages.reduce((total, page) => total + page.entries.length, 0);
+---
+
+<BaseLayout
+  title="Monsters | Via Occulta"
+  description="Grouped Via Occulta monster catalog for undead, slimes, infernal forms, forest threats, constructs, and dungeon ecology."
+>
+  <section class="page-hero">
+    <div class="shell">
+      <p class="eyebrow">Monster catalog</p>
+      <h1>Threats from the roads that no longer stay where they belong.</h1>
+      <p>
+        The Via Occulta bestiary is grouped into public-facing monster families: undead remnants, infernal trespassers, alchemical spillover, constructed guardians, forest hunger, and familiar fantasy dangers bent toward the hidden-road collapse.
+      </p>
+      <div class="pill-row">
+        <span class="pill">{monsterPages.length} families</span>
+        <span class="pill">{entryCount} representative forms</span>
+        <span class="pill">Crypt, forest, dungeon, and under-route threats</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell split">
+      <div>
+        <p class="eyebrow">Bestiary role</p>
+        <h2>Monsters are evidence of infrastructure failure.</h2>
+      </div>
+      <div class="prose">
+        <p>
+          Monsters in Via Occulta do not simply invade from wilderness. Many appear from inside the road-network itself, wearing the shapes of old local spirits, failed guardians, hungry under-routes, and forgotten dead.
+        </p>
+        <p>
+          The bestiary supports the game loop: Tenebrio reads or avoids them, Luciphilus fights them, and Opiphilus turns recovered proof into repairs, tools, recipes, and warnings.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow">Browse families</p>
+      <h2>Monster families and forms</h2>
+      <div class="card-grid">
+        {monsterPages.map((page) => <ShowcaseCard page={page} href={`/monsters/${page.slug}`} />)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
