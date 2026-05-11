@@ -90,18 +90,18 @@ Area feasibility should assume **one canonical shared map / area graph**. Tenebr
 
 ### 1. Shrine-Town Hub
 
-**Recommended story name:** Greybell Shrine
+**Source-derived placeholder name:** Shrine-Town Hub
 
 Interior/exterior verdict:
 
-- **Exterior:** strong for shrine approach, road-bell plaza, town edge, market-adjacent shrine space.
+- **Exterior:** strong for shrine approach, Shrine-Town Hub plaza, town edge, market-adjacent shrine space.
 - **Interior:** moderate, best as small chapel/ritual room composed from chapel, guild, and ritual assets.
 
 Best use:
 
 - starting hub
 - shrine courtyard
-- road-bell plaza
+- Shrine-Town Hub plaza
 - small chapel edge/interior
 - guild notice board
 - guild / gate escort board
@@ -137,7 +137,7 @@ Best game lines:
 
 ### 2. Roads, Crossroads, Camp Edges
 
-**Recommended story names:** The Broken Road, Pilgrim Road, Lantern Crossing
+**Source-derived placeholder name:** Road and Forest
 
 Interior/exterior verdict:
 
@@ -183,7 +183,7 @@ Best game lines:
 
 ### 3. Forests and Glades
 
-**Recommended story names:** Blackbough Glade, The Pilgrim Wood, The White-Fog Grove
+**Source-derived placeholder name:** Forests and Glades
 
 Interior/exterior verdict:
 
@@ -212,7 +212,7 @@ Supported by:
 
 ### 4. Caves and Rocky Underways
 
-**Recommended story names:** The Underwell, Bellroot Cave, The Hollow Road
+**Source-derived placeholder name:** Caves and Rocky Underways
 
 Interior/exterior verdict:
 
@@ -237,9 +237,9 @@ Supported by:
 
 ---
 
-### 5. Sewers / Underwell Spaces
+### 5. Sewers
 
-**Recommended story names:** The Underwell, Greybell Drain, The Old Channel
+**Source-derived placeholder name:** Sewers
 
 Interior/exterior verdict:
 
@@ -264,7 +264,7 @@ Supported by:
 
 ### 6. Cursed Chapels and Shrine Ruins
 
-**Recommended story names:** Mistfall Chapel, The Drowned Chapel, Saintless Aisle
+**Source-derived placeholder name:** Chapel Ruins
 
 Interior/exterior verdict:
 
@@ -293,7 +293,7 @@ Supported by:
 
 ### 7. Dungeons and Occult Deep Ruins
 
-**Recommended story names:** The Road Below, The Black Reliquary, The Deep Aisle
+**Source-derived placeholder name:** Dungeons and Occult Deep Ruins
 
 Interior/exterior verdict:
 
@@ -321,7 +321,7 @@ Supported by:
 
 ### 8. Guild Halls and Workshops
 
-**Recommended story names:** The Guild Hearth, Bellwright Hall, The Lantern House
+**Source-derived placeholder name:** Guild Hall and Workshops
 
 Interior/exterior verdict:
 
@@ -367,7 +367,7 @@ Best game lines:
 
 ### 9. Markets, Shops, Taverns, Homes
 
-**Recommended story names:** Greybell Market, The Bell Inn, The Pilgrim House
+**Source-derived placeholder name:** Market Square
 
 Interior/exterior verdict:
 
@@ -413,7 +413,7 @@ Best game lines:
 
 ### 10. Mage Towers and Ritual Rooms
 
-**Recommended story names:** The Bell Astrolabe, Moon-Index Tower, The White Ledger
+**Source-derived placeholder name:** Mage Towers and Ritual Rooms
 
 Interior/exterior verdict:
 
@@ -440,7 +440,7 @@ Supported by:
 
 ### 11. Training Arena / Guard Yard
 
-**Recommended story names:** Lantern Yard, Guild Drill Court
+**Source-derived placeholder name:** Training Arena / Guard Yard
 
 Interior/exterior verdict:
 
@@ -466,7 +466,7 @@ Supported by:
 
 ### 12. Fishing Village / Docks / Small Port Edge
 
-**Recommended story names:** Lowdock, Bellwater Landing, Pilgrim Quay
+**Source-derived placeholder name:** Fishing Village / Docks
 
 Interior/exterior verdict:
 
@@ -638,17 +638,18 @@ The current art language is occult, guild, medieval-fantasy, shrine, cave, dunge
 
 # Recommended First Region Area List
 
-The first region should be **The Pilgrim Verge**, built only from Tier A and simple Tier B areas.
+The first region should be **First Route**, built only from Tier A and simple Tier B areas. These names are source-derived placeholders until final canon names are chosen.
 
 | Area | Type | Interior / Exterior Plan |
 |---|---|---|
-| **Greybell Shrine** | shrine-town hub | exterior plaza + small shrine/chapel interior |
-| **The Broken Road** | road / forest approach | exterior-only route screen |
-| **Mistfall Chapel** | cursed chapel / shrine ruin | exterior cursed chapel approach + small interior aisle / underchapel |
-| **The Underwell** | sewer / cave under-route | small exterior entry point + strong interior sewer/cave route |
-| **The Chapel Undercrypt** | dungeon / cave / cursed ruin | interior-first dungeon rooms and boss threshold |
-| **The Guild Hearth** | guild hall + blacksmith / workshop | interior-strong guild/workshop with optional town frontage |
-| **The Old Crystal Gate** | composed court gate / ruin threshold | exterior threshold first; interior court archive later if needed |
+| **Shrine-Town Hub** | shrine-town hub | exterior plaza + small shrine/chapel interior |
+| **Road and Forest** | road / forest approach | exterior-only route screen |
+| **Chapel Ruins** | cursed chapel / shrine ruin | exterior cursed chapel approach + small interior aisle / underchapel |
+| **Cave and Sewer** | sewer / cave under-route | small exterior entry point + strong interior sewer/cave route |
+| **Dungeon Rooms** | dungeon / cave / cursed ruin | interior-first dungeon rooms and boss threshold |
+| **Guild Hall and Workshops** | guild hall + blacksmith / workshop | interior-strong guild/workshop with optional town frontage |
+| **Market Square** | market / shop / tavern support | exterior market street plus small service interiors |
+| **Ruins Gate** | composed court gate / ruin threshold | exterior threshold first; interior court archive later if needed |
 
 ---
 
@@ -672,11 +673,11 @@ The current `world_builder` system already thinks in curated environment kits:
 
 | Builder Environment Kit | Use In Story | Interior / Exterior Bias |
 |---|---|---|
-| `road_shrine` | shrine approach, road threshold, Greybell Shrine exterior | exterior-first |
+| `road_shrine` | shrine approach, road threshold, Shrine-Town Hub exterior | exterior-first |
 | `forest_glade` | ritual grove, forest road, hidden route | exterior-first |
-| `cave_sewer` | Underwell, cave room, sewer threshold | interior-first, with threshold support |
-| `cursed_chapel` | Mistfall Chapel, shrine ruin, undead threshold | mixed interior/exterior |
-| `town_guild` | Guild Hearth, workshop, market, service interior | interior/service-first with town frontage support |
+| `cave_sewer` | Cave and Sewer, cave room, sewer threshold | interior-first, with threshold support |
+| `cursed_chapel` | Chapel Ruins, shrine ruin, undead threshold | mixed interior/exterior |
+| `town_guild` | Guild Hall and Workshops, workshop, market, service interior | interior/service-first with town frontage support |
 
 Early development should use these kits before expanding into the full art library.
 

@@ -13,11 +13,13 @@ const { page, href } = Astro.props;
 const previewEntries = selectShowcasePreview(page.entries);
 const typeLabel = page.kind === 'monster' ? 'Bestiary dossier' : 'Character dossier';
 const countLabel = page.kind === 'monster' ? 'sightings logged' : 'profiles logged';
+const largestPreviewEdge = previewEntries.length > 0 ? Math.max(...previewEntries.map((entry) => Math.max(entry.width, entry.height))) : 0;
+const previewScale = page.kind === 'character' || largestPreviewEdge <= 45 ? 3 : 2;
 ---
 
-<a class="showcase-card panel" href={withBase(href)}>
+<a class="showcase-card panel" href={withBase(href)} data-kind={page.kind}>
   <div class="showcase-card__art">
-    <SpriteStrip entries={previewEntries} scale={2} label={`${page.title} dossier preview`} density="compact" showLabels={false} rhythm="subtle" />
+    <SpriteStrip entries={previewEntries} scale={previewScale} label={`${page.title} dossier preview`} density="compact" showLabels={false} rhythm="subtle" />
   </div>
   <div class="showcase-card__copy">
     <p class="card-kicker">{typeLabel}</p>

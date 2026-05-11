@@ -281,19 +281,25 @@ Opiphilus is a guild worker, crafter, trader, or village specialist who is valua
 Main artwork candidates:
 
 - Smith,
-- Herbalist,
-- Priest / ritual support,
-- Guild Mage,
-- Monk,
-- Glassblower / Blacksmith worker where animation supports it.
+- Herbalist.
+
+Smith and Herbalist are the official Opiphilus playable candidates for now because they have both same-identity walk support and clear same-identity work/craft loops. Other walk-capable roles remain useful as support or escorted NPCs until their playable identity is clearer.
+
+| Opiphilus role | Official playable now | Walk animation | Craft / magic animation | Current use |
+|---|---:|---:|---:|---|
+| Smith | Yes | Yes | Yes | Playable guild crafter / escorted worker. `Smith Walk` exists; `Smith Forge` is stationary craft work. |
+| Herbalist | Yes | Yes | Yes | Playable support crafter / escorted worker. `Herbalist Walk` exists; `Herbalist Boiler` is stationary craft work. |
+| Priest | No | Yes | Yes | Shrine ritual support or escort NPC; has walk plus making-spell/speech support, but is not official Opiphilus playable yet. |
+| Monk | No | Yes | Yes | Shrine worker or ritual support NPC; has walk plus pray/ritual support, but is not official Opiphilus playable yet. |
+| Guild Mage | No | Yes | No confirmed same-identity sheet | Magical guild support or escort NPC; Tower Mage is only a ritual stand-in, not a same-identity Guild Mage craft/magic loop. |
+| Generic Citizen | No | Yes | No | Generic escorted buyer, traveler, or townsperson; walk/idle only. |
 
 Primary character roles:
 
 - blacksmith,
 - herbalist,
-- glassblower,
-- guild mage,
-- ritual assistant,
+- guild crafter,
+- escorted worker,
 - market buyer,
 - repair worker,
 - trade client.
@@ -306,6 +312,9 @@ Supporting cast:
 - guild clerks,
 - blacksmiths,
 - herbalists,
+- priests,
+- monks,
+- guild mages,
 - glassblowers,
 - villagers,
 - escorted clients.
@@ -521,34 +530,35 @@ Associated with:
 
 ---
 
-## The First Region: The Pilgrim Verge
+## The First Region: First Route
 
-The first playable region should be small, readable, and grounded in available art.
+The first playable region should be small, readable, and grounded in available art. Use plain source-derived placeholder names until final canon names are chosen.
 
 ### Core locations
 
 | Location | Area Type | Production Rationale |
 |---|---|---|
-| **Greybell Shrine** | shrine-town hub | supported by chapel, shrine, road, market, and guild-adjacent art |
-| **The Broken Road** | road / forest approach | supported by road, path, grassland, rocks, trees, bushes, bridges |
-| **Mistfall Chapel** | cursed chapel / shrine ruin | supported by chapel, cursed land, undead, ruins, priest / monk support |
-| **The Underwell** | sewer / cave under-route | supported by sewer, cave, rocky, glowing-cave, and under-town assets |
-| **The Chapel Undercrypt** | occult dungeon | supported by dungeon tiles, traps, cursed props, magic book effects |
-| **The Guild Hearth** | guild hall / workshop | supported by guild hall, blacksmith, herbalist, glassblower, market support |
-| **The Old Crystal Gate** | composed court gate / ruin threshold | feasible from ruins, dungeon props, mage tower flavor, and crystal-law story framing |
+| **Shrine-Town Hub** | shrine-town hub | supported by chapel, shrine, road, market, and guild-adjacent art |
+| **Road and Forest** | road / forest approach | supported by road, path, grassland, rocks, trees, bushes, bridges |
+| **Chapel Ruins** | cursed chapel / shrine ruin | supported by chapel, cursed land, undead, ruins, priest / monk support |
+| **Cave and Sewer** | sewer / cave under-route | supported by sewer, cave, rocky, glowing-cave, and under-town assets |
+| **Dungeon Rooms** | occult dungeon | supported by dungeon tiles, traps, cursed props, magic book effects |
+| **Guild Hall and Workshops** | guild hall / workshop | supported by guild hall, blacksmith, herbalist, glassblower, market support |
+| **Market Square** | market / shop / tavern support | supported by market square, tavern, home, citizens, traders, and service counters |
+| **Ruins Gate** | composed court gate / ruin threshold | feasible from ruins, dungeon props, mage tower flavor, and crystal-law story framing |
 
 ### First story arc
 
-The town of Greybell survives beside a shrine that no longer rings its road-bell. Without the bell, the hidden road network cannot be trusted. Caravans vanish, chapel doors open into wrong rooms, and monsters appear wearing the forms of local dead.
+The Shrine-Town Hub survives beside a route rite that no longer holds. Without the rite, the hidden road network cannot be trusted. Caravans vanish, chapel doors open into wrong rooms, and monsters appear wearing the forms of local dead.
 
 The player loop:
 
-1. Tenebrio maps the changed route beneath Mistfall Chapel.
-2. Opiphilus posts a request to move bell-repair materials, lantern glass, and a guild craft worker from Greybell to the Guild Hearth or Old Crystal Gate worksite.
-3. Luciphilus accepts the escort at the Greybell guild or gate board, making the Opiphilus traveler visible at the departure point.
-4. Luciphilus escorts the traveler across The Broken Road and clears the Wraith of the Drowned Gate in the Chapel Undercrypt.
-5. Opiphilus restores the Guild Hearth forge, repairs the shrine bell casing, and unlocks destination services such as local shops, guild jobs, craft stations, and repair work.
-6. The town reopens the Old Crystal Gate.
+1. Tenebrio maps the changed route beneath Chapel Ruins.
+2. Opiphilus posts a request to move route-repair materials, lantern glass, and a guild craft worker from Shrine-Town Hub to the Guild Hall and Workshops or Ruins Gate worksite.
+3. Luciphilus accepts the escort at the Shrine-Town Hub guild or gate board, making the Opiphilus traveler visible at the departure point.
+4. Luciphilus escorts the traveler across Road and Forest and clears the first route threat in Dungeon Rooms.
+5. Opiphilus restores the Guild Hall and Workshops forge, repairs the Shrine-Town Hub route fixture, and unlocks destination services such as local shops, guild jobs, craft stations, and repair work.
+6. The town reopens Ruins Gate.
 7. The next region becomes reachable.
 
 ---
@@ -636,7 +646,6 @@ Because the artwork direction is monochrome, the story should emphasize strong s
 Use:
 
 - lanterns,
-- bells,
 - masks,
 - shrine arches,
 - road signs,
@@ -686,27 +695,27 @@ The camera identity should never be described only as “top-down MMO.” The pr
 
 ### Title
 
-**The Bell That Forgot the Road**
+**First Route**
 
 ### Setup
 
-Greybell Shrine has stopped ringing. The bell still swings, but no sound comes out. Since then, every mapped road beyond the town has become unreliable.
+Shrine-Town Hub has lost the route rite that made the first road reliable. Since then, every mapped road beyond the town has become unreliable.
 
 ### Tenebrio task
 
-Enter Mistfall Chapel and recover a map fragment from a room that only appears while disguised as one of the road-bound dead.
+Enter Chapel Ruins and recover a map fragment from a room that only appears while disguised as one of the road-bound dead.
 
 ### Luciphilus task
 
-Use the recovered map fragment to accept a paid escort request, guard an Opiphilus traveler across The Broken Road, enter the chapel undercrypt, and defeat the Wraith of the Drowned Gate.
+Use the recovered map fragment to accept a paid escort request, guard an Opiphilus traveler across Road and Forest, enter Dungeon Rooms, and defeat the first route threat.
 
 ### Opiphilus task
 
-Post an escort request from Greybell, travel under Luciphilus guard to the Guild Hearth worksite, buy or trade for local materials, then use ghost silk, iron, lantern glass, and crystal dust to repair the bell housing and craft the first Road Lantern.
+Post an escort request from Shrine-Town Hub, travel under Luciphilus guard to the Guild Hall and Workshops worksite, buy or trade for local materials, then use recovered relics, iron, glasswork, and crystal dust to repair the route fixture and craft the first route hardware.
 
 ### Resolution
 
-The bell rings once. The Broken Road becomes stable long enough to reveal the Old Crystal Gate.
+First Route stabilizes. Road and Forest becomes reliable long enough to reveal Ruins Gate.
 
 ---
 

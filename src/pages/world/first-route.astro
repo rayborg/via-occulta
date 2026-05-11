@@ -1,0 +1,154 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../paths';
+
+const areas = [
+  {
+    name: 'Shrine-Town Hub',
+    type: 'Shrine-town hub',
+    copy: 'A compact starting hub built from chapel, shrine-support, road, market, and guild-adjacent artwork.',
+    play: 'Spawn, inspect the failed road marker, learn the first shrine rite, read the map board, and post materials to the guild project.'
+  },
+  {
+    name: 'Road and Forest',
+    type: 'Road and forest approach',
+    copy: 'A path of grass, stones, black trees, bridges, and white fog. It teaches the first rule of the route: a mapped road can still betray you.',
+    play: 'Watch bridges fail into fog, find hidden entrance markers, and face the first Road-Bound pressure outside town.'
+  },
+  {
+    name: 'Chapel Ruins',
+    type: 'Cursed chapel and shrine ruin',
+    copy: 'A drowned chapel ruin where a hidden room appears only to the correctly disguised. Its map fragment proves the old routes are changing.',
+    play: 'Use a Road-Bound-dead disguise to reveal the hidden room and recover the changed map fragment.'
+  },
+  {
+    name: 'Cave and Sewer',
+    type: 'Sewer, cave, and under-town route',
+    copy: 'A damp under-town channel where wells, sewers, cave stone, vermin, alchemy, and old roadwork cross below the town.',
+    play: 'Solve the tunnel route, gather crystal dust, and learn how low monsters nest inside civic infrastructure.'
+  },
+  {
+    name: 'Dungeon Rooms',
+    type: 'Occult dungeon',
+    copy: 'Trap rooms, cursed props, dungeon objects, crystal locks, and the first major route threat waiting behind the recovered fragment.',
+    play: 'Carry the fragment into a combat route, survive traps and locks, defeat the route threat, and bring back the relic proof.'
+  },
+  {
+    name: 'Guild Hall and Workshops',
+    type: 'Guild hall and workshop cluster',
+    copy: 'Forge, herbalist bench, glasswork, ledgers, and order boards. Here recovered materials become route hardware and town upgrades.',
+    play: 'Craft route tools, repair the route marker, and turn dungeon salvage into a town upgrade.'
+  },
+  {
+    name: 'Market Square',
+    type: 'Market, shop, and tavern support',
+    copy: 'Shopfronts, market citizens, tavern rooms, and service counters show what restored routes mean for ordinary town life.',
+    play: 'Buy supplies, post orders, hear rumors, and unlock local services after the route becomes reliable.'
+  },
+  {
+    name: 'Ruins Gate',
+    type: 'Ruin threshold',
+    copy: 'A ruined court threshold of crystal-law inscriptions and sealed authority. When the route is proven, the gate becomes visible again.',
+    play: 'Use the road charter, restored marker, or remembered name to prove the route and unlock the next region.'
+  }
+];
+
+const arcSteps = [
+  'The shrine-town hub loses the first route, and every charted road beyond town becomes unreliable.',
+  'Tenebrio enters the chapel ruins in a road-bound disguise and recovers the changed map fragment.',
+  'Luciphilus carries the fragment into the dungeon rooms and defeats the first route threat.',
+  'Opiphilus repairs the route marker and builds route hardware at the guild hall.',
+  'The road and forest approach steadies long enough to reveal the ruins gate.'
+];
+---
+
+<BaseLayout
+  title="First Route | Via Occulta"
+  description="The first Via Occulta route using source-derived area labels: shrine-town hub, road and forest, chapel ruins, cave and sewer, dungeon rooms, guild hall, market square, and ruins gate."
+>
+  <section class="page-hero">
+    <div class="shell">
+      <a class="breadcrumb" href={withBase('/world')}>World</a>
+      <p class="eyebrow">First region</p>
+      <h1>First Route</h1>
+      <p>
+        The first route uses plain source-derived area labels until final canon names are chosen:
+        shrine-town hub, road and forest, chapel ruins, cave and sewer, dungeon rooms, guild halls,
+        market squares, and a ruins gate.
+      </p>
+      <div class="pill-row">
+        <span class="pill">Shrine-Town Hub</span>
+        <span class="pill">Chapel Ruins</span>
+        <span class="pill">Guild Hall and Workshops</span>
+        <span class="pill">Ruins Gate</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight" aria-label="First route field record">
+    <div class="shell">
+      <figure class="onebit-art onebit-art--wide panel">
+        <div class="onebit-art__hud">
+          <span>Field report / Road and Forest</span>
+          <span>Route instability: active</span>
+        </div>
+        <div class="onebit-art__viewport">
+          <img
+            class="onebit-art__image"
+            src={withBase('/art/env.png')}
+            alt="Black-and-white environment art of the first hidden-road route"
+            width="1583"
+            height="994"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <figcaption>
+          <strong>A mapped road can still betray you.</strong>
+          <span>Grass, stone, black trees, and white fog: the road and forest approach teaches the first rule.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell split">
+      <div class="summary-panel panel">
+        <p class="eyebrow">Opening arc</p>
+        <h3>The Road That Should Not Open</h3>
+        <ul>
+          {arcSteps.map((step) => <li>{step}</li>)}
+        </ul>
+      </div>
+      <div class="prose">
+        <p>
+          The first route stays close to local life: a place of old shrines, failed crossings, practical guild
+          work, and thresholds that do not open because the player is chosen. They open because rites,
+          proof, materials, and labor line up again.
+        </p>
+        <p>
+          The region feels complete because Via Occulta is not about size first. It is about route
+          failure, local institutions, hidden infrastructure, and the recovery of a world one shrine,
+          workshop, and threshold at a time.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow">Region map</p>
+      <h2>Eight source-derived area labels around the first failing road.</h2>
+      <div class="card-grid">
+        {areas.map((area) => (
+          <article class="info-card panel">
+            <p class="card-kicker">{area.type}</p>
+            <h3>{area.name}</h3>
+            <p>{area.copy}</p>
+            <p class="play-beat"><strong>Player work:</strong> {area.play}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

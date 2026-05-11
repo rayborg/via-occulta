@@ -42,7 +42,7 @@ Short version:
 
 - **Tenebrio hero:** weak shriner / forbidden-route mapper. Main candidates are base male unarmed and base female unarmed, with sword variants reserved for later defensive or disguise-capable states.
 - **Luciphilus hero:** adventurer / escort / monster-clearer. The Swordsman line is the clearest active player hero, supported by guards, fighters, archers, expedition members, mages, and dungeon parties.
-- **Opiphilus hero:** guild worker / crafter / trade traveler. Main candidates include Smith, Herbalist, Priest / ritual support, Guild Mage, Monk, and Glassblower / Blacksmith worker where animation supports it.
+- **Opiphilus hero:** guild worker / crafter / trade traveler. Official playable candidates are Smith and Herbalist for now because both have walk animation and same-identity craft/work loops; Priest, Monk, Guild Mage, Citizen, Glassblower, and Blacksmith Girl remain support or escorted NPC candidates.
 
 Short trio:
 
@@ -169,17 +169,18 @@ For the detailed matrix, see:
 
 ## Recommended First Region
 
-The first region should be **The Pilgrim Verge**, a compact shrine-town region that uses only well-supported art categories.
+The first region should be **First Route**, a compact shrine-town region that uses plain source-derived placeholders until final canon names are chosen.
 
 | Area | Type | Why It Fits The Art |
 |---|---|---|
-| **Greybell Shrine** | shrine-town hub | chapel, shrine support, road, market, and guild-adjacent assets |
-| **The Broken Road** | road / forest approach | path, grassland, rocks, trees, bushes, bridges |
-| **Mistfall Chapel** | cursed chapel / shrine ruin | chapel, cursed land, undead, ruins, priest/monk support |
-| **The Underwell** | sewer / cave under-route | cave, sewer, rocky, glowing-cave, under-town assets |
-| **The Chapel Undercrypt** | occult dungeon | dungeon tiles, traps, cursed props, magic book effects |
-| **The Guild Hearth** | guild hall / workshop | guild hall, blacksmith, herbalist, glassblower, market support |
-| **The Old Crystal Gate** | composed court gate / ruin threshold | ruins, dungeon props, mage tower flavor, crystal-law story framing |
+| **Shrine-Town Hub** | shrine-town hub | chapel, shrine support, road, market, and guild-adjacent assets |
+| **Road and Forest** | road / forest approach | path, grassland, rocks, trees, bushes, bridges |
+| **Chapel Ruins** | cursed chapel / shrine ruin | chapel, cursed land, undead, ruins, priest/monk support |
+| **Cave and Sewer** | sewer / cave under-route | cave, sewer, rocky, glowing-cave, under-town assets |
+| **Dungeon Rooms** | occult dungeon | dungeon tiles, traps, cursed props, magic book effects |
+| **Guild Hall and Workshops** | guild hall / workshop | guild hall, blacksmith, herbalist, glassblower, market support |
+| **Market Square** | market / shop / tavern support | market square, tavern, home, citizens, traders, and service counters |
+| **Ruins Gate** | composed court gate / ruin threshold | ruins, dungeon props, mage tower flavor, crystal-law story framing |
 
 This region avoids unsupported castle/palace promises while still feeling like a complete JRPG opening zone.
 
@@ -201,12 +202,12 @@ Build a vertical slice that proves the shared-world loop at small scale.
 
 Minimum loop:
 
-1. A player starts in **Greybell Shrine**.
-2. Tenebrio-style exploration reveals a hidden route or shrine fragment in **Mistfall Chapel** or **The Underwell**.
+1. A player starts in **Shrine-Town Hub**.
+2. Tenebrio-style exploration reveals a hidden route or shrine fragment in **Chapel Ruins** or **Cave and Sewer**.
 3. Luciphilus-style adventuring clears a small dungeon threat, guards the route, or accepts an escort request.
 4. An Opiphilus character becomes visible at the guild or gate when the escort is accepted.
 5. The escort reaches a destination village, where Opiphilus accesses local shops, guild jobs, crafting stations, repairs, or restoration work.
-6. The restored object unlocks **The Old Crystal Gate** or a new route off **The Broken Road**.
+6. The restored object unlocks **Ruins Gate** or a new route off **Road and Forest**.
 
 ---
 

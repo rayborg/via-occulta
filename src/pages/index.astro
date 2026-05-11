@@ -18,41 +18,42 @@ const gameLines = [
   {
     name: 'Opiphilus',
     action: 'Builds',
-    copy: 'Guild workers craft lanterns, restore bells, fulfill orders, and turn danger into civic infrastructure.',
+    copy: 'Guild workers craft lanterns, fulfill orders, reopen workshops, and turn danger into civic infrastructure.',
     payoff: 'You make the tools that let the town endure.'
   }
 ];
 
 const regionHighlights = [
-  'Greybell Shrine',
-  'The Broken Road',
-  'Mistfall Chapel',
-  'The Underwell',
-  'The Chapel Undercrypt',
-  'The Guild Hearth',
-  'The Old Crystal Gate'
+  'Shrine-Town Hub',
+  'Road and Forest',
+  'Chapel Ruins',
+  'Cave and Sewer',
+  'Dungeon Rooms',
+  'Guild Hall and Workshops',
+  'Market Square',
+  'Ruins Gate'
 ];
 
 const openingBeats = [
   {
     step: '01',
-    title: 'The Bell Falls Silent',
-    copy: 'Greybell Shrine still swings its road-bell, but no sound comes out. Every mapped road beyond town becomes unreliable.'
+    title: 'The Map Fails',
+    copy: 'The first shrine road slips out of ordinary geography. Every mapped road beyond town becomes unreliable.'
   },
   {
     step: '02',
-    title: 'Mistfall Reveals A Room',
+    title: 'Chapel Ruins Reveal A Room',
     copy: 'A Tenebrio shriner enters the cursed chapel and recovers a map fragment from a room that only appears under disguise.'
   },
   {
     step: '03',
-    title: 'The Undercrypt Answers',
-    copy: 'Luciphilus carries the fragment into the chapel undercrypt and clears the Wraith of the Drowned Gate.'
+    title: 'Dungeon Rooms Answer',
+    copy: 'Luciphilus carries the fragment into the dungeon rooms below and clears the first route threat.'
   },
   {
     step: '04',
-    title: 'The Road Lantern Is Made',
-    copy: 'Opiphilus repairs the bell housing with ghost silk, iron, lantern glass, and crystal dust. The Old Crystal Gate is revealed.'
+    title: 'The Route Is Marked',
+    copy: 'Opiphilus turns recovered relics, glass, iron, and craft labor into route hardware. A ruins gate becomes reachable.'
   }
 ];
 ---
@@ -61,14 +62,14 @@ const openingBeats = [
   <section class="hero">
     <div class="shell hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Route 01 / Greybell Shrine</p>
-        <h1>The bell is silent. The hidden road is open.</h1>
+        <p class="eyebrow">First Route / Shrine-Town Hub</p>
+        <h1>The map is wrong. The hidden road is open.</h1>
         <p class="lede">
           Via Occulta is a 1-bit occult JRPG about finding forbidden routes, surviving the rooms behind them,
           and restoring the town with proof brought back alive.
         </p>
         <div class="hero-proof" aria-label="Core promise">
-          <span>Inspect the bell</span>
+          <span>Read the map</span>
           <span>Enter the chapel</span>
           <span>Bring proof home</span>
         </div>
@@ -77,10 +78,10 @@ const openingBeats = [
           <a class="button" href={withBase('/games')}>See the game loop</a>
         </div>
       </div>
-      <aside class="cinematic-frame panel" aria-label="Greybell Shrine opening omen">
+      <aside class="cinematic-frame panel" aria-label="Opening hidden-road omen">
         <div class="field-screen">
           <div class="field-screen__hud">
-            <span>Route 01 / Greybell Shrine</span>
+            <span>First Route</span>
             <span>Opening omen</span>
           </div>
           <figure class="onebit-art onebit-art--hero">
@@ -96,21 +97,16 @@ const openingBeats = [
                 fetchpriority="high"
               />
             </div>
-            <figcaption>The bell forgot the road. Greybell did not.</figcaption>
+            <figcaption>The road remembers those who know the rite.</figcaption>
           </figure>
           <div class="field-screen__caption">
             <p class="eyebrow">Opening route</p>
-            <h2>Greybell Shrine: the bell swings with no sound.</h2>
+            <h2>A shrine road opens where the map says nothing.</h2>
             <p>
-              Quest: enter Mistfall Chapel, recover the road fragment, survive the undercrypt,
+              Quest: enter the chapel ruins, recover the road fragment, survive the dungeon rooms,
               and bring proof back before the town forgets how to open the route.
             </p>
           </div>
-        </div>
-        <div class="status-grid">
-          <div><span>Format</span><strong>Overhead JRPG</strong></div>
-          <div><span>Route</span><strong>Greybell Verge</strong></div>
-          <div><span>Objective</span><strong>Restore Bell</strong></div>
         </div>
       </aside>
     </div>
@@ -119,7 +115,7 @@ const openingBeats = [
   <section class="section section-tight">
     <div class="shell">
       <p class="eyebrow">Opening route</p>
-      <h2>Route 01: The Bell That Forgot the Road.</h2>
+      <h2>First Route: The Road That Should Not Open.</h2>
       <div class="chapter-flow">
         {openingBeats.map((beat) => (
           <article class="chapter-step panel" data-step={beat.step}>
@@ -129,7 +125,7 @@ const openingBeats = [
         ))}
       </div>
       <div class="link-row">
-        <a class="text-link" href={withBase('/world/the-pilgrim-verge')}>Visit The Pilgrim Verge</a>
+        <a class="text-link" href={withBase('/world/first-route')}>Visit the first route</a>
       </div>
     </div>
   </section>
@@ -178,14 +174,14 @@ const openingBeats = [
     <div class="shell region-showcase panel">
       <div class="region-showcase__copy">
         <p class="eyebrow">Opening region</p>
-        <h2>A shrine-town frontier of bells, chapels, wells, and wrong doors.</h2>
+        <h2>A shrine-town frontier of chapels, wells, and wrong doors.</h2>
         <p>
-          The Pilgrim Verge starts small on purpose: a town, a mute shrine bell, a cursed chapel,
-          a sewer under-route, and the old crystal gate that should not be reachable yet.
+          The first route starts small on purpose: a shrine-town hub, road and forest approach,
+          chapel ruins, a cave and sewer under-route, guild halls, market rooms, and a ruins gate.
         </p>
-        <a class="text-link" href={withBase('/world/the-pilgrim-verge')}>Visit The Pilgrim Verge</a>
+        <a class="text-link" href={withBase('/world/first-route')}>Visit the first route</a>
       </div>
-      <div class="region-showcase__places" aria-label="Pilgrim Verge areas">
+      <div class="region-showcase__places" aria-label="First route source-derived areas">
         {regionHighlights.map((area) => <span>{area}</span>)}
       </div>
     </div>

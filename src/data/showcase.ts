@@ -111,7 +111,7 @@ const characterPageDefs = [
     title: 'Priest',
     summary: 'The clearest shrine authority in the cast, standing at the line between community ritual and failing road-law.',
     description: [
-      'Priests in Via Occulta are not merely flavor NPCs. They embody the old compact that once kept the roads legible, the bells resonant, and the threshold rites trustworthy.',
+      'Priests in Via Occulta are not merely flavor NPCs. They embody the old compact that once kept the roads legible, the shrines maintained, and the threshold rites trustworthy.',
       'The Priest is a reminder that the crisis of the world is spiritual and infrastructural at once: if the priesthood forgets the road, the town itself begins to lose direction.'
     ],
     tags: ['Shrine Orders', 'Ritual Authority', 'Disguise Rites'],
@@ -136,7 +136,7 @@ const characterPageDefs = [
       'The Smith and Blacksmith Girl together define one of the most grounded parts of Opiphilus. They are not abstract crafters; they belong to heat, timing, tool wear, and the daily making of things that must survive the road outside town.',
       'Craft in Via Occulta is not decorative. The workshop is one of the world’s defensive organs.'
     ],
-    tags: ['Guild Houses', 'Bell Iron', 'Forge'],
+    tags: ['Guild Houses', 'Forge Iron', 'Forge'],
     entrySlugs: ['smith', 'blacksmith-girl']
   },
   {
@@ -155,7 +155,7 @@ const characterPageDefs = [
     title: 'Glassblower Folk',
     summary: 'Trade and craft identities centered on glass, display, vessels, and the quiet materials of ritual civilization.',
     description: [
-      'Glasswork matters in Via Occulta because the world’s rites need containers, lenses, bell casings, and lantern bodies as much as they need weapons. The glassblower family is where fragile material becomes civic infrastructure.',
+      'Glasswork matters in Via Occulta because the world’s rites need containers, lenses, glass vessels, and lantern bodies as much as they need weapons. The glassblower family is where fragile material becomes civic infrastructure.',
       'Glasswork reads less like combat preparation and more like proof that town life has specialist labor with its own dignity and visual identity.'
     ],
     tags: ['Guild Houses', 'Lantern Glass', 'Glass and Trade'],
@@ -166,7 +166,7 @@ const characterPageDefs = [
     title: 'Market Citizens',
     summary: 'The town crowd that gives the market a lived rhythm instead of leaving it as a decorative empty square.',
     description: [
-      'Citizens matter because they are the measure of whether the hidden-road world is worth saving. Markets, bells, and chapels only matter if ordinary people still pass through them, argue in them, buy food in them, and notice when the routes begin to fail.',
+      'Citizens matter because they are the measure of whether the hidden-road world is worth saving. Markets, shrines, and chapels only matter if ordinary people still pass through them, argue in them, buy food in them, and notice when the routes begin to fail.',
       'Grouped together, these citizens make the world feel inhabited and social instead of reading like a cast made only of specialists and fighters.'
     ],
     tags: ['Town Life', 'Market', 'Variants 1-5'],
@@ -279,7 +279,7 @@ const characterPageDefs = [
       'The under-route cast shows what life looks like closer to the hidden infrastructure itself. These are people who work, steal, survive, and improvise near channels, drains, and broken mechanisms the surface would rather ignore.',
       'They connect the world’s occult mystery to its social underside: the places where route failure becomes a class condition, not only a story event.'
     ],
-    tags: ['Underwell', 'Sewer Route', 'Marginal Lives'],
+    tags: ['Cave and Sewer', 'Sewer Route', 'Marginal Lives'],
     entrySlugs: ['poor-man', 'thief', 'alchemist']
   }
 ] as const;
@@ -313,7 +313,7 @@ const monsterPageDefs = [
     summary: 'Forest-burdened giants that make the wild edges of the world feel old, slow, and heavy with memory.',
     description: [
       'Ents are not just big monsters; they are environmental presences given will. They make glades, roots, and broken paths feel like places that can answer back if pushed too hard.',
-      'They connect the forest spaces of the Pilgrim Verge to the hidden-road crisis without turning every threat undead or demonic.'
+      'They connect the forest spaces of the first route to the hidden-road crisis without turning every threat undead or demonic.'
     ],
     tags: ['Forest', 'Heavy Form'],
     entrySlugs: ['ent-1', 'ent-2', 'ent-3']

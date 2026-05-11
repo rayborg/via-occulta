@@ -1293,6 +1293,21 @@ button:focus-visible {
   min-height: 12rem;
 }
 
+.dossier-plate--character .sprite-strip--hero {
+  padding: clamp(0.75rem, 2vw, 1.1rem) 0.7rem 0.8rem;
+}
+
+.dossier-plate--character .sprite-strip--hero .sprite-strip__slot {
+  flex-basis: clamp(5.75rem, 22%, 8.25rem);
+  min-width: 5.25rem;
+  max-width: 8.75rem;
+}
+
+.dossier-plate--character .sprite-strip--hero .sprite-strip__stage {
+  min-height: 9.25rem;
+  padding: 0.55rem 0.35rem 0.45rem;
+}
+
 .codex-slate__note {
   border-top: 1px solid var(--line);
   padding: 1rem;
@@ -1379,6 +1394,21 @@ button:focus-visible {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.036), rgba(255, 255, 255, 0.012)),
     rgba(0, 0, 0, 0.12);
+}
+
+.character-lineup-section .variant-grid .sprite-strip {
+  gap: 0.65rem;
+  padding: clamp(0.75rem, 2vw, 1rem);
+}
+
+.character-lineup-section .variant-grid .sprite-strip__slot {
+  flex-basis: clamp(7rem, 16vw, 11rem);
+  max-width: 13rem;
+}
+
+.character-lineup-section .variant-grid .sprite-strip__stage {
+  min-height: 8.6rem;
+  padding: 0.65rem 0.5rem 0.45rem;
 }
 
 .sprite-strip figcaption {
@@ -1635,6 +1665,69 @@ button:focus-visible {
   max-height: 9rem;
 }
 
+.showcase-card[data-kind="character"] {
+  grid-template-columns: minmax(16rem, 0.4fr) minmax(0, 1fr);
+}
+
+.showcase-card[data-kind="character"] .showcase-card__art {
+  min-height: 9rem;
+}
+
+.showcase-card[data-kind="character"] .sprite-strip--compact {
+  display: flex;
+  gap: 0.45rem;
+  align-items: end;
+  padding: 0.65rem;
+}
+
+.showcase-card[data-kind="character"] .sprite-strip--compact .sprite-strip__slot {
+  flex: 1 1 5rem;
+  min-width: 4.6rem;
+}
+
+.showcase-card[data-kind="character"] .sprite-strip--compact .sprite-strip__stage {
+  min-height: 8rem;
+  padding: 0.35rem 0.25rem 0.25rem;
+}
+
+.showcase-card[data-kind="character"] .sprite-strip--compact .sprite-image {
+  max-height: 8rem;
+}
+
+.showcase-card[data-kind="monster"] {
+  grid-template-columns: minmax(15rem, 0.38fr) minmax(0, 1fr);
+}
+
+.showcase-card[data-kind="monster"] .showcase-card__art {
+  min-height: 9.25rem;
+}
+
+.showcase-card[data-kind="monster"] .sprite-strip--compact {
+  display: flex;
+  gap: 0.45rem;
+  align-items: end;
+  padding: 0.55rem 0.65rem;
+}
+
+.showcase-card[data-kind="monster"] .sprite-strip--compact .sprite-strip__slot {
+  flex: 1 1 4.75rem;
+  min-width: 4.2rem;
+}
+
+.showcase-card[data-kind="monster"] .sprite-strip--compact[data-scale="2x"] .sprite-strip__stage {
+  min-height: 9.75rem;
+  padding: 0.45rem 0.25rem 0.25rem;
+}
+
+.showcase-card[data-kind="monster"] .sprite-strip--compact[data-scale="3x"] .sprite-strip__stage {
+  min-height: 8.25rem;
+  padding: 0.35rem 0.25rem 0.2rem;
+}
+
+.showcase-card[data-kind="monster"] .sprite-strip--compact .sprite-image {
+  max-height: 9.5rem;
+}
+
 @media (max-width: 1020px) {
   .hero-grid,
   .split,
@@ -1658,6 +1751,14 @@ button:focus-visible {
   }
 
   .showcase-card {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-card[data-kind="character"] {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-card[data-kind="monster"] {
     grid-template-columns: 1fr;
   }
 
