@@ -1,70 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SpriteImage from '../components/SpriteImage.astro';
-import { characterPages, homepageFeaturedCharacters, homepageFeaturedMonsters } from '../data/showcase';
-import type { FlatEntry, ShowcasePage } from '../data/showcase';
 import { withBase } from '../paths';
-
-type HeroFigure = {
-  entry: FlatEntry;
-  role: string;
-  detail: string;
-  scale: 2 | 3;
-  weight: 'anchor' | 'small' | 'normal';
-};
-
-function requirePage(page: ShowcasePage | undefined, label: string): ShowcasePage {
-  if (!page) throw new Error(`Missing homepage showcase page: ${label}`);
-  return page;
-}
-
-function requireEntry(entry: FlatEntry | undefined, label: string): FlatEntry {
-  if (!entry) throw new Error(`Missing homepage showcase entry: ${label}`);
-  return entry;
-}
-
-const swordsmanPage = requirePage(homepageFeaturedCharacters.find((page) => page.slug === 'swordsman') ?? homepageFeaturedCharacters[0], 'swordsman');
-const baseHumanPage = requirePage(characterPages.find((page) => page.slug === 'base-human'), 'base-human');
-const blacksmithPage = requirePage(homepageFeaturedCharacters.find((page) => page.slug === 'blacksmith') ?? homepageFeaturedCharacters[2], 'blacksmith');
-const ghostPage = requirePage(homepageFeaturedMonsters.find((page) => page.slug === 'ghost') ?? homepageFeaturedMonsters[1], 'ghost');
-const demonPage = requirePage(homepageFeaturedMonsters.find((page) => page.slug === 'demon') ?? homepageFeaturedMonsters[2], 'demon');
-const heroFigures: HeroFigure[] = [
-  {
-    entry: requireEntry(baseHumanPage.entries[0], 'Tenebrio shriner'),
-    role: 'Tenebrio shriner',
-    detail: 'Weak, but knows the rite',
-    scale: 3,
-    weight: 'anchor'
-  },
-  {
-    entry: requireEntry(swordsmanPage.entries[swordsmanPage.entries.length - 1], 'swordsman veteran'),
-    role: 'Lantern Company',
-    detail: 'Luciphilus proves the road can be survived',
-    scale: 2,
-    weight: 'normal'
-  },
-  {
-    entry: requireEntry(blacksmithPage.entries[0], 'blacksmith'),
-    role: 'Bellwright',
-    detail: 'Opiphilus turns proof into repair',
-    scale: 2,
-    weight: 'normal'
-  },
-  {
-    entry: requireEntry(ghostPage.entries[1] ?? ghostPage.entries[0], 'Mistfall ghost'),
-    role: 'Mistfall dead',
-    detail: 'A name leaking through a failed rite',
-    scale: 2,
-    weight: 'small'
-  },
-  {
-    entry: requireEntry(demonPage.entries[1] ?? demonPage.entries[0], 'road trespasser'),
-    role: 'Wrong road',
-    detail: 'Something the compact kept below',
-    scale: 2,
-    weight: 'small'
-  }
-];
 
 const gameLines = [
   {
@@ -141,35 +77,33 @@ const openingBeats = [
           <a class="button" href={withBase('/games')}>See the game loop</a>
         </div>
       </div>
-      <aside class="cinematic-frame panel" aria-label="Greybell Shrine field screen">
+      <aside class="cinematic-frame panel" aria-label="Greybell Shrine opening omen">
         <div class="field-screen">
           <div class="field-screen__hud">
-            <span>Greybell Shrine</span>
-            <span>Route instability: active</span>
+            <span>Route 01 / Greybell Shrine</span>
+            <span>Opening omen</span>
           </div>
-          <div class="field-screen__map" role="list" aria-label="Via Occulta field figures">
-            <span class="map-path map-path--main" aria-hidden="true"></span>
-            <span class="map-path map-path--under" aria-hidden="true"></span>
-            <span class="route-label route-label--shrine" aria-hidden="true">Greybell</span>
-            <span class="route-label route-label--chapel" aria-hidden="true">Mistfall</span>
-            <span class="route-label route-label--gate" aria-hidden="true">Old Gate</span>
-            {heroFigures.map((figure, index) => (
-              <figure class="field-figure" role="listitem" data-weight={figure.weight} data-lane={index}>
-                <SpriteImage entry={figure.entry} scale={figure.scale} loading="eager" />
-                <figcaption>
-                  <strong>{figure.role}</strong>
-                  <span>{figure.detail}</span>
-                </figcaption>
-              </figure>
-            ))}
-            <div class="route-command" aria-hidden="true">A Inspect / B Rite / Menu Relics</div>
-          </div>
+          <figure class="onebit-art onebit-art--hero">
+            <div class="onebit-art__viewport">
+              <img
+                class="onebit-art__image"
+                src={withBase('/art/coverART_BW.png')}
+                alt="Black-and-white Via Occulta cover artwork showing the occult pilgrimage world"
+                width="1619"
+                height="971"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+              />
+            </div>
+            <figcaption>The bell forgot the road. Greybell did not.</figcaption>
+          </figure>
           <div class="field-screen__caption">
             <p class="eyebrow">Opening route</p>
             <h2>Greybell Shrine: the bell swings with no sound.</h2>
             <p>
               Quest: enter Mistfall Chapel, recover the road fragment, survive the undercrypt,
-              and bring proof back before the town forgets the route.
+              and bring proof back before the town forgets how to open the route.
             </p>
           </div>
         </div>

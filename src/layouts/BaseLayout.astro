@@ -8,6 +8,7 @@ type Props = {
 };
 
 const { title, description = 'A 1-bit occult shared-world JRPG where hidden roads are discovered by shriners, cleared by adventurers, and rebuilt by guild crafters.' } = Astro.props;
+const socialImage = new URL(withBase('/art/coverART_BW.png'), Astro.site ?? Astro.url).toString();
 ---
 
 <!doctype html>
@@ -17,6 +18,12 @@ const { title, description = 'A 1-bit occult shared-world JRPG where hidden road
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={socialImage} />
     <link rel="icon" href={withBase('/showcase/monsters/goblin-1.png')} />
   </head>
   <body>

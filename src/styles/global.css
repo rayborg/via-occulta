@@ -838,6 +838,86 @@ button:focus-visible {
   image-rendering: pixelated;
 }
 
+.onebit-art {
+  --art-paper: #f7f1df;
+  --art-ink: #050605;
+
+  margin: 0;
+  background: var(--art-paper);
+  color: var(--art-ink);
+}
+
+.onebit-art__hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  border-bottom: 2px solid var(--art-ink);
+  padding: 0.82rem 1rem;
+  background: var(--art-ink);
+  color: var(--art-paper);
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.onebit-art__hud span:last-child {
+  opacity: 0.72;
+}
+
+.onebit-art__viewport {
+  overflow: hidden;
+  border-bottom: 2px solid var(--art-ink);
+  background: var(--art-paper);
+}
+
+.onebit-art__image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: var(--art-paper);
+  image-rendering: auto;
+}
+
+.onebit-art figcaption {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.75rem 1rem;
+  color: var(--art-ink);
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.onebit-art figcaption strong {
+  color: var(--art-ink);
+  font-size: inherit;
+}
+
+.onebit-art figcaption span {
+  color: var(--art-ink);
+  opacity: 0.72;
+}
+
+.onebit-art--hero .onebit-art__viewport {
+  border-bottom: 0;
+}
+
+.onebit-art--hero figcaption {
+  border-top: 2px solid var(--art-ink);
+  border-bottom: 2px solid var(--art-ink);
+}
+
+.onebit-art--wide {
+  border: 2px solid var(--art-paper);
+  border-radius: 14px;
+  background: var(--art-paper);
+  box-shadow: 0 1.2rem 0 #000, 0 1.8rem 3.5rem rgba(0, 0, 0, 0.58);
+}
+
 .site-header {
   background:
     linear-gradient(180deg, rgba(3, 4, 6, 0.94), rgba(3, 4, 6, 0.76)),
@@ -1335,6 +1415,17 @@ button:focus-visible {
   opacity: 0.55;
 }
 
+.panel.onebit-art--wide {
+  border: 2px solid var(--art-paper);
+  border-radius: 14px;
+  background: var(--art-paper);
+  box-shadow: 0 1.2rem 0 #000, 0 1.8rem 3.5rem rgba(0, 0, 0, 0.58);
+}
+
+.panel.onebit-art--wide::before {
+  background: none;
+}
+
 .field-screen {
   background: var(--screen-bg);
   color: var(--screen-ink);
@@ -1637,6 +1728,7 @@ button:focus-visible {
   }
 
   .field-screen__hud,
+  .onebit-art__hud,
   .dossier-plate__header,
   .codex-slate__header,
   .dossier-plate__footer {
