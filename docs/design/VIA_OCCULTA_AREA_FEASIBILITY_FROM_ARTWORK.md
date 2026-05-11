@@ -2,9 +2,10 @@
 
 ## Purpose
 
-This document answers a practical production question:
+This document answers practical production questions:
 
-> **Given the current `via_occulta_artwork` repo, what areas can Via Occulta actually build now?**
+1. **Given the current `via_occulta_artwork` repo, what areas can Via Occulta actually build now?**
+2. **For those areas, does the current art support the outside, the inside, or both?**
 
 The answer is not “anything fantasy.” The current art set strongly supports a specific kind of world: **1-bit top-down occult JRPG spaces** built from roads, forests, shrines, chapels, caves, sewers, cursed ruins, dungeons, guild interiors, markets, workshops, taverns, mage towers, and small village / dock spaces.
 
@@ -41,6 +42,42 @@ Interpretation:
 
 ---
 
+# Interior vs. Exterior Support Summary
+
+The current art does **not** support every place equally inside and outside. Some areas are naturally exterior, some are naturally interior/underground, and some have both indoor and outdoor support.
+
+| Area Type | Exterior Support | Interior Support | Current Verdict | Notes |
+|---|---|---|---|---|
+| Shrine-town hub | Strong | Moderate | Build now | Strong as shrine approach / town hub. Interior shrine rooms can be composed from chapel/guild/ritual assets. |
+| Roads / crossroads / camp edges | Strong | Not applicable | Build now | These are exterior route screens. |
+| Forests / glades | Strong | Not applicable | Build now | Exterior outdoor biome. Interior equivalent would be cave/shrine/ruin entered from forest. |
+| Caves / rocky underways | Entrance/threshold support | Strong | Build now | Use exterior as cave mouth / rocky threshold; main cave gameplay is interior/underground. |
+| Sewers / underwell | Entrance/threshold support | Strong | Build now | Best as under-town interior route; exterior is usually well, drain, hatch, or town threshold. |
+| Cursed chapels / shrine ruins | Moderate to strong | Moderate to strong | Build now | Good for chapel exterior, ruined threshold, cursed grounds, and small interior chapel/aisle/crypt scenes. |
+| Dungeons / occult deep ruins | Threshold support | Strong | Build now | Best as interior rooms, undercrypts, trap rooms, relic chambers, and boss thresholds. Exterior should be a ruin door, cave mouth, chapel stair, or gate. |
+| Guild halls | Moderate | Strong | Build now | Best for interiors and service rooms; exterior/frontage can be composed with town/guild assets. |
+| Blacksmith workshops | Moderate to strong | Strong | Build now | Named pack includes interior/exterior support; very good for Opiphilus. |
+| Herbalist huts | Moderate | Strong | Build now | Best as service interior plus hut/frontage scene. |
+| Glassblower workshops | Moderate | Strong | Build now | Best as workshop interior/service space; exterior/frontage possible. |
+| Markets / shops | Strong | Moderate | Build now | Market square is exterior; shop interiors can be composed, but not every shop type has a dedicated full interior. |
+| Taverns | Moderate | Strong | Build now | Tavern pack and NPC loops support interior/social scenes; exterior can be town frontage. |
+| Homes | Moderate | Strong | Build now | Main-character/home assets support small house scenes. |
+| Mage towers / ritual rooms | Moderate | Moderate to strong | Build now / compose | Strong for ritual interiors and tower rooms; exterior tower identity may need composition. |
+| Training arena / guard yard | Strong | Weak / not central | Build now | Best as exterior or open training yard. Interior barracks are not a proven strength. |
+| Fishing village / docks | Strong | Moderate | Build now | Named pack includes dock/interior/boats/NPCs, so small port edge and interiors are feasible. |
+| Crystal Court outpost | Composed | Composed | Feasible with composition | Use gates, tower annexes, archives, guard yards, court-shrine hybrids; not a full castle. |
+| Castle / palace / keep | Weak | Weak | Defer | Current named docs do not prove full castle exterior or interior support. |
+
+## Practical Interpretation
+
+- **Caves, sewers, dungeons, undercrypts, and occult ruins are mostly interior-first.** The art supports the playable inside more than a large exterior facade.
+- **Roads, forests, glades, crossroads, docks, and training yards are exterior-first.** They do not need interiors.
+- **Guild halls, workshops, taverns, homes, herbalists, blacksmiths, and glassblowers are interior-strong.** These are excellent for Opiphilus.
+- **Chapels and shrine ruins can support both inside and outside at small scale.** Avoid huge cathedral promises unless new art is added.
+- **Castle/palace interiors and exteriors should be deferred.** The Crystal Courts should be represented through smaller supported pieces: gates, archives, tower annexes, court shrines, guard yards, and ruined checkpoints.
+
+---
+
 # Area Feasibility Tiers
 
 ## Tier A — Build Now
@@ -51,12 +88,17 @@ These areas are directly supported by named current art groups and should be saf
 
 **Recommended story name:** Greybell Shrine
 
+Interior/exterior verdict:
+
+- **Exterior:** strong for shrine approach, road-bell plaza, town edge, market-adjacent shrine space.
+- **Interior:** moderate, best as small chapel/ritual room composed from chapel, guild, and ritual assets.
+
 Best use:
 
 - starting hub
 - shrine courtyard
 - road-bell plaza
-- small chapel edge
+- small chapel edge/interior
 - guild notice board
 - route entrance
 
@@ -68,26 +110,16 @@ Supported by:
 - market and town support loops
 - road/path/grassland/tree/bush/bridge assets
 
-Gameplay fit:
-
-- player spawn
-- party formation
-- shrine rite tutorial
-- map board
-- guild contribution board
-- first route unlock
-
-Best game lines:
-
-- Tenebrio
-- Luciphilus
-- Opiphilus
-
 ---
 
 ### 2. Roads, Crossroads, Camp Edges
 
 **Recommended story names:** The Broken Road, Pilgrim Road, Lantern Crossing
+
+Interior/exterior verdict:
+
+- **Exterior:** strong.
+- **Interior:** not applicable.
 
 Best use:
 
@@ -106,24 +138,16 @@ Supported by:
 - bridges
 - road/camp/town-edge kits
 
-Gameplay fit:
-
-- route discovery
-- low-risk exploration
-- ambush marker
-- resource gathering
-- entrance to forest/cave/chapel
-
-Best game lines:
-
-- Tenebrio
-- Luciphilus
-
 ---
 
 ### 3. Forests and Glades
 
 **Recommended story names:** Blackbough Glade, The Pilgrim Wood, The White-Fog Grove
+
+Interior/exterior verdict:
+
+- **Exterior:** strong.
+- **Interior:** not applicable, except by entering a cave, shrine, chapel, or ruin from the forest.
 
 Best use:
 
@@ -143,23 +167,16 @@ Supported by:
 - rocks
 - plants
 
-Gameplay fit:
-
-- Tenebrio stealth/disguise
-- Luciphilus encounter approach
-- hidden map fragments
-- gathering herbs or ritual wood
-
-Best game lines:
-
-- Tenebrio
-- Luciphilus
-
 ---
 
 ### 4. Caves and Rocky Underways
 
 **Recommended story names:** The Underwell, Bellroot Cave, The Hollow Road
+
+Interior/exterior verdict:
+
+- **Exterior:** moderate as cave mouth / rocky entrance / threshold.
+- **Interior:** strong.
 
 Best use:
 
@@ -177,24 +194,16 @@ Supported by:
 - glowing cave objects
 - rocky top-down tiles
 
-Gameplay fit:
-
-- first dungeon room
-- cave traversal
-- crystal gathering
-- monster disguise
-- boss approach
-
-Best game lines:
-
-- Tenebrio
-- Luciphilus
-
 ---
 
 ### 5. Sewers / Underwell Spaces
 
 **Recommended story names:** The Underwell, Greybell Drain, The Old Channel
+
+Interior/exterior verdict:
+
+- **Exterior:** weak-to-moderate as a well, hatch, drain, cellar door, or town threshold.
+- **Interior:** strong.
 
 Best use:
 
@@ -210,23 +219,16 @@ Supported by:
 - sewer NPC/effect loops
 - cave/sewer kit grouping
 
-Gameplay fit:
-
-- hidden route under town
-- low-level monster forms
-- tunnel puzzle
-- route instability event
-
-Best game lines:
-
-- Tenebrio
-- Luciphilus
-
 ---
 
 ### 6. Cursed Chapels and Shrine Ruins
 
 **Recommended story names:** Mistfall Chapel, The Drowned Chapel, Saintless Aisle
+
+Interior/exterior verdict:
+
+- **Exterior:** moderate-to-strong for chapel facade, shrine ruin, cursed grounds, cemetery-like approach.
+- **Interior:** moderate-to-strong for small chapel aisle, ritual room, ruined underchapel, crypt threshold.
 
 Best use:
 
@@ -246,23 +248,16 @@ Supported by:
 - undead land objects
 - priest/monk support loops
 
-Gameplay fit:
-
-- map fragment recovery
-- undead disguise rite
-- Wraith boss gate
-- shrine repair objective
-
-Best game lines:
-
-- Tenebrio
-- Luciphilus
-
 ---
 
 ### 7. Dungeons and Occult Deep Ruins
 
 **Recommended story names:** The Road Below, The Black Reliquary, The Deep Aisle
+
+Interior/exterior verdict:
+
+- **Exterior:** weak-to-moderate as entrance, ruin gate, cave mouth, chapel stair, or threshold.
+- **Interior:** strong.
 
 Best use:
 
@@ -281,24 +276,16 @@ Supported by:
 - trap effects
 - mage tower support packs
 
-Gameplay fit:
-
-- Luciphilus dungeon combat
-- Tenebrio ritual/infiltration
-- boss relic recovery
-- trap navigation
-- crystal locks
-
-Best game lines:
-
-- Tenebrio
-- Luciphilus
-
 ---
 
 ### 8. Guild Halls and Workshops
 
 **Recommended story names:** The Guild Hearth, Bellwright Hall, The Lantern House
+
+Interior/exterior verdict:
+
+- **Exterior:** moderate as frontage / town service entrance.
+- **Interior:** strong.
 
 Best use:
 
@@ -318,24 +305,16 @@ Supported by:
 - market square pack
 - guild hall mages
 
-Gameplay fit:
-
-- Opiphilus crafting loop
-- guild project contribution
-- weapon/armor crafting
-- lantern glass crafting
-- shrine repair kit assembly
-
-Best game lines:
-
-- Opiphilus
-- Luciphilus support hub
-
 ---
 
 ### 9. Markets, Shops, Taverns, Homes
 
 **Recommended story names:** Greybell Market, The Bell Inn, The Pilgrim House
+
+Interior/exterior verdict:
+
+- **Exterior:** strong for market street / shopfront / town frontage.
+- **Interior:** moderate-to-strong for tavern/home/shop service rooms, depending on exact location type.
 
 Best use:
 
@@ -355,24 +334,16 @@ Supported by:
 - main character home pack
 - fishing village NPCs where suitable
 
-Gameplay fit:
-
-- buying/selling
-- guild order pickup
-- rumor system
-- companion recruitment
-- economy tutorial
-
-Best game lines:
-
-- Opiphilus
-- Luciphilus
-
 ---
 
 ### 10. Mage Towers and Ritual Rooms
 
 **Recommended story names:** The Bell Astrolabe, Moon-Index Tower, The White Ledger
+
+Interior/exterior verdict:
+
+- **Exterior:** moderate as tower approach / annex / ritual building facade.
+- **Interior:** moderate-to-strong for ritual rooms, archives, magic study, spell-presence scenes.
 
 Best use:
 
@@ -390,24 +361,16 @@ Supported by:
 - magic book effects
 - ritual/caster ambience
 
-Gameplay fit:
-
-- unlock lore
-- decode maps
-- identify cursed relics
-- introduce Crystal Court story without needing a full castle
-
-Best game lines:
-
-- Opiphilus
-- Luciphilus
-- Tenebrio story scenes
-
 ---
 
 ### 11. Training Arena / Guard Yard
 
 **Recommended story names:** Lantern Yard, Guild Drill Court
+
+Interior/exterior verdict:
+
+- **Exterior:** strong.
+- **Interior:** weak / not a current strength.
 
 Best use:
 
@@ -424,22 +387,16 @@ Supported by:
 - archers
 - mannequins
 
-Gameplay fit:
-
-- Luciphilus combat onboarding
-- party role tutorial
-- town defense prep
-
-Best game lines:
-
-- Luciphilus
-- Opiphilus support scenes
-
 ---
 
 ### 12. Fishing Village / Docks / Small Port Edge
 
 **Recommended story names:** Lowdock, Bellwater Landing, Pilgrim Quay
+
+Interior/exterior verdict:
+
+- **Exterior:** strong for docks / village edge / boats.
+- **Interior:** moderate; the named pack includes interior support, but keep it small.
 
 Best use:
 
@@ -453,17 +410,6 @@ Supported by:
 - fishing village pack
 - docks / boats / interiors support
 - fishing village NPCs
-
-Gameplay fit:
-
-- trade-route recovery
-- side region
-- water-adjacent road instability
-
-Best game lines:
-
-- Luciphilus
-- Opiphilus
 
 ---
 
@@ -484,6 +430,11 @@ What can be built now:
 - mage tower annex
 - ruined court checkpoint
 
+Interior/exterior verdict:
+
+- **Exterior:** feasible as gate, tower annex, ruined checkpoint, shrine-court threshold.
+- **Interior:** feasible as archive, court shrine, crystal-law chamber, ritual room.
+
 Use these packs together:
 
 - guild hall
@@ -493,26 +444,14 @@ Use these packs together:
 - dungeon/ruin pieces
 - crystal/occult UI and props
 
-Story framing:
-
-> The Crystal Courts are encountered through annexes, sealed gates, shrines, archives, and ruined checkpoints before the game ever shows a full palace.
-
 ### 2. Castle Ruin / Old Keep Threshold
 
-A full castle is unsupported, but a **ruined court gate** or **broken keep approach** can be implied using:
+A full castle is unsupported, but a **ruined court gate** or **broken keep approach** can be implied.
 
-- ruins packs
-- dungeon tiles
-- chapel pieces
-- training arena / guard-yard pieces
-- mage tower props
+Interior/exterior verdict:
 
-Use as:
-
-- a locked gate
-- a ruined wall line
-- a crystal-law checkpoint
-- a story threshold, not a full explorable castle.
+- **Exterior:** feasible as threshold only.
+- **Interior:** weak; use dungeon/ruin interiors rather than full castle rooms.
 
 ### 3. Drowned Sanctuary
 
@@ -524,11 +463,10 @@ Feasible as a blend of:
 - cursed land
 - undead tiles
 
-Good for:
+Interior/exterior verdict:
 
-- Mistfall Chapel lower floors
-- Wraith of the Drowned Gate
-- flooded shrine rooms
+- **Exterior:** moderate as drowned chapel or cursed grounds.
+- **Interior:** strong as flooded underchapel / sewer-sanctuary / cursed crypt.
 
 ### 4. Monster Dens
 
@@ -540,7 +478,10 @@ Feasible using:
 - dungeon/occult kits
 - local monster families
 
-Best as small one-screen or few-screen spaces, not giant organic lairs yet.
+Interior/exterior verdict:
+
+- **Exterior:** feasible for forest/cursed-land dens.
+- **Interior:** strong for cave/dungeon dens.
 
 ### 5. Ritual Archive / Forbidden Library
 
@@ -552,11 +493,10 @@ Feasible using:
 - dungeon props
 - chapel / occult pieces
 
-Good for:
+Interior/exterior verdict:
 
-- map decoding
-- Crystal Court law
-- Tenebrio forbidden rite scenes
+- **Exterior:** weak-to-moderate as tower/annex/guild frontage.
+- **Interior:** moderate-to-strong.
 
 ---
 
@@ -600,18 +540,6 @@ Defer:
 
 Do not make these first-region pillars unless new packs are added or existing assets are reclassified to support them.
 
-Allowed now:
-
-- forest
-- glade
-- road
-- cave
-- sewer
-- cursed land
-- ruins
-- chapel
-- town/guild spaces
-
 ### 4. High-Tech Facilities
 
 The current art language is occult, guild, medieval-fantasy, shrine, cave, dungeon, town, and workshop. Avoid sci-fi labs or modern facilities unless the art set expands.
@@ -622,136 +550,15 @@ The current art language is occult, guild, medieval-fantasy, shrine, cave, dunge
 
 The first region should be **The Pilgrim Verge**, built only from Tier A and simple Tier B areas.
 
-## Region Hub
-
-### Greybell Shrine
-
-Type:
-
-- shrine-town hub
-
-Area ingredients:
-
-- chapel support
-- road/path tiles
-- guild notice board implied through guild hall support
-- market/town NPCs
-
-Gameplay:
-
-- spawn
-- shrine rite tutorial
-- map board
-- guild project board
-
-## Exterior Route
-
-### The Broken Road
-
-Type:
-
-- road / forest approach
-
-Area ingredients:
-
-- path tiles
-- grassland
-- rocks
-- trees
-- bushes
-- bridges
-
-Gameplay:
-
-- first route exploration
-- route instability events
-- hidden entrance markers
-
-## Tenebrio Area
-
-### Mistfall Chapel
-
-Type:
-
-- cursed chapel / shrine ruin
-
-Area ingredients:
-
-- chapel
-- cursed land
-- undead land
-- ruins
-- priest/monk support where needed
-
-Gameplay:
-
-- map fragment discovery
-- disguise rite
-- hidden room
-
-## Luciphilus Area
-
-### The Chapel Undercrypt
-
-Type:
-
-- dungeon / cave / cursed ruin
-
-Area ingredients:
-
-- dungeon tiles
-- cave tiles
-- undead/cursed props
-- traps
-- magic book / occult effects
-
-Gameplay:
-
-- boss route
-- Wraith encounter
-- crystal shard recovery
-
-## Opiphilus Area
-
-### The Guild Hearth
-
-Type:
-
-- guild hall + blacksmith / workshop
-
-Area ingredients:
-
-- guild hall
-- blacksmith
-- herbalist
-- glassblower
-- market support
-
-Gameplay:
-
-- craft Road Lantern
-- repair bell housing
-- contribute materials to guild project
-
-## Region Gate
-
-### The Old Crystal Gate
-
-Type:
-
-- composed court gate / ruin threshold
-
-Area ingredients:
-
-- ruins
-- dungeon props
-- mage tower / crystal-law flavor
-- chapel/gate framing
-
-Gameplay:
-
-- first-region completion gate
-- unlock to later region
+| Area | Type | Interior / Exterior Plan |
+|---|---|---|
+| **Greybell Shrine** | shrine-town hub | exterior plaza + small shrine/chapel interior |
+| **The Broken Road** | road / forest approach | exterior-only route screen |
+| **Mistfall Chapel** | cursed chapel / shrine ruin | exterior cursed chapel approach + small interior aisle / underchapel |
+| **The Underwell** | sewer / cave under-route | small exterior entry point + strong interior sewer/cave route |
+| **The Chapel Undercrypt** | dungeon / cave / cursed ruin | interior-first dungeon rooms and boss threshold |
+| **The Guild Hearth** | guild hall + blacksmith / workshop | interior-strong guild/workshop with optional town frontage |
+| **The Old Crystal Gate** | composed court gate / ruin threshold | exterior threshold first; interior court archive later if needed |
 
 ---
 
@@ -770,13 +577,13 @@ Use area names and worldbuilding that fit the available art:
 
 The current `world_builder` system already thinks in curated environment kits:
 
-| Builder Environment Kit | Use In Story |
-|---|---|
-| `road_shrine` | shrine approach, road threshold, Greybell Shrine exterior |
-| `forest_glade` | ritual grove, forest road, hidden route |
-| `cave_sewer` | Underwell, cave room, sewer threshold |
-| `cursed_chapel` | Mistfall Chapel, shrine ruin, undead threshold |
-| `town_guild` | Guild Hearth, workshop, market, service interior |
+| Builder Environment Kit | Use In Story | Interior / Exterior Bias |
+|---|---|---|
+| `road_shrine` | shrine approach, road threshold, Greybell Shrine exterior | exterior-first |
+| `forest_glade` | ritual grove, forest road, hidden route | exterior-first |
+| `cave_sewer` | Underwell, cave room, sewer threshold | interior-first, with threshold support |
+| `cursed_chapel` | Mistfall Chapel, shrine ruin, undead threshold | mixed interior/exterior |
+| `town_guild` | Guild Hearth, workshop, market, service interior | interior/service-first with town frontage support |
 
 Early development should use these kits before expanding into the full art library.
 
@@ -784,8 +591,39 @@ Early development should use these kits before expanding into the full art libra
 
 # Bottom Line
 
-The current artwork supports a very coherent first game world:
+The current artwork supports **both inside and outside** for some area families, but not all.
 
-> **A compact 1-bit occult JRPG region made of shrine towns, broken roads, forests, caves, sewers, cursed chapels, occult dungeons, guild halls, workshops, markets, taverns, mage towers, and small dock/village edges.**
+Strongest full indoor/outdoor candidates:
 
-The world should not start with castles. It should start with **shrines, roads, guilds, chapels, underways, and ruins**. That is where the current art is strongest.
+- cursed chapel / shrine ruin,
+- guild hall / workshop,
+- blacksmith,
+- tavern/home/shop scenes,
+- fishing village / dock edges,
+- composed Crystal Court outpost.
+
+Strong interior-first candidates:
+
+- caves,
+- sewers,
+- dungeons,
+- undercrypts,
+- ritual archives,
+- occult ruins.
+
+Strong exterior-first candidates:
+
+- roads,
+- crossroads,
+- forests,
+- glades,
+- camp edges,
+- training yards.
+
+The first region should therefore use **outside-to-inside transitions** like:
+
+- road → shrine plaza → chapel interior,
+- town square → well hatch → sewer interior,
+- forest path → cave mouth → cave interior,
+- chapel ruin → undercrypt dungeon,
+- market street → guild hall / workshop interior.
