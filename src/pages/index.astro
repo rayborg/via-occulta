@@ -1,14 +1,26 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ShowcaseCard from '../components/ShowcaseCard.astro';
-import SpriteStrip from '../components/SpriteStrip.astro';
+import SpriteImage from '../components/SpriteImage.astro';
 import { homepageFeaturedCharacters, homepageFeaturedMonsters } from '../data/showcase';
 import type { FlatEntry, ShowcasePage } from '../data/showcase';
 import { withBase } from '../paths';
 
+type HeroFigure = {
+  entry: FlatEntry;
+  role: string;
+  scale: 2 | 3;
+  weight: 'anchor' | 'small' | 'normal';
+};
+
 function requirePage(page: ShowcasePage | undefined, label: string): ShowcasePage {
   if (!page) throw new Error(`Missing homepage showcase page: ${label}`);
   return page;
+}
+
+function requireEntry(entry: FlatEntry | undefined, label: string): FlatEntry {
+  if (!entry) throw new Error(`Missing homepage showcase entry: ${label}`);
+  return entry;
 }
 
 const swordsmanPage = requirePage(homepageFeaturedCharacters.find((page) => page.slug === 'swordsman') ?? homepageFeaturedCharacters[0], 'swordsman');
@@ -16,36 +28,104 @@ const guildMagePage = requirePage(homepageFeaturedCharacters.find((page) => page
 const blacksmithPage = requirePage(homepageFeaturedCharacters.find((page) => page.slug === 'blacksmith') ?? homepageFeaturedCharacters[2], 'blacksmith');
 const goblinPage = requirePage(homepageFeaturedMonsters.find((page) => page.slug === 'goblin') ?? homepageFeaturedMonsters[0], 'goblin');
 const ghostPage = requirePage(homepageFeaturedMonsters.find((page) => page.slug === 'ghost') ?? homepageFeaturedMonsters[1], 'ghost');
-const heroEntries: FlatEntry[] = [
-  swordsmanPage.entries[swordsmanPage.entries.length - 1],
-  guildMagePage.entries[0],
-  blacksmithPage.entries[0],
-  goblinPage.entries[2] ?? goblinPage.entries[0],
-  ghostPage.entries[1] ?? ghostPage.entries[0]
-].filter((entry): entry is FlatEntry => Boolean(entry));
+const heroFigures: HeroFigure[] = [
+  {
+    entry: requireEntry(swordsmanPage.entries[swordsmanPage.entries.length - 1], 'swordsman veteran'),
+    role: 'Lantern Company',
+    scale: 2,
+    weight: 'anchor'
+  },
+  {
+    entry: requireEntry(guildMagePage.entries[0], 'guild mage'),
+    role: 'Rite worker',
+    scale: 2,
+    weight: 'normal'
+  },
+  {
+    entry: requireEntry(goblinPage.entries[2] ?? goblinPage.entries[0], 'road-bound goblin'),
+    role: 'Road-bound',
+    scale: 3,
+    weight: 'small'
+  },
+  {
+    entry: requireEntry(ghostPage.entries[1] ?? ghostPage.entries[0], 'Mistfall ghost'),
+    role: 'Local dead',
+    scale: 2,
+    weight: 'small'
+  },
+  {
+    entry: requireEntry(blacksmithPage.entries[0], 'blacksmith'),
+    role: 'Bell repair',
+    scale: 2,
+    weight: 'normal'
+  }
+];
 const featuredDossiers = [swordsmanPage, guildMagePage, ghostPage];
+
+const openingBeats = [
+  {
+    step: '01',
+    title: 'The Bell Falls Silent',
+    copy: 'Greybell Shrine still swings its road-bell, but no sound comes out. Every mapped road beyond town becomes unreliable.'
+  },
+  {
+    step: '02',
+    title: 'Mistfall Reveals A Room',
+    copy: 'A Tenebrio shriner enters the cursed chapel and recovers a map fragment from a room that only appears under disguise.'
+  },
+  {
+    step: '03',
+    title: 'The Undercrypt Answers',
+    copy: 'Luciphilus carries the fragment into the chapel undercrypt and clears the Wraith of the Drowned Gate.'
+  },
+  {
+    step: '04',
+    title: 'The Road Lantern Is Made',
+    copy: 'Opiphilus repairs the bell housing with ghost silk, iron, lantern glass, and crystal dust. The Old Crystal Gate is revealed.'
+  }
+];
 ---
 
 <BaseLayout title="Via Occulta | A 1-bit occult shared-world JRPG">
   <section class="hero">
     <div class="shell hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">1-bit occult JRPG</p>
-        <h1>Find the road. Survive what guards it. Bring it home.</h1>
+        <p class="eyebrow">1-bit occult shared-world JRPG</p>
+        <h1>The old roads have vanished from the maps.</h1>
         <p class="lede">
-          Via Occulta is a calm, dark-fantasy world of shrine bells, hidden routes, dungeon expeditions,
-          guild labor, and towns trying to remember how travel used to work.
+          Via Occulta is a tile-based dark-fantasy JRPG about hidden sacred roads, failing shrine rites,
+          dungeon expeditions, and guild workers rebuilding the infrastructure that lets towns survive.
         </p>
         <div class="hero-actions" aria-label="Primary paths">
           <a class="button button--primary" href={withBase('/world')}>Enter the world</a>
           <a class="button" href={withBase('/games')}>See the game loop</a>
         </div>
       </div>
-      <aside class="hero-window panel" aria-label="Road-bound figures preview">
-        <SpriteStrip entries={heroEntries} scale={3} label="Road-bound figures preview" density="hero" loading="eager" showLabels={false} />
+      <aside class="hero-window route-window panel" aria-label="Road-bound field report">
+        <div class="route-window__map">
+          <p class="eyebrow">Greybell road report</p>
+          <h2>The bell still swings. No sound comes out.</h2>
+          <p>
+            The Viae Occultae once opened through shrines, caves, drowned chapels, forest gates,
+            market doors, guild cellars, and remembered names. Now the map is being quietly rerouted.
+          </p>
+          <ul class="route-cues" aria-label="Current signs of collapse">
+            <li>Wells open into catacombs</li>
+            <li>Chapel doors lead to wrong rooms</li>
+            <li>Monsters wear local dead shapes</li>
+          </ul>
+        </div>
+        <div class="sprite-tableau" role="list" aria-label="Via Occulta field figures">
+          {heroFigures.map((figure) => (
+            <figure role="listitem" data-weight={figure.weight}>
+              <SpriteImage entry={figure.entry} scale={figure.scale} loading="eager" />
+              <figcaption>{figure.role}</figcaption>
+            </figure>
+          ))}
+        </div>
         <div class="status-grid">
-          <div><span>Mode</span><strong>Overhead JRPG</strong></div>
-          <div><span>Palette</span><strong>1-bit Monochrome</strong></div>
+          <div><span>Format</span><strong>Overhead JRPG</strong></div>
+          <div><span>Pressure</span><strong>Rerouted World</strong></div>
           <div><span>Loop</span><strong>Find / Fight / Rebuild</strong></div>
         </div>
       </aside>
@@ -58,14 +138,14 @@ const featuredDossiers = [swordsmanPage, guildMagePage, ghostPage];
       <h2>The old roads no longer obey the rites.</h2>
       <div class="three-up">
         <article class="info-card panel">
-          <h3>The Viae Occultae</h3>
+          <h3>A Living Road Network</h3>
           <p>
-            The hidden roads once linked shrines, caves, chapels, guild cellars, market doors, and
-            sealed underways through a compact of rites, crystals, charters, and remembered names.
+            The Viae Occultae were built from oaths, crystals, ritual locks, guild charters, crafted
+            keys, road lanterns, and monster-bound disguises. A road can be a place, a rite, or a repair.
           </p>
         </article>
         <article class="info-card panel">
-          <h3>The Quiet Collapse</h3>
+          <h3>A Quiet Rerouting</h3>
           <p>
             The world is not ending in a single blaze. Its routes are being quietly rewritten.
             Towns wake to find wells opening into catacombs and chapel doors leading to rooms that
@@ -73,10 +153,10 @@ const featuredDossiers = [swordsmanPage, guildMagePage, ghostPage];
           </p>
         </article>
         <article class="info-card panel">
-          <h3>The Work Ahead</h3>
+          <h3>A Cursed Pilgrimage</h3>
           <p>
-            Tenebrio finds the road, Luciphilus survives what guards it, and Opiphilus turns the
-            recovered fragments into something a town can use again.
+            The fantasy is not chosen-one conquest. It is to find the hidden road, survive what guards
+            it, bring back proof, and help the town remember how to use it.
           </p>
         </article>
       </div>
@@ -107,24 +187,19 @@ const featuredDossiers = [swordsmanPage, guildMagePage, ghostPage];
   </section>
 
   <section class="section">
-    <div class="shell split">
-      <div class="summary-panel panel">
-        <p class="eyebrow">First region</p>
-        <h3>The Pilgrim Verge</h3>
-        <p>
-          A compact shrine-town frontier: Greybell Shrine, The Broken Road, Mistfall Chapel, The
-          Underwell, The Chapel Undercrypt, The Guild Hearth, and The Old Crystal Gate.
-        </p>
+    <div class="shell">
+      <p class="eyebrow">Opening chapter</p>
+      <h2>The Bell That Forgot the Road.</h2>
+      <div class="chapter-flow">
+        {openingBeats.map((beat) => (
+          <article class="chapter-step panel" data-step={beat.step}>
+            <h3>{beat.title}</h3>
+            <p>{beat.copy}</p>
+          </article>
+        ))}
       </div>
-      <div class="prose">
-        <p>
-          The opening arc, <strong>The Bell That Forgot the Road</strong>, begins with a shrine bell
-          falling silent. Roads beyond town become unreliable, a hidden route is found, a threat is
-          cleared, and the guild rebuilds the object that lets the town remember how to travel.
-        </p>
-        <div class="link-row">
-          <a class="text-link" href={withBase('/world/the-pilgrim-verge')}>Visit The Pilgrim Verge</a>
-        </div>
+      <div class="link-row">
+        <a class="text-link" href={withBase('/world/the-pilgrim-verge')}>Visit The Pilgrim Verge</a>
       </div>
     </div>
   </section>

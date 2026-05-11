@@ -1,5 +1,36 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const gameLines = [
+  {
+    name: 'Tenebrio',
+    kicker: 'Shriner exploration',
+    role: 'Discovery, mapping, shrine rites, hidden routes, disguise, and transformation.',
+    fantasy: 'You are weak, but you know the rites.',
+    contributes: ['Map fragments', 'Shrine keys', 'Monster-form knowledge', 'Occult warnings', 'Route unlocks']
+  },
+  {
+    name: 'Luciphilus',
+    kicker: 'Adventurer RPG',
+    role: 'Dungeon expeditions, battle-screen pressure, relic recovery, monsters, and crystal-era conflict.',
+    fantasy: 'You carry the light into the road after someone else has found it.',
+    contributes: ['Cleared routes', 'Boss relics', 'Monster parts', 'Recovered weapons', 'Proof an area can be rebuilt']
+  },
+  {
+    name: 'Opiphilus',
+    kicker: 'Crafter and guild work',
+    role: 'Workshops, town interiors, trade orders, ritual support, repairs, and restoration projects.',
+    fantasy: 'You make the tools that let the town endure the abyss.',
+    contributes: ['Road lanterns', 'Shrine repair kits', 'Guild orders', 'Town upgrades', 'Market circulation']
+  }
+];
+
+const handoff = [
+  'Tenebrio maps the changed route beneath Mistfall Chapel.',
+  'Luciphilus clears the Wraith of the Drowned Gate in the Chapel Undercrypt.',
+  'Opiphilus restores the Guild Hearth forge and repairs the shrine bell casing.',
+  'Greybell reopens the Old Crystal Gate and the next region becomes reachable.'
+];
 ---
 
 <BaseLayout
@@ -8,11 +39,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 >
   <section class="page-hero">
     <div class="shell">
-      <p class="eyebrow">Game lines</p>
-      <h1>One hidden-road world, played through three kinds of work.</h1>
+      <p class="eyebrow">Three linked game lines</p>
+      <h1>Discovery, battle, and craft share one wounded map.</h1>
       <p>
-        Via Occulta uses classic overhead exploration for towns, shrines, roads, caves, ruins,
-        interiors, and dungeons, with battle-screen combat where the expedition becomes dangerous.
+        Via Occulta is not one generic online role with different skins. Tenebrio, Luciphilus, and
+        Opiphilus are distinct ways of serving the same hidden-road world: find what vanished, survive
+        what guards it, and rebuild the civic systems that keep it open.
       </p>
       <div class="pill-row">
         <span class="pill">Tenebrio discovers</span>
@@ -26,40 +58,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="shell">
       <p class="eyebrow">Playable lenses</p>
       <h2>The world changes when each role completes its part.</h2>
-      <div class="three-up">
-        <article class="info-card panel">
-          <h3>Tenebrio</h3>
-          <p>
-            A weak shriner exploration game about forbidden routes, shrine rites, disguise, mapping, and monster transformation.
-          </p>
-          <ul>
-            <li>Finds hidden routes and map fragments</li>
-            <li>Reads shrine locks, names, and warnings</li>
-            <li>Survives by knowledge instead of force</li>
-          </ul>
-        </article>
-        <article class="info-card panel">
-          <h3>Luciphilus</h3>
-          <p>
-            The main adventurer RPG line: dungeon expeditions, monster fights, relic recovery, and crystal-era conflict.
-          </p>
-          <ul>
-            <li>Clears threats inside revealed routes</li>
-            <li>Recovers relics, monster parts, and crystals</li>
-            <li>Carries combat pressure into battle screens</li>
-          </ul>
-        </article>
-        <article class="info-card panel">
-          <h3>Opiphilus</h3>
-          <p>
-            A crafter and guild game about workshops, town interiors, trade orders, ritual support, and world restoration.
-          </p>
-          <ul>
-            <li>Builds tools that keep routes usable</li>
-            <li>Repairs shrines, workshops, and town systems</li>
-            <li>Turns dangerous discoveries into civilization</li>
-          </ul>
-        </article>
+      <div class="role-grid">
+        {gameLines.map((line) => (
+          <article class="role-card panel">
+            <p class="card-kicker">{line.kicker}</p>
+            <h3>{line.name}</h3>
+            <p>{line.role}</p>
+            <p class="role-card__quote">{line.fantasy}</p>
+            <h4>Contributes</h4>
+            <ul>
+              {line.contributes.map((item) => <li>{item}</li>)}
+            </ul>
+          </article>
+        ))}
       </div>
     </div>
   </section>
@@ -90,30 +101,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <section class="section">
     <div class="shell">
-      <p class="eyebrow">Opening chapter</p>
-      <h2>A compact shrine-town arc with a complete handoff.</h2>
-      <div class="three-up">
-        <article class="info-card panel">
-          <h3>Readable Maps</h3>
-          <p>
-            The journey begins with a shrine-town hub, a road or forest approach, and a cave,
-            chapel, or ruin entrance that teaches how routes fail.
-          </p>
-        </article>
-        <article class="info-card panel">
-          <h3>Small Dungeon</h3>
-          <p>
-            A compact dungeon turn carries the Luciphilus handoff: a discovered route becomes a
-            cleared threat, not an unbounded open world.
-          </p>
-        </article>
-        <article class="info-card panel">
-          <h3>Guild Repair</h3>
-          <p>
-            A workshop or guild contribution converts recovered material into a restored object,
-            road tool, or route unlock.
-          </p>
-        </article>
+      <p class="eyebrow">Opening handoff</p>
+      <h2>The first chapter proves the whole shared-world promise.</h2>
+      <div class="chapter-flow">
+        {handoff.map((step, index) => (
+          <article class="chapter-step panel" data-step={`0${index + 1}`}>
+            <h3>{index === 0 ? 'Rite' : index === 1 ? 'Expedition' : index === 2 ? 'Repair' : 'Unlock'}</h3>
+            <p>{step}</p>
+          </article>
+        ))}
       </div>
     </div>
   </section>

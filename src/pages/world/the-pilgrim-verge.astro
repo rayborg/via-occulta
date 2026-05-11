@@ -6,38 +6,46 @@ const areas = [
   {
     name: 'Greybell Shrine',
     type: 'Shrine-town hub',
-    copy: 'The starting hub: a road-bell plaza, chapel edge, market threshold, guild notice board, and first route entrance.'
+    copy: 'A road-bell plaza where the shrine still swings its bell without sound. Pilgrims gather here because every road beyond town has become suspect.'
   },
   {
     name: 'The Broken Road',
     type: 'Road and forest approach',
-    copy: 'A readable overworld route of path, grassland, rocks, trees, bridges, and suspicious crossings where the map begins to fail.'
+    copy: 'A path of grass, stones, black trees, bridges, and white fog. It teaches the first rule of the Verge: a mapped road can still betray you.'
   },
   {
     name: 'Mistfall Chapel',
     type: 'Cursed chapel and shrine ruin',
-    copy: 'The first major shrine failure: undead pressure, corrupted rites, ruined chapel space, and the first hidden-road proof.'
+    copy: 'A drowned chapel ruin where a hidden room appears only to the correctly disguised. Its map fragment proves the old routes are changing.'
   },
   {
     name: 'The Underwell',
     type: 'Sewer, cave, and under-town route',
-    copy: 'A damp under-route where town infrastructure, occult passage, vermin, and low-level monster ecology cross over.'
+    copy: 'A damp under-town channel where wells, sewers, cave stone, vermin, alchemy, and old roadwork cross beneath Greybell.'
   },
   {
     name: 'The Chapel Undercrypt',
     type: 'Occult dungeon',
-    copy: 'A compact dungeon layer of traps, cursed props, grave-road logic, and the first serious Luciphilus clearance objective.'
+    copy: 'The grave-road below Mistfall: traps, cursed props, crystal locks, and the Wraith of the Drowned Gate waiting behind the recovered route.'
   },
   {
     name: 'The Guild Hearth',
     type: 'Guild hall and workshop cluster',
-    copy: 'The Opiphilus center: blacksmith work, herbalist remedies, glass, orders, repairs, and the social proof that restoration is labor.'
+    copy: 'Forge, herbalist bench, glasswork, ledgers, and order boards. Here ghost silk, iron, lantern glass, and crystal dust become a Road Lantern.'
   },
   {
     name: 'The Old Crystal Gate',
     type: 'Ruin threshold',
-    copy: 'A composed court-gate ruin where crystal-law, sealed archives, and old road authority meet.'
+    copy: 'A ruined court threshold of crystal-law inscriptions and sealed authority. When the bell rings once, the gate becomes visible again.'
   }
+];
+
+const arcSteps = [
+  'Greybell Shrine stops ringing, and every charted route beyond town becomes unreliable.',
+  'Tenebrio enters Mistfall Chapel in a road-bound disguise and recovers the changed map fragment.',
+  'Luciphilus carries the fragment into the Chapel Undercrypt and defeats the Wraith of the Drowned Gate.',
+  'Opiphilus repairs the bell housing and crafts the first Road Lantern at the Guild Hearth.',
+  'The bell rings once. The Broken Road steadies long enough to reveal the Old Crystal Gate.'
 ];
 ---
 
@@ -51,8 +59,9 @@ const areas = [
       <p class="eyebrow">First region</p>
       <h1>The Pilgrim Verge</h1>
       <p>
-        The Pilgrim Verge is a compact shrine-town frontier of roads, guild halls, caves, sewers,
-        cursed chapels, ruins, workshops, markets, taverns, and occult dungeons.
+        The Pilgrim Verge is the first cursed pilgrimage route: a shrine-town frontier of road bells,
+        chapel ruins, under-town channels, guild workshops, market thresholds, and one old Crystal Court
+        gate that should have stayed sealed.
       </p>
       <div class="pill-row">
         <span class="pill">Greybell Shrine</span>
@@ -69,20 +78,19 @@ const areas = [
         <p class="eyebrow">Opening arc</p>
         <h3>The Bell That Forgot the Road</h3>
         <ul>
-          <li>A shrine bell stops ringing.</li>
-          <li>The roads beyond town become unreliable.</li>
-          <li>A Tenebrio shriner finds the hidden route.</li>
-          <li>A Luciphilus adventurer clears what guards it.</li>
-          <li>An Opiphilus guild worker rebuilds the object that lets the town travel again.</li>
+          {arcSteps.map((step) => <li>{step}</li>)}
         </ul>
       </div>
       <div class="prose">
         <p>
-          The Pilgrim Verge stays close to the shrine-town frontier: a place of old bells, failed
-          crossings, practical guild work, and the first thresholds that ask to be repaired.
+          The Verge stays close to local life: a place of old bells, failed crossings, practical guild
+          work, and thresholds that do not open because the player is chosen. They open because rites,
+          proof, materials, and labor line up again.
         </p>
         <p>
-          The region still feels complete because Via Occulta is not about scale first. It is about route failure, local institutions, hidden infrastructure, and the recovery of a world one shrine, workshop, and threshold at a time.
+          The region feels complete because Via Occulta is not about size first. It is about route
+          failure, local institutions, hidden infrastructure, and the recovery of a world one shrine,
+          workshop, and threshold at a time.
         </p>
       </div>
     </div>

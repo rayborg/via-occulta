@@ -2,13 +2,17 @@
 import type { FlatEntry } from '../data/showcase';
 import SpriteStrip from './SpriteStrip.astro';
 
+type SpriteScale = 2 | 3 | 4;
+
 type Props = {
   entries: FlatEntry[];
+  label?: string;
+  scale?: SpriteScale;
 };
 
-const { entries } = Astro.props;
+const { entries, label = 'Recorded profiles', scale = 3 } = Astro.props;
 ---
 
 <div class="variant-grid">
-  <SpriteStrip entries={entries} scale={3} label="Grouped forms" />
+  <SpriteStrip entries={entries} scale={scale} label={label} rhythm="subtle" />
 </div>

@@ -17,13 +17,16 @@ export function getStaticPaths() {
 }
 
 const { page } = Astro.props;
+const primaryThread = page.tags[0] ?? 'Road-Bound';
+const largestNativeEdge = Math.max(...page.entries.map((entry) => Math.max(entry.width, entry.height)));
+const galleryScale: 2 | 3 = largestNativeEdge > 56 ? 2 : 3;
 ---
 
 <BaseLayout title={`${page.title} | Via Occulta Monsters`} description={page.summary}>
   <section class="page-hero">
     <div class="shell">
       <a class="breadcrumb" href={withBase('/monsters')}>Monsters</a>
-      <p class="eyebrow">Monster family</p>
+      <p class="eyebrow">Bestiary dossier</p>
       <h1>{page.title}</h1>
       <p>{page.summary}</p>
       <div class="tag-row">
@@ -32,28 +35,38 @@ const { page } = Astro.props;
     </div>
   </section>
 
-  <section class="section">
-    <div class="shell split">
-      <div class="summary-panel panel">
-        <p class="eyebrow">Dossier</p>
-        <h3>How this threat reads</h3>
-        <ul>
-          <li>{page.entries.length} {page.entries.length === 1 ? 'form' : 'forms'} gathered here</li>
-          <li>Primary thread: {page.tags[0]}</li>
-          <li>Role: road-bound pressure or dungeon threat</li>
-        </ul>
-      </div>
-      <div class="prose">
+  <section class="section section-tight">
+    <div class="shell dossier-layout">
+      <article class="dossier-copy panel">
+        <p class="eyebrow">Bestiary reading</p>
+        <h2>{page.title} pressure in the hidden-road collapse</h2>
         {page.description.map((paragraph) => <p>{paragraph}</p>)}
-      </div>
+      </article>
+      <aside class="dossier-facts panel" aria-label={`${page.title} threat notes`}>
+        <p class="eyebrow">Threat notes</p>
+        <dl>
+          <div>
+            <dt>Primary sign</dt>
+            <dd>{primaryThread}</dd>
+          </div>
+          <div>
+            <dt>Encounter role</dt>
+            <dd>Road-bound pressure, dungeon ecology, or proof that a route has failed.</dd>
+          </div>
+          <div>
+            <dt>Sightings logged</dt>
+            <dd>{page.entries.length}</dd>
+          </div>
+        </dl>
+      </aside>
     </div>
   </section>
 
   <section class="section">
     <div class="shell">
-      <p class="eyebrow">Form study</p>
-      <h2>Grouped forms</h2>
-      <VariantGrid entries={page.entries} />
+      <p class="eyebrow">Observed sightings</p>
+      <h2>Field silhouettes</h2>
+      <VariantGrid entries={page.entries} label={`${page.title} bestiary sightings`} scale={galleryScale} />
     </div>
   </section>
 </BaseLayout>

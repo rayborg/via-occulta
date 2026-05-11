@@ -11,6 +11,7 @@ type Props = {
   density?: 'compact' | 'regular' | 'hero';
   loading?: 'eager' | 'lazy';
   showLabels?: boolean;
+  rhythm?: 'none' | 'subtle';
 };
 
 const {
@@ -19,13 +20,14 @@ const {
   label = 'Sprite lineup',
   density = 'regular',
   loading = 'lazy',
-  showLabels = true
+  showLabels = true,
+  rhythm = 'none'
 } = Astro.props;
 ---
 
 <div class:list={["sprite-strip", `sprite-strip--${density}`]} role="list" aria-label={label} data-scale={`${scale}x`}>
-  {entries.map((entry) => (
-    <figure class="sprite-strip__slot" role="listitem">
+  {entries.map((entry, index) => (
+    <figure class="sprite-strip__slot" role="listitem" data-cadence={rhythm === 'subtle' ? index % 4 : undefined}>
       <div class="sprite-strip__stage">
         <SpriteImage entry={entry} scale={scale} loading={loading} />
       </div>
