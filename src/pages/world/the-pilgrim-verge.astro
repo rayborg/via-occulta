@@ -6,37 +6,44 @@ const areas = [
   {
     name: 'Greybell Shrine',
     type: 'Shrine-town hub',
-    copy: 'A road-bell plaza where the shrine still swings its bell without sound. Pilgrims gather here because every road beyond town has become suspect.'
+    copy: 'A road-bell plaza where the shrine still swings its bell without sound. Pilgrims gather here because every road beyond town has become suspect.',
+    play: 'Spawn, inspect the silent bell, learn the first shrine rite, read the map board, and post materials to the guild project.'
   },
   {
     name: 'The Broken Road',
     type: 'Road and forest approach',
-    copy: 'A path of grass, stones, black trees, bridges, and white fog. It teaches the first rule of the Verge: a mapped road can still betray you.'
+    copy: 'A path of grass, stones, black trees, bridges, and white fog. It teaches the first rule of the Verge: a mapped road can still betray you.',
+    play: 'Watch bridges fail into fog, find hidden entrance markers, and face the first Road-Bound pressure outside town.'
   },
   {
     name: 'Mistfall Chapel',
     type: 'Cursed chapel and shrine ruin',
-    copy: 'A drowned chapel ruin where a hidden room appears only to the correctly disguised. Its map fragment proves the old routes are changing.'
+    copy: 'A drowned chapel ruin where a hidden room appears only to the correctly disguised. Its map fragment proves the old routes are changing.',
+    play: 'Use a Road-Bound-dead disguise to reveal the hidden room and recover the changed map fragment.'
   },
   {
     name: 'The Underwell',
     type: 'Sewer, cave, and under-town route',
-    copy: 'A damp under-town channel where wells, sewers, cave stone, vermin, alchemy, and old roadwork cross beneath Greybell.'
+    copy: 'A damp under-town channel where wells, sewers, cave stone, vermin, alchemy, and old roadwork cross beneath Greybell.',
+    play: 'Solve the tunnel route, gather crystal dust, and learn how low monsters nest inside civic infrastructure.'
   },
   {
     name: 'The Chapel Undercrypt',
     type: 'Occult dungeon',
-    copy: 'The grave-road below Mistfall: traps, cursed props, crystal locks, and the Wraith of the Drowned Gate waiting behind the recovered route.'
+    copy: 'The grave-road below Mistfall: traps, cursed props, crystal locks, and the Wraith of the Drowned Gate waiting behind the recovered route.',
+    play: 'Carry the fragment into a combat route, survive traps and locks, defeat the Wraith, and bring back the relic proof.'
   },
   {
     name: 'The Guild Hearth',
     type: 'Guild hall and workshop cluster',
-    copy: 'Forge, herbalist bench, glasswork, ledgers, and order boards. Here ghost silk, iron, lantern glass, and crystal dust become a Road Lantern.'
+    copy: 'Forge, herbalist bench, glasswork, ledgers, and order boards. Here ghost silk, iron, lantern glass, and crystal dust become a Road Lantern.',
+    play: 'Craft the Road Lantern, repair the bell housing, and turn dungeon salvage into a town upgrade.'
   },
   {
     name: 'The Old Crystal Gate',
     type: 'Ruin threshold',
-    copy: 'A ruined court threshold of crystal-law inscriptions and sealed authority. When the bell rings once, the gate becomes visible again.'
+    copy: 'A ruined court threshold of crystal-law inscriptions and sealed authority. When the bell rings once, the gate becomes visible again.',
+    play: 'Use the bell ring, road charter, or remembered name to prove the route and unlock the next region.'
   }
 ];
 
@@ -106,6 +113,7 @@ const arcSteps = [
             <p class="card-kicker">{area.type}</p>
             <h3>{area.name}</h3>
             <p>{area.copy}</p>
+            <p class="play-beat"><strong>Player work:</strong> {area.play}</p>
           </article>
         ))}
       </div>

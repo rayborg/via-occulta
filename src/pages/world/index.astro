@@ -19,6 +19,38 @@ const collapseSigns = [
     copy: 'Monsters appear from inside the network itself, wearing the shapes of local spirits, failed guardians, and forgotten dead.'
   }
 ];
+
+const compactForces = [
+  {
+    name: 'The Shrine Orders',
+    copy: 'Keepers of rites, road prayers, bells, names, and disguise customs. Their knowledge opens paths, but many rites are now incomplete.'
+  },
+  {
+    name: 'The Guild Houses',
+    copy: 'Maintainers of exchange, workshops, charters, tools, and road infrastructure. They make dangerous discoveries usable.'
+  },
+  {
+    name: 'The Lantern Companies',
+    copy: 'Expedition parties that enter revealed routes, clear threats, recover relics, and prove a path can be survived.'
+  },
+  {
+    name: 'The Crystal Courts',
+    copy: 'Boundary keepers represented early by gates, archives, checkpoints, inscriptions, sealed thresholds, and court relics.'
+  },
+  {
+    name: 'The Road-Bound',
+    copy: 'Hostile, territorial, or displaced beings trapped inside the Viae Occultae: guardians, local dead, cursed citizens, and lost names.'
+  }
+];
+
+const keyObjects = [
+  ['Map Fragments', 'Partial records of roads that can be drawn, sung, or encoded in shrine geometry.'],
+  ['Shrine Keys', 'Ritual objects that open paths only in the correct place, form, or phase.'],
+  ['Road Charters', 'Guild documents that authorize restored travel legally and magically.'],
+  ['Crystal Shards', 'Old boundary fragments that power locks, repairs, spells, and danger.'],
+  ['Lantern Glass', 'Crafted vessels and lenses used to make route lanterns.'],
+  ['Disguise Rites', 'Tenebrio rites that change who the road believes is standing there.']
+];
 ---
 
 <BaseLayout
@@ -53,7 +85,7 @@ const collapseSigns = [
           <li>Trade routes break without warning.</li>
           <li>Wells open into catacombs.</li>
           <li>Chapel doors lead to rooms that should not exist.</li>
-          <li>Monsters appear from inside the road-network itself.</li>
+          <li>Road-Bound dead, guardians, and displaced citizens appear from inside the network itself.</li>
         </ul>
       </div>
       <div class="prose">
@@ -85,26 +117,29 @@ const collapseSigns = [
   <section class="section">
     <div class="shell">
       <p class="eyebrow">The failed compact</p>
-      <h2>Three powers once kept the hidden roads stable.</h2>
-      <div class="three-up">
-        <article class="info-card panel">
-          <h3>The Shrine Orders</h3>
-          <p>
-            Keepers of old rites, road prayers, names, bells, and threshold customs. Their knowledge opens paths, but many of their rites are incomplete or corrupted.
-          </p>
-        </article>
-        <article class="info-card panel">
-          <h3>The Guild Houses</h3>
-          <p>
-            Practical maintainers of exchange, workshops, charters, tools, and road infrastructure. They turn dangerous discoveries into usable life.
-          </p>
-        </article>
-        <article class="info-card panel">
-          <h3>The Crystal Courts</h3>
-          <p>
-            Boundary keepers tied to court relics, checkpoints, archives, sealed thresholds, and old road law.
-          </p>
-        </article>
+      <h2>The compact failed in five directions.</h2>
+      <div class="force-grid">
+        {compactForces.map((force) => (
+          <article class="info-card panel">
+            <h3>{force.name}</h3>
+            <p>{force.copy}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="shell">
+      <p class="eyebrow">Key objects</p>
+      <h2>Every unlock is a piece of infrastructure.</h2>
+      <div class="object-grid">
+        {keyObjects.map(([name, copy]) => (
+          <article class="info-card panel">
+            <h3>{name}</h3>
+            <p>{copy}</p>
+          </article>
+        ))}
       </div>
     </div>
   </section>
@@ -119,6 +154,7 @@ const collapseSigns = [
         <p>
           The road-network gives maps, crafting, rituals, boss drops, and guild projects a single
           story reason to matter: every unlock is another way to persuade the world to remember a path.
+          A disguise rite opens a route by changing who the road believes is standing there.
         </p>
         <div class="path-list" aria-label="Hidden road forms">
           {roadForms.map((form) => <span>{form}</span>)}

@@ -6,8 +6,9 @@ import { characterPages } from '../../data/showcase';
 import type { FlatEntry } from '../../data/showcase';
 
 const entryCount = characterPages.reduce((total, page) => total + page.entries.length, 0);
-const characterRibbon = ['swordsman', 'priest', 'blacksmith']
-  .map((slug) => characterPages.find((page) => page.slug === slug)?.entries[0])
+const characterEntries = characterPages.flatMap((page) => page.entries);
+const characterRibbon = ['swordsman-l9', 'priest', 'tower-reader']
+  .map((slug) => characterEntries.find((entry) => entry.slug === slug))
   .filter((entry): entry is FlatEntry => Boolean(entry))
   .slice(0, 3);
 ---
@@ -37,7 +38,7 @@ const characterRibbon = ['swordsman', 'priest', 'blacksmith']
           <span>Personnel register</span>
           <strong>Shrine / Guild / Road</strong>
         </div>
-        <SpriteStrip entries={characterRibbon} scale={2} label="Character role preview" density="hero" showLabels={false} />
+        <SpriteStrip entries={characterRibbon} scale={2} label="Character role preview" density="hero" loading="eager" showLabels={false} />
         <div class="codex-slate__note">
           <p>Readable silhouettes are treated as field identities: what job they do, what room they belong in, and how they keep the road-world functioning.</p>
         </div>

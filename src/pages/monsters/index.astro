@@ -6,8 +6,9 @@ import { monsterPages } from '../../data/showcase';
 import type { FlatEntry } from '../../data/showcase';
 
 const entryCount = monsterPages.reduce((total, page) => total + page.entries.length, 0);
-const bestiaryRibbon = ['ghost', 'goblin', 'slime-boss']
-  .map((slug) => monsterPages.find((page) => page.slug === slug)?.entries[0])
+const monsterEntries = monsterPages.flatMap((page) => page.entries);
+const bestiaryRibbon = ['demon-3', 'ent-3', 'beholder-3']
+  .map((slug) => monsterEntries.find((entry) => entry.slug === slug))
   .filter((entry): entry is FlatEntry => Boolean(entry))
   .slice(0, 3);
 ---
@@ -37,7 +38,7 @@ const bestiaryRibbon = ['ghost', 'goblin', 'slime-boss']
           <span>Threat register</span>
           <strong>Crypt / Forest / Underway</strong>
         </div>
-        <SpriteStrip entries={bestiaryRibbon} scale={2} label="Monster family preview" density="hero" showLabels={false} />
+        <SpriteStrip entries={bestiaryRibbon} scale={2} label="Monster family preview" density="hero" loading="eager" showLabels={false} />
         <div class="codex-slate__note">
           <p>Each sighting is framed by what it tells the player about a broken route, a failed rite, or a dungeon ecology pushing into town life.</p>
         </div>

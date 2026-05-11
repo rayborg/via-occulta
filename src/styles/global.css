@@ -1,20 +1,20 @@
 :root {
   color-scheme: dark;
-  --bg: #030406;
-  --bg-2: #090b10;
-  --surface: #111318;
-  --surface-soft: #171a20;
-  --surface-warm: #211d17;
+  --bg: #050605;
+  --bg-2: #0a0b08;
+  --surface: #10110d;
+  --surface-soft: #17180f;
+  --surface-warm: #1f1a0b;
   --line: rgba(235, 231, 214, 0.14);
   --line-strong: rgba(235, 231, 214, 0.3);
   --text: #f7f1df;
   --muted: #c3bdad;
   --dim: #827b6b;
-  --accent: #d8bb72;
-  --accent-strong: #ffdf91;
-  --blue: #9fc9ff;
-  --violet: #a48bff;
-  --danger: #d17762;
+  --accent: #eac94a;
+  --accent-strong: #ffd93d;
+  --blue: #d9d2b7;
+  --violet: #c9bd86;
+  --danger: #e7a15c;
   --shadow: rgba(0, 0, 0, 0.52);
   --shell: 1180px;
   --display: Iowan Old Style, Palatino Linotype, Georgia, Times New Roman, serif;
@@ -452,10 +452,20 @@ button:focus-visible {
 .feature-grid,
 .role-grid,
 .chapter-flow,
-.signal-grid {
+.signal-grid,
+.force-grid,
+.object-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.force-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.object-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .info-card,
@@ -489,6 +499,18 @@ button:focus-visible {
 .signal-card p,
 .dossier-facts p {
   margin: 0;
+}
+
+.play-beat {
+  margin-top: 0.9rem !important;
+  border-top: 1px solid var(--line);
+  padding-top: 0.85rem;
+  color: var(--accent-strong) !important;
+  font-size: 0.92rem !important;
+}
+
+.play-beat strong {
+  color: var(--text);
 }
 
 .info-card ul,
@@ -1283,6 +1305,245 @@ button:focus-visible {
   white-space: normal;
 }
 
+.panel,
+.jrpg-window {
+  border-radius: 16px;
+  background:
+    linear-gradient(180deg, rgba(247, 241, 223, 0.045), rgba(247, 241, 223, 0.012)),
+    rgba(12, 13, 9, 0.96);
+  box-shadow: 0 1rem 0 rgba(0, 0, 0, 0.62), 0 1.8rem 3.8rem rgba(0, 0, 0, 0.5);
+}
+
+.panel::before,
+.jrpg-window::before {
+  background: repeating-linear-gradient(0deg, rgba(247, 241, 223, 0.026) 0 1px, transparent 1px 6px);
+  opacity: 0.72;
+}
+
+.cinematic-frame {
+  --screen-bg: #f7f1df;
+  --screen-ink: #050605;
+  border: 2px solid var(--screen-bg);
+  border-radius: 14px;
+  background: var(--screen-ink);
+  box-shadow: 0 1.2rem 0 #000, 0 1.8rem 3.5rem rgba(0, 0, 0, 0.58);
+  transform: none;
+}
+
+.cinematic-frame::before {
+  background: repeating-linear-gradient(0deg, rgba(247, 241, 223, 0.08) 0 1px, transparent 1px 4px);
+  opacity: 0.55;
+}
+
+.field-screen {
+  background: var(--screen-bg);
+  color: var(--screen-ink);
+}
+
+.field-screen__hud {
+  border-bottom: 2px solid var(--screen-ink);
+  background: var(--screen-ink);
+  color: var(--screen-bg);
+}
+
+.field-screen__hud span,
+.field-screen__hud span:last-child {
+  color: var(--screen-bg);
+}
+
+.field-screen__hud span:last-child {
+  opacity: 0.72;
+}
+
+.field-screen__map {
+  min-height: clamp(24rem, 46vw, 34rem);
+  border-bottom: 2px solid var(--screen-ink);
+  background:
+    repeating-linear-gradient(0deg, transparent 0 23px, rgba(5, 6, 5, 0.08) 23px 24px),
+    repeating-linear-gradient(90deg, transparent 0 23px, rgba(5, 6, 5, 0.08) 23px 24px),
+    radial-gradient(circle at 47% 58%, rgba(5, 6, 5, 0.13), transparent 9rem),
+    var(--screen-bg);
+}
+
+.field-screen__map::before {
+  background: repeating-linear-gradient(45deg, rgba(5, 6, 5, 0.055) 0 2px, transparent 2px 7px);
+  mask-image: none;
+  opacity: 1;
+}
+
+.field-screen__map::after {
+  background: radial-gradient(circle at 50% 54%, transparent 42%, rgba(5, 6, 5, 0.16));
+}
+
+.map-path {
+  border: 0;
+  border-radius: 0;
+  background: repeating-linear-gradient(90deg, var(--screen-ink) 0 10px, transparent 10px 17px);
+  box-shadow: none;
+  opacity: 0.32;
+}
+
+.map-path--main {
+  left: 10%;
+  right: 12%;
+  top: 57%;
+  height: 1.25rem;
+  transform: rotate(-8deg);
+}
+
+.map-path--under {
+  left: 28%;
+  right: 18%;
+  top: 43%;
+  height: 1rem;
+  transform: rotate(18deg);
+  opacity: 0.18;
+}
+
+.field-figure {
+  transform: translate(-50%, -50%);
+  filter: none;
+}
+
+.field-figure[data-lane="0"] { left: 46%; top: 57%; }
+.field-figure[data-lane="1"] { left: 36%; top: 69%; }
+.field-figure[data-lane="2"] { left: 23%; top: 72%; }
+.field-figure[data-lane="3"] { left: 61%; top: 34%; opacity: 0.9; }
+.field-figure[data-lane="4"] { left: 75%; top: 61%; }
+
+.field-figure[data-weight="anchor"] {
+  z-index: 4;
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.field-figure .sprite-image {
+  filter: grayscale(1) contrast(1.3) drop-shadow(2px 2px 0 rgba(5, 6, 5, 0.45));
+}
+
+.field-figure::before {
+  position: absolute;
+  left: 50%;
+  bottom: -0.35rem;
+  width: 2.6rem;
+  height: 4px;
+  content: "";
+  background: var(--screen-ink);
+  opacity: 0.22;
+  transform: translateX(-50%);
+}
+
+.field-figure figcaption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.route-label,
+.route-command {
+  position: absolute;
+  z-index: 4;
+  border: 1px solid var(--screen-ink);
+  background: var(--screen-bg);
+  color: var(--screen-ink);
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.route-label {
+  padding: 0.24rem 0.35rem;
+}
+
+.route-label--shrine { left: 38%; top: 46%; }
+.route-label--chapel { left: 58%; top: 23%; }
+.route-label--gate { right: 9%; top: 48%; }
+
+.route-command {
+  left: 0.85rem;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  padding: 0.55rem 0.65rem;
+  text-align: center;
+}
+
+.field-screen__caption {
+  border-top: 0;
+  background: var(--screen-bg);
+  color: var(--screen-ink);
+}
+
+.field-screen__caption .eyebrow,
+.field-screen__caption p:not(.eyebrow),
+.field-screen__caption h2 {
+  color: var(--screen-ink);
+}
+
+.chapter-flow {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.chapter-step.panel {
+  border: 0;
+  border-right: 1px solid var(--line);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.chapter-step.panel:last-child {
+  border-right: 0;
+}
+
+.sprite-strip--compact .sprite-strip__slot {
+  flex: 1 1 8rem;
+  min-width: min(100%, 6.5rem);
+  max-width: 11.5rem;
+  overflow: visible;
+}
+
+.sprite-strip--compact .sprite-strip__stage {
+  min-height: 10.75rem;
+  padding: 0.65rem 0.4rem;
+}
+
+.showcase-card {
+  grid-template-columns: minmax(14rem, 0.34fr) minmax(0, 1fr);
+}
+
+.showcase-card__art {
+  min-height: 10.5rem;
+}
+
+.showcase-card .sprite-strip--compact {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem;
+  align-items: end;
+}
+
+.showcase-card .sprite-strip--compact .sprite-strip__slot {
+  min-width: 0;
+  max-width: none;
+  overflow: visible;
+}
+
+.showcase-card .sprite-strip--compact .sprite-strip__stage {
+  min-height: 9.5rem;
+}
+
+.showcase-card .sprite-strip--compact .sprite-image {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 9rem;
+}
+
 @media (max-width: 1020px) {
   .hero-grid,
   .split,
@@ -1299,7 +1560,9 @@ button:focus-visible {
   .role-grid,
   .game-lineup,
   .chapter-flow,
-  .signal-grid {
+  .signal-grid,
+  .force-grid,
+  .object-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1363,6 +1626,8 @@ button:focus-visible {
   .game-lineup,
   .chapter-flow,
   .signal-grid,
+  .force-grid,
+  .object-grid,
   .status-grid {
     grid-template-columns: 1fr;
   }
@@ -1383,11 +1648,15 @@ button:focus-visible {
     min-height: 25rem;
   }
 
-  .field-figure[data-lane="0"] { left: 38%; top: 30%; }
-  .field-figure[data-lane="1"] { left: 7%; top: 44%; }
-  .field-figure[data-lane="2"] { left: 67%; top: 48%; }
-  .field-figure[data-lane="3"] { left: 58%; top: 14%; }
-  .field-figure[data-lane="4"] { left: 24%; top: 66%; }
+  .field-figure[data-lane="0"] { left: 43%; top: 52%; }
+  .field-figure[data-lane="1"] { left: 28%; top: 69%; }
+  .field-figure[data-lane="2"] { left: 16%; top: 76%; }
+  .field-figure[data-lane="3"] { left: 61%; top: 29%; }
+  .field-figure[data-lane="4"] { left: 75%; top: 58%; }
+
+  .route-label--shrine { left: 32%; top: 41%; }
+  .route-label--chapel { left: 55%; top: 18%; }
+  .route-label--gate { right: 5%; top: 44%; }
 
   .status-grid div {
     border-right: 0;
@@ -1407,8 +1676,8 @@ button:focus-visible {
   }
 
   .sprite-strip--compact .sprite-strip__slot {
-    flex-basis: 4.7rem;
-    max-width: 5.8rem;
+    flex-basis: 8rem;
+    max-width: 11.5rem;
   }
 
   .sprite-strip--hero .sprite-strip__slot {

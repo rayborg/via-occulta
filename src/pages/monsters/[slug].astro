@@ -2,7 +2,7 @@
 import SpriteStrip from '../../components/SpriteStrip.astro';
 import VariantGrid from '../../components/VariantGrid.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { monsterPages } from '../../data/showcase';
+import { monsterPages, selectShowcasePreview } from '../../data/showcase';
 import { withBase } from '../../paths';
 import type { ShowcasePage } from '../../data/showcase';
 
@@ -20,8 +20,8 @@ export function getStaticPaths() {
 const { page } = Astro.props;
 const primaryThread = page.tags[0] ?? 'Road-Bound';
 const largestNativeEdge = Math.max(...page.entries.map((entry) => Math.max(entry.width, entry.height)));
-const galleryScale: 2 | 3 = largestNativeEdge > 56 ? 2 : 3;
-const dossierPreview = page.entries.slice(0, Math.min(page.entries.length, 4));
+const galleryScale: 2 | 3 | 4 = page.entries.length === 1 && largestNativeEdge <= 40 ? 4 : largestNativeEdge > 56 ? 2 : 3;
+const dossierPreview = selectShowcasePreview(page.entries, 4);
 ---
 
 <BaseLayout title={`${page.title} | Via Occulta Monsters`} description={page.summary}>
@@ -41,10 +41,10 @@ const dossierPreview = page.entries.slice(0, Math.min(page.entries.length, 4));
           <span>Threat plate</span>
           <strong>{primaryThread}</strong>
         </div>
-        <SpriteStrip entries={dossierPreview} label={`${page.title} threat plate`} scale={galleryScale} density="hero" showLabels={false} rhythm="subtle" />
+        <SpriteStrip entries={dossierPreview} label={`${page.title} threat plate`} scale={galleryScale} density="hero" loading="eager" showLabels={false} rhythm="subtle" />
         <div class="dossier-plate__footer">
           <span>{page.entries.length} sightings logged</span>
-          <span>Encounter role: route pressure</span>
+          <span>Encounter role: Road-Bound evidence</span>
         </div>
       </aside>
     </div>
@@ -66,7 +66,7 @@ const dossierPreview = page.entries.slice(0, Math.min(page.entries.length, 4));
           </div>
           <div>
             <dt>Encounter role</dt>
-            <dd>Road-bound pressure, dungeon ecology, or proof that a route has failed.</dd>
+            <dd>Road-bound pressure, dungeon ecology, displaced guardian, or proof that a route has failed.</dd>
           </div>
           <div>
             <dt>Sightings logged</dt>

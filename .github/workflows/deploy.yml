@@ -39,6 +39,8 @@ jobs:
         run: npm ci
 
       - name: Build site
+        env:
+          VIA_OCCULTA_CUSTOM_DOMAIN: "true"
         run: npm run build
 
       - name: Upload artifact

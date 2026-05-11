@@ -39,6 +39,17 @@ function resolveEntries(slugs: readonly string[]): FlatEntry[] {
   });
 }
 
+export function selectShowcasePreview(entries: FlatEntry[], limit = 3): FlatEntry[] {
+  if (entries.length <= limit) return entries;
+
+  const last = entries.length - 1;
+  const indexes = limit >= 4
+    ? [0, Math.round(last / 3), Math.round((last * 2) / 3), last]
+    : [0, Math.round(last / 2), last];
+
+  return [...new Set(indexes)].map((index) => entries[index]);
+}
+
 const characterPageDefs = [
   {
     slug: 'swordsman',
@@ -48,7 +59,7 @@ const characterPageDefs = [
       'The Swordsman line is the most straightforward expression of Luciphilus as a classic JRPG expedition game. Each level reads like a cleaner, more disciplined stage of the same road-tested fighter rather than a completely different character.',
       'The Swordsman line is the spine of the adventuring cast: the person who takes the route after Tenebrio has found it and before Opiphilus has fully rebuilt it.'
     ],
-    tags: ['Luciphilus', 'Player Line', 'Adventurer', 'Levels 1-9'],
+    tags: ['Luciphilus', 'Lantern Company', 'Player Line', 'Levels 1-9'],
     entrySlugs: ['swordsman-l1', 'swordsman-l2', 'swordsman-l3', 'swordsman-l4', 'swordsman-l5', 'swordsman-l6', 'swordsman-l7', 'swordsman-l8', 'swordsman-l9']
   },
   {
@@ -70,7 +81,7 @@ const characterPageDefs = [
       'The Guild Mages represent the practical magical side of Opiphilus rather than the remote, ritual-heavy mystery of the tower rooms. They belong in halls, ledgers, workshops, archives, and contracts, where magic is a trained profession instead of a haunted inheritance.',
       'They make the world feel inhabited by learned workers, not only priests and warriors. They suggest a town that studies, records, and administers power instead of merely surviving it.'
     ],
-    tags: ['Guild Hall', 'Mage Line', 'Variants 1-4'],
+    tags: ['Guild Houses', 'Road Charters', 'Mage Line', 'Variants 1-4'],
     entrySlugs: ['guild-mage-1', 'guild-mage-2', 'guild-mage-3', 'guild-mage-4']
   },
   {
@@ -92,7 +103,7 @@ const characterPageDefs = [
       'The Tower Reader exists at the edge between scholarship and danger. This is the kind of figure who does not clear the dungeon or forge the lantern, but understands why the door opens and what name should never be spoken inside it.',
       'The Reader gives the setting a quieter intellectual presence and helps the world feel deeper than a simple combat-and-crafting split.'
     ],
-    tags: ['Archive', 'Ritual Reading'],
+    tags: ['Archive', 'Remembered Names', 'Ritual Reading'],
     entrySlugs: ['tower-reader']
   },
   {
@@ -103,7 +114,7 @@ const characterPageDefs = [
       'Priests in Via Occulta are not merely flavor NPCs. They embody the old compact that once kept the roads legible, the bells resonant, and the threshold rites trustworthy.',
       'The Priest is a reminder that the crisis of the world is spiritual and infrastructural at once: if the priesthood forgets the road, the town itself begins to lose direction.'
     ],
-    tags: ['Shrine Orders', 'Ritual Authority', 'Shared World'],
+    tags: ['Shrine Orders', 'Ritual Authority', 'Disguise Rites'],
     entrySlugs: ['priest']
   },
   {
@@ -114,7 +125,7 @@ const characterPageDefs = [
       'The Monk variants feel less ceremonial than the Priest and more bodily tied to the maintenance of place: carrying things, watching doors, tending routines, and enduring fear through repetition.',
       'Grouped together, they suggest a living order rather than a single hero figure. Via Occulta depends on institutions, not only protagonists.'
     ],
-    tags: ['Shrine Orders', 'Support Line', 'Variants'],
+    tags: ['Shrine Orders', 'Threshold Customs', 'Variants'],
     entrySlugs: ['monk-1', 'monk-2', 'monk-3']
   },
   {
@@ -125,7 +136,7 @@ const characterPageDefs = [
       'The Smith and Blacksmith Girl together define one of the most grounded parts of Opiphilus. They are not abstract crafters; they belong to heat, timing, tool wear, and the daily making of things that must survive the road outside town.',
       'Craft in Via Occulta is not decorative. The workshop is one of the world’s defensive organs.'
     ],
-    tags: ['Workshop', 'Forge'],
+    tags: ['Guild Houses', 'Bell Iron', 'Forge'],
     entrySlugs: ['smith', 'blacksmith-girl']
   },
   {
@@ -136,7 +147,7 @@ const characterPageDefs = [
       'The Herbalist represents another side of survival work: not the making of steel, but the preparation of treatments, tonics, and gathered knowledge. This is the craft of keeping living people stable long enough to attempt another descent.',
       'The Herbalist helps Via Occulta feel like a world of restoration and preparation rather than a pure gauntlet of fights.'
     ],
-    tags: ['Support Craft', 'Remedies'],
+    tags: ['Guild Houses', 'Repair Kits', 'Remedies'],
     entrySlugs: ['herbalist']
   },
   {
@@ -147,7 +158,7 @@ const characterPageDefs = [
       'Glasswork matters in Via Occulta because the world’s rites need containers, lenses, bell casings, and lantern bodies as much as they need weapons. The glassblower family is where fragile material becomes civic infrastructure.',
       'Glasswork reads less like combat preparation and more like proof that town life has specialist labor with its own dignity and visual identity.'
     ],
-    tags: ['Workshop', 'Glass and Trade'],
+    tags: ['Guild Houses', 'Lantern Glass', 'Glass and Trade'],
     entrySlugs: ['glassblower-seller', 'glassblower-customer']
   },
   {
@@ -169,7 +180,7 @@ const characterPageDefs = [
       'The Trader stands at the point where adventure becomes value. If relics, ingredients, lantern glass, and forged goods cannot move through a social economy, then the road is only a wound and never a lifeline.',
       'The Trader stands as proof that Opiphilus is not just crafting in isolation. It is about reconnecting people, goods, and obligations.'
     ],
-    tags: ['Market', 'Economy'],
+    tags: ['Guild Houses', 'Road Charters', 'Market'],
     entrySlugs: ['trader']
   },
   {
@@ -191,7 +202,7 @@ const characterPageDefs = [
       'The Arena Archers belong to drill yards and supervised readiness. They are not glamorous champions so much as evidence that settlements still invest in collective defense and technique.',
       'As grouped variants, they show that Luciphilus is not only a hero fantasy. It also includes systems of training, patrol, and preparation.'
     ],
-    tags: ['Training Arena', 'Guards', 'Variants 1-3'],
+    tags: ['Lantern Companies', 'Training Yard', 'Variants 1-3'],
     entrySlugs: ['arena-archer-1', 'arena-archer-2', 'arena-archer-3']
   },
   {
@@ -202,7 +213,7 @@ const characterPageDefs = [
       'The Arena Fighters show how different equipment reshapes posture, reach, and risk. Sword, shield, and halberd do not just change damage output; they change the visual grammar of how a body occupies space in danger.',
       'Together, they present combat identity as a spectrum of roles instead of a pile of disconnected poses.'
     ],
-    tags: ['Training Arena', 'Weapon Roles'],
+    tags: ['Lantern Companies', 'Weapon Roles'],
     entrySlugs: ['arena-fighter-sword', 'arena-fighter-shield', 'arena-fighter-halberd']
   },
   {
@@ -213,7 +224,7 @@ const characterPageDefs = [
       'A Trainer implies institutional memory. Someone has to know how to pass on stance, caution, timing, and survival habits before the road claims another generation of novices.',
       'In the larger setting, the Trainer is one of the quiet proofs that the world still produces continuity instead of only collapse.'
     ],
-    tags: ['Training Arena', 'Instruction'],
+    tags: ['Lantern Companies', 'Instruction'],
     entrySlugs: ['trainer']
   },
   {
@@ -326,7 +337,7 @@ const monsterPageDefs = [
       'Ghosts are important to Via Occulta because they turn memory into a navigational hazard. A failed rite does not just create sadness; it creates a threshold where the dead continue to interfere with the living map.',
       'Their presence communicates that the world’s spiritual crisis is one of lingering displacement, not only of evil invasion.'
     ],
-    tags: ['Undead', 'Ritual Failure'],
+    tags: ['Road-Bound', 'Disguise Rite', 'Ritual Failure'],
     entrySlugs: ['ghost-1', 'ghost-2', 'ghost-3']
   },
   {
@@ -370,7 +381,7 @@ const monsterPageDefs = [
       'Golems make the world feel engineered and ancient at the same time. They are less beasts than old commands still moving through matter, indifferent to whether anyone remembers why they were built.',
       'They add a valuable mechanical tone to the bestiary, connecting magic, law, and craftsmanship in one hostile body.'
     ],
-    tags: ['Construct', 'Ancient Defense'],
+    tags: ['Road-Bound', 'Ancient Defense', 'Crystal Law'],
     entrySlugs: ['golem-1', 'golem-2', 'golem-3']
   },
   {
@@ -436,7 +447,7 @@ const monsterPageDefs = [
       'Skeletons are useful because they are pure structure. They make undead threat feel less mournful than ghosts and less calculating than liches: simple remains still moving under dead instruction.',
       'They suit crypts, ruins, chapels, and forgotten roadwork equally well.'
     ],
-    tags: ['Undead', 'Crypt Guard'],
+    tags: ['Road-Bound', 'Crypt Guard', 'Ritual Failure'],
     entrySlugs: ['skeleton-1', 'skeleton-2', 'skeleton-3']
   },
   {
@@ -480,7 +491,7 @@ const monsterPageDefs = [
       'Zombies in Via Occulta are less about spectacle than about the stubborn refusal of decay to stay quiet. They make collapsed rites feel physical, common, and impossible to ignore.',
       'They close out the bestiary with a threat that is immediately legible and thematically central to cursed land and chapel ruin spaces.'
     ],
-    tags: ['Undead', 'Cursed Land'],
+    tags: ['Road-Bound', 'Cursed Land', 'Ritual Failure'],
     entrySlugs: ['zombie-1', 'zombie-2', 'zombie-3']
   }
 ] as const;

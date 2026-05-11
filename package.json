@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/rayborg/via-occulta/issues"
   },
-  "homepage": "https://www.viaocculta.com",
+  "homepage": "https://www.viaocculta.net",
   "dependencies": {
     "astro": "^6.3.1",
     "typescript": "^6.0.3"

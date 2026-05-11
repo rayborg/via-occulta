@@ -1,5 +1,6 @@
 ---
 import type { ShowcasePage } from '../data/showcase';
+import { selectShowcasePreview } from '../data/showcase';
 import SpriteStrip from './SpriteStrip.astro';
 import { withBase } from '../paths';
 
@@ -9,7 +10,7 @@ type Props = {
 };
 
 const { page, href } = Astro.props;
-const previewEntries = page.entries.slice(0, 3);
+const previewEntries = selectShowcasePreview(page.entries);
 const typeLabel = page.kind === 'monster' ? 'Bestiary dossier' : 'Character dossier';
 const countLabel = page.kind === 'monster' ? 'sightings logged' : 'profiles logged';
 ---

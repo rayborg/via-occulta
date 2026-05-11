@@ -5,9 +5,9 @@ const gameLines = [
   {
     name: 'Tenebrio',
     kicker: 'Shriner exploration',
-    role: 'Discovery, mapping, shrine rites, hidden routes, disguise, and transformation.',
+    role: 'Disguise rites let a weak shriner pass as Road-Bound dead, local spirits, or failed guardians long enough to recover forbidden map fragments.',
     fantasy: 'You are weak, but you know the rites.',
-    contributes: ['Map fragments', 'Shrine keys', 'Monster-form knowledge', 'Occult warnings', 'Route unlocks']
+    contributes: ['Map fragments', 'Shrine keys', 'Disguise rites', 'Occult warnings', 'Route unlocks']
   },
   {
     name: 'Luciphilus',
@@ -26,10 +26,33 @@ const gameLines = [
 ];
 
 const handoff = [
-  'Tenebrio maps the changed route beneath Mistfall Chapel.',
-  'Luciphilus clears the Wraith of the Drowned Gate in the Chapel Undercrypt.',
-  'Opiphilus restores the Guild Hearth forge and repairs the shrine bell casing.',
-  'Greybell reopens the Old Crystal Gate and the next region becomes reachable.'
+  'Tenebrio recovers a map fragment from a room that appears only under a Road-Bound disguise.',
+  'Luciphilus clears the Wraith of the Drowned Gate and brings back a relic-crystal shard.',
+  'Opiphilus combines ghost silk, iron, lantern glass, and crystal dust into the first Road Lantern.',
+  'Greybell repairs the bell housing, issues a road charter, and reveals the Old Crystal Gate.'
+];
+
+const forces = [
+  {
+    name: 'Shrine Orders',
+    claim: 'Rites, names, bells, and disguise customs decide who the road recognizes.'
+  },
+  {
+    name: 'Lantern Companies',
+    claim: 'Expeditions prove whether a recovered route can actually be survived.'
+  },
+  {
+    name: 'Guild Houses',
+    claim: 'Workshops turn relics, glass, iron, and charters into civic infrastructure.'
+  },
+  {
+    name: 'Crystal Courts',
+    claim: 'Old gates, archives, checkpoints, and inscriptions still enforce failed road law.'
+  },
+  {
+    name: 'Road-Bound',
+    claim: 'Some monsters are displaced guardians, cursed citizens, or territorial dead, not simple invaders.'
+  }
 ];
 ---
 
@@ -69,6 +92,21 @@ const handoff = [
             <ul>
               {line.contributes.map((item) => <li>{item}</li>)}
             </ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="shell">
+      <p class="eyebrow">One road, five claims</p>
+      <h2>The route is never just a dungeon entrance.</h2>
+      <div class="force-grid">
+        {forces.map((force) => (
+          <article class="info-card panel">
+            <h3>{force.name}</h3>
+            <p>{force.claim}</p>
           </article>
         ))}
       </div>
