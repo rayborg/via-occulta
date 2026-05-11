@@ -254,6 +254,12 @@ button:focus-visible {
 
 .page-hero p { max-width: 62rem; }
 
+.codex-hero__copy h1 {
+  max-width: 18ch;
+  font-size: clamp(2.3rem, 4.4vw, 3.9rem);
+  line-height: 1.02;
+}
+
 .eyebrow,
 .card-kicker {
   margin: 0;

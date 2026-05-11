@@ -561,13 +561,13 @@
       "width" : 39
     },
     {
-      "height" : 66,
+      "height" : 86,
       "image" : "/showcase/monsters/demon-3.png",
       "key" : "monster:demon3",
       "label" : "Demon 3",
       "slug" : "demon-3",
       "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/demon3/without_shadow/frames/idle/front/demon3_idle_front_01_128x128_edges_native.png",
-      "width" : 55
+      "width" : 75
     },
     {
       "height" : 53,
@@ -588,13 +588,13 @@
       "width" : 52
     },
     {
-      "height" : 75,
+      "height" : 92,
       "image" : "/showcase/monsters/ent-3.png",
       "key" : "monster:ent3",
       "label" : "Ent 3",
       "slug" : "ent-3",
       "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/ent3/without_shadow/frames/idle/front/ent3_idle_front_01_128x128_edges_native.png",
-      "width" : 63
+      "width" : 83
     },
     {
       "height" : 24,
