@@ -1,0 +1,35 @@
+---
+import SpriteImage from './SpriteImage.astro';
+import type { FlatEntry } from '../data/showcase';
+
+type SpriteScale = 4;
+
+type Props = {
+  entries: FlatEntry[];
+  scale?: SpriteScale;
+  label?: string;
+  density?: 'compact' | 'regular' | 'hero';
+  loading?: 'eager' | 'lazy';
+  showLabels?: boolean;
+};
+
+const {
+  entries,
+  scale = 4,
+  label = 'Sprite lineup',
+  density = 'regular',
+  loading = 'lazy',
+  showLabels = true
+} = Astro.props;
+---
+
+<div class:list={["sprite-strip", `sprite-strip--${density}`]} role="list" aria-label={label} data-scale={`${scale}x`}>
+  {entries.map((entry) => (
+    <figure class="sprite-strip__slot" role="listitem">
+      <div class="sprite-strip__stage">
+        <SpriteImage entry={entry} scale={scale} loading={loading} />
+      </div>
+      {showLabels && <figcaption>{entry.label}</figcaption>}
+    </figure>
+  ))}
+</div>

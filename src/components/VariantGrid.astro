@@ -1,5 +1,6 @@
 ---
 import type { FlatEntry } from '../data/showcase';
+import SpriteStrip from './SpriteStrip.astro';
 
 type Props = {
   entries: FlatEntry[];
@@ -9,10 +10,5 @@ const { entries } = Astro.props;
 ---
 
 <div class="variant-grid">
-  {entries.map((entry) => (
-    <article class="variant-card">
-      <div class="variant-art"><img src={entry.image} alt={entry.label} loading="lazy" /></div>
-      <h3>{entry.label}</h3>
-    </article>
-  ))}
+  <SpriteStrip entries={entries} label="All grouped sprite forms" />
 </div>

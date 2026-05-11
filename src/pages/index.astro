@@ -1,32 +1,49 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ShowcaseCard from '../components/ShowcaseCard.astro';
+import SpriteStrip from '../components/SpriteStrip.astro';
 import { homepageFeaturedCharacters, homepageFeaturedMonsters } from '../data/showcase';
+import type { FlatEntry } from '../data/showcase';
+import { withBase } from '../paths';
+
+const swordsmanPage = homepageFeaturedCharacters[0];
+const goblinPage = homepageFeaturedMonsters.find((page) => page.slug === 'goblin') ?? homepageFeaturedMonsters[0];
+const ghostPage = homepageFeaturedMonsters.find((page) => page.slug === 'ghost') ?? homepageFeaturedMonsters[1];
+const heroEntries: FlatEntry[] = [
+  swordsmanPage.entries[swordsmanPage.entries.length - 1],
+  homepageFeaturedCharacters[1].entries[0],
+  homepageFeaturedCharacters[3].entries[0],
+  goblinPage.entries[2] ?? goblinPage.entries[0],
+  ghostPage.entries[1] ?? ghostPage.entries[0]
+].filter((entry): entry is FlatEntry => Boolean(entry));
 ---
 
 <BaseLayout title="Via Occulta | A 1-bit occult shared-world JRPG">
   <section class="hero">
     <div class="shell hero-grid">
-      <div>
+      <div class="hero-copy">
         <p class="eyebrow">A 1-bit occult shared-world JRPG</p>
         <h1>Hidden roads, shrine bells, guild fire, and the things waiting below them.</h1>
-        <p>
+        <p class="lede">
           Via Occulta is a monochrome dark-fantasy JRPG world built around overhead exploration,
           cursed routes, dungeon expeditions, workshop labor, and the slow restoration of a world
           that is quietly being rerouted from underneath itself.
         </p>
-        <div class="pill-row">
-          <span class="pill">Tenebrio discovers</span>
-          <span class="pill">Luciphilus fights</span>
-          <span class="pill">Opiphilus builds</span>
+        <div class="command-menu jrpg-window" aria-label="Primary site routes">
+          <a href={withBase('/world')}><span>World</span><strong>Read the hidden-road premise</strong></a>
+          <a href={withBase('/characters')}><span>Roster</span><strong>Browse character groups</strong></a>
+          <a href={withBase('/monsters')}><span>Bestiary</span><strong>Survey monster families</strong></a>
         </div>
       </div>
-      <div class="hero-sheet">
-        <div class="feature-grid">
-          {homepageFeaturedCharacters.slice(0, 2).map((page) => <ShowcaseCard page={page} href={`characters/${page.slug}`} />)}
-          {homepageFeaturedMonsters.slice(0, 2).map((page) => <ShowcaseCard page={page} href={`monsters/${page.slug}`} />)}
+      <aside class="hero-window jrpg-window" aria-label="Opening party and threat preview">
+        <div class="window-title">Opening Party / Road-Bound Contact</div>
+        <SpriteStrip entries={heroEntries} scale={4} label="Hero roster preview at 4x sprite scale" density="hero" loading="eager" />
+        <div class="status-grid">
+          <div><span>Mode</span><strong>Overhead JRPG</strong></div>
+          <div><span>Palette</span><strong>1-bit Monochrome</strong></div>
+          <div><span>Loop</span><strong>Find / Fight / Rebuild</strong></div>
         </div>
-      </div>
+      </aside>
     </div>
   </section>
 
@@ -97,7 +114,7 @@ import { homepageFeaturedCharacters, homepageFeaturedMonsters } from '../data/sh
     <div class="shell">
       <p class="eyebrow">Browse the cast</p>
       <h2>Representative characters and monster families</h2>
-      <div class="card-grid">
+      <div class="showcase-list">
         {homepageFeaturedCharacters.map((page) => <ShowcaseCard page={page} href={`characters/${page.slug}`} />)}
         {homepageFeaturedMonsters.map((page) => <ShowcaseCard page={page} href={`monsters/${page.slug}`} />)}
       </div>

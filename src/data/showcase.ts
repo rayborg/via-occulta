@@ -7,6 +7,8 @@ export type FlatEntry = {
   slug: string;
   image: string;
   sourcePath: string;
+  width: number;
+  height: number;
 };
 
 export type ShowcasePage = {

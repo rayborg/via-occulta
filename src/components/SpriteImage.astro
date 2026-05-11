@@ -1,0 +1,33 @@
+---
+import type { FlatEntry } from '../data/showcase';
+
+type SpriteScale = 4;
+
+type Props = {
+  entry: FlatEntry;
+  scale?: SpriteScale;
+  loading?: 'eager' | 'lazy';
+};
+
+const { entry, scale = 4, loading = 'lazy' } = Astro.props;
+
+if (scale !== 4) {
+  throw new Error(`Unsupported sprite scale: ${scale}. Website sprites must render at fixed 4x.`);
+}
+
+const width = entry.width * scale;
+const height = entry.height * scale;
+---
+
+<img
+  class="sprite-image"
+  src={entry.image}
+  alt={entry.label}
+  width={width}
+  height={height}
+  loading={loading}
+  decoding="async"
+  data-native-size={`${entry.width}x${entry.height}`}
+  data-scale={`${scale}x`}
+  style={`width:${width}px;height:${height}px;`}
+/>

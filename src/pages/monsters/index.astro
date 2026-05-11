@@ -1,9 +1,11 @@
 ---
 import ShowcaseCard from '../../components/ShowcaseCard.astro';
+import SpriteStrip from '../../components/SpriteStrip.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { monsterPages } from '../../data/showcase';
 
 const entryCount = monsterPages.reduce((total, page) => total + page.entries.length, 0);
+const bestiaryPreview = monsterPages.flatMap((page) => page.entries.slice(0, 1));
 ---
 
 <BaseLayout
@@ -22,6 +24,13 @@ const entryCount = monsterPages.reduce((total, page) => total + page.entries.len
         <span class="pill">{entryCount} representative forms</span>
         <span class="pill">Crypt, forest, dungeon, and under-route threats</span>
       </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="shell catalog-strip-window jrpg-window">
+      <div class="window-title">Bestiary Strip</div>
+      <SpriteStrip entries={bestiaryPreview} label="Monster family representatives" />
     </div>
   </section>
 
@@ -46,7 +55,7 @@ const entryCount = monsterPages.reduce((total, page) => total + page.entries.len
     <div class="shell">
       <p class="eyebrow">Browse families</p>
       <h2>Monster families and forms</h2>
-      <div class="card-grid">
+      <div class="showcase-list">
         {monsterPages.map((page) => <ShowcaseCard page={page} href={`monsters/${page.slug}`} />)}
       </div>
     </div>

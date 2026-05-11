@@ -1,804 +1,1032 @@
 {
   "characters" : [
     {
+      "height" : 29,
       "image" : "/showcase/characters/alchemist.png",
       "key" : "npc:alchemist",
       "label" : "Alchemist",
       "slug" : "alchemist",
-      "sourcePath" : "games/tenebrio/effects_ui/effects/sprite_1bit_monochrome_native/sewer_npcs_effects/sheets/PNG/Animation_packed_version/Alchemist_taking_mushroom_without_shadow_1bit_native.png"
+      "sourcePath" : "games/tenebrio/effects_ui/effects/sprite_1bit_monochrome_native/sewer_npcs_effects/sheets/PNG/Animation_packed_version/Alchemist_taking_mushroom_without_shadow_1bit_native.png",
+      "width" : 29
     },
     {
+      "height" : 30,
       "image" : "/showcase/characters/arena-archer-1.png",
       "key" : "npc:arena_archer_1",
       "label" : "Arena Archer 1",
       "slug" : "arena-archer-1",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/training_arena_characters/sheets/PNG/Characters/Archers/Archer1_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/training_arena_characters/sheets/PNG/Characters/Archers/Archer1_without_shadow_1bit_native.png",
+      "width" : 24
     },
     {
+      "height" : 30,
       "image" : "/showcase/characters/arena-archer-2.png",
       "key" : "npc:arena_archer_2",
       "label" : "Arena Archer 2",
       "slug" : "arena-archer-2",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/training_arena_characters/sheets/PNG/Characters/Archers/Archer2_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/training_arena_characters/sheets/PNG/Characters/Archers/Archer2_without_shadow_1bit_native.png",
+      "width" : 24
     },
     {
+      "height" : 30,
       "image" : "/showcase/characters/arena-archer-3.png",
       "key" : "npc:arena_archer_3",
       "label" : "Arena Archer 3",
       "slug" : "arena-archer-3",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/training_arena_characters/sheets/PNG/Characters/Archers/Archer3_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/training_arena_characters/sheets/PNG/Characters/Archers/Archer3_without_shadow_1bit_native.png",
+      "width" : 24
     },
     {
+      "height" : 28,
       "image" : "/showcase/characters/arena-fighter-halberd.png",
       "key" : "npc:arena_fighter_halberd",
       "label" : "Arena Fighter Halberd",
       "slug" : "arena-fighter-halberd",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/training_arena_characters/sheets/PNG/Characters/Other_fighters/Without_shadow/Fighter_halberd_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/training_arena_characters/sheets/PNG/Characters/Other_fighters/Without_shadow/Fighter_halberd_without_shadow_1bit_native.png",
+      "width" : 42
     },
     {
+      "height" : 26,
       "image" : "/showcase/characters/arena-fighter-shield.png",
       "key" : "npc:arena_fighter_shield",
       "label" : "Arena Fighter Shield",
       "slug" : "arena-fighter-shield",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/training_arena_characters/sheets/PNG/Characters/Other_fighters/Without_shadow/Fighter_sword_shield_without1_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/training_arena_characters/sheets/PNG/Characters/Other_fighters/Without_shadow/Fighter_sword_shield_without1_shadow_1bit_native.png",
+      "width" : 28
     },
     {
+      "height" : 26,
       "image" : "/showcase/characters/arena-fighter-sword.png",
       "key" : "npc:arena_fighter_sword",
       "label" : "Arena Fighter Sword",
       "slug" : "arena-fighter-sword",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/training_arena_characters/sheets/PNG/Characters/Figters_sword/Without_shadow/Fighter_sword1_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/training_arena_characters/sheets/PNG/Characters/Figters_sword/Without_shadow/Fighter_sword1_without_shadow_1bit_native.png",
+      "width" : 42
     },
     {
+      "height" : 28,
       "image" : "/showcase/characters/base-female-sword.png",
       "key" : "player:base_female_sword",
       "label" : "Base Female Sword",
       "slug" : "base-female-sword",
-      "sourcePath" : "games/luciphilus/player_roles/alternate_human_dd/sprite_edges_64x64/base_female_sword/without_shadow/frames/idle/front/base_female_sword_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/luciphilus/player_roles/alternate_human_dd/sprite_edges_64x64/base_female_sword/without_shadow/frames/idle/front/base_female_sword_idle_front_01_64x64_edges.png",
+      "width" : 23
     },
     {
+      "height" : 26,
       "image" : "/showcase/characters/base-female-unarmed.png",
       "key" : "player:base_female_unarmed",
       "label" : "Base Female Unarmed",
       "slug" : "base-female-unarmed",
-      "sourcePath" : "games/tenebrio/actors/human_baseline/base_female_unarmed/sprite_edges_64x64/without_shadow/frames/idle/front/base_female_unarmed_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/human_baseline/base_female_unarmed/sprite_edges_64x64/without_shadow/frames/idle/front/base_female_unarmed_idle_front_01_64x64_edges.png",
+      "width" : 17
     },
     {
+      "height" : 28,
       "image" : "/showcase/characters/base-male-sword.png",
       "key" : "player:base_male_sword",
       "label" : "Base Male Sword",
       "slug" : "base-male-sword",
-      "sourcePath" : "games/luciphilus/player_roles/alternate_human_dd/sprite_edges_64x64/base_male_sword/without_shadow/frames/idle/front/base_male_sword_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/luciphilus/player_roles/alternate_human_dd/sprite_edges_64x64/base_male_sword/without_shadow/frames/idle/front/base_male_sword_idle_front_01_64x64_edges.png",
+      "width" : 23
     },
     {
+      "height" : 26,
       "image" : "/showcase/characters/base-male-unarmed.png",
       "key" : "player:base_male_unarmed",
       "label" : "Base Male Unarmed",
       "slug" : "base-male-unarmed",
-      "sourcePath" : "games/tenebrio/actors/human_baseline/base_male_unarmed/sprite_edges_64x64/without_shadow/frames/idle/front/base_male_unarmed_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/human_baseline/base_male_unarmed/sprite_edges_64x64/without_shadow/frames/idle/front/base_male_unarmed_idle_front_01_64x64_edges.png",
+      "width" : 17
     },
     {
+      "height" : 27,
       "image" : "/showcase/characters/blacksmith-girl.png",
       "key" : "npc:blacksmith_girl",
       "label" : "Blacksmith Girl",
       "slug" : "blacksmith-girl",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/blacksmith_npcs/sheets/PNG/Girl_animation_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/blacksmith_npcs/sheets/PNG/Girl_animation_1bit_native.png",
+      "width" : 23
     },
     {
+      "height" : 30,
       "image" : "/showcase/characters/citizen-1.png",
       "key" : "npc:citizen_1",
       "label" : "Citizen 1",
       "slug" : "citizen-1",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/market_square_npcs/sheets/PNG/Characters/Character_citizens_animation/Without_shadow/Citizen1_Idle_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/market_square_npcs/sheets/PNG/Characters/Character_citizens_animation/Without_shadow/Citizen1_Idle_without_shadow_1bit_native.png",
+      "width" : 21
     },
     {
+      "height" : 27,
       "image" : "/showcase/characters/citizen-2.png",
       "key" : "npc:citizen_2",
       "label" : "Citizen 2",
       "slug" : "citizen-2",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/market_square_npcs/sheets/PNG/Characters/Character_citizens_animation/Without_shadow/Citizen2_Idle_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/market_square_npcs/sheets/PNG/Characters/Character_citizens_animation/Without_shadow/Citizen2_Idle_without_shadow_1bit_native.png",
+      "width" : 20
     },
     {
+      "height" : 29,
       "image" : "/showcase/characters/citizen-3.png",
       "key" : "npc:citizen_3",
       "label" : "Citizen 3",
       "slug" : "citizen-3",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/market_square_npcs/sheets/PNG/Characters/Character_citizens_animation/Without_shadow/Citizen3_Idle_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/market_square_npcs/sheets/PNG/Characters/Character_citizens_animation/Without_shadow/Citizen3_Idle_without_shadow_1bit_native.png",
+      "width" : 23
     },
     {
+      "height" : 28,
       "image" : "/showcase/characters/citizen-4.png",
       "key" : "npc:citizen_4",
       "label" : "Citizen 4",
       "slug" : "citizen-4",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/market_square_npcs/sheets/PNG/Characters/Character_citizens_animation/Without_shadow/Citizen4_Idle_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/market_square_npcs/sheets/PNG/Characters/Character_citizens_animation/Without_shadow/Citizen4_Idle_without_shadow_1bit_native.png",
+      "width" : 21
     },
     {
+      "height" : 29,
       "image" : "/showcase/characters/citizen-5.png",
       "key" : "npc:citizen_5",
       "label" : "Citizen 5",
       "slug" : "citizen-5",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/market_square_npcs/sheets/PNG/Characters/Character_citizens_animation/Without_shadow/Citizen5_Idle_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/market_square_npcs/sheets/PNG/Characters/Character_citizens_animation/Without_shadow/Citizen5_Idle_without_shadow_1bit_native.png",
+      "width" : 20
     },
     {
+      "height" : 29,
       "image" : "/showcase/characters/flutist.png",
       "key" : "npc:flutist",
       "label" : "Flutist",
       "slug" : "flutist",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/market_square_npcs/sheets/PNG/Characters/Character_others_animation/Without_shadow/Flutist_animation_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/market_square_npcs/sheets/PNG/Characters/Character_others_animation/Without_shadow/Flutist_animation_without_shadow_1bit_native.png",
+      "width" : 29
     },
     {
+      "height" : 29,
       "image" : "/showcase/characters/glassblower-customer.png",
       "key" : "npc:glassblower_customer",
       "label" : "Glassblower Customer",
       "slug" : "glassblower-customer",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/glassblower_npcs/sheets/PNG/Customer_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/glassblower_npcs/sheets/PNG/Customer_without_shadow_1bit_native.png",
+      "width" : 23
     },
     {
+      "height" : 26,
       "image" : "/showcase/characters/glassblower-seller.png",
       "key" : "npc:glassblower_seller",
       "label" : "Glassblower Seller",
       "slug" : "glassblower-seller",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/glassblower_npcs/sheets/PNG/Seller_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/glassblower_npcs/sheets/PNG/Seller_1bit_native.png",
+      "width" : 19
     },
     {
+      "height" : 36,
       "image" : "/showcase/characters/guild-mage-1.png",
       "key" : "npc:guild_mage_1",
       "label" : "Guild Mage 1",
       "slug" : "guild-mage-1",
-      "sourcePath" : "games/opiphilus/visible_cast/walking_mages/sprite_1bit_monochrome_native/guild_hall_mages/sheets/PNG/Mage1_without_shadow_1bit_native.png"
+      "sourcePath" : "games/opiphilus/visible_cast/walking_mages/sprite_1bit_monochrome_native/guild_hall_mages/sheets/PNG/Mage1_without_shadow_1bit_native.png",
+      "width" : 20
     },
     {
+      "height" : 30,
       "image" : "/showcase/characters/guild-mage-2.png",
       "key" : "npc:guild_mage_2",
       "label" : "Guild Mage 2",
       "slug" : "guild-mage-2",
-      "sourcePath" : "games/opiphilus/visible_cast/walking_mages/sprite_1bit_monochrome_native/guild_hall_mages/sheets/PNG/Mage2_without_shadow_1bit_native.png"
+      "sourcePath" : "games/opiphilus/visible_cast/walking_mages/sprite_1bit_monochrome_native/guild_hall_mages/sheets/PNG/Mage2_without_shadow_1bit_native.png",
+      "width" : 19
     },
     {
+      "height" : 34,
       "image" : "/showcase/characters/guild-mage-3.png",
       "key" : "npc:guild_mage_3",
       "label" : "Guild Mage 3",
       "slug" : "guild-mage-3",
-      "sourcePath" : "games/opiphilus/visible_cast/walking_mages/sprite_1bit_monochrome_native/guild_hall_mages/sheets/PNG/Mage3_without_shadow_1bit_native.png"
+      "sourcePath" : "games/opiphilus/visible_cast/walking_mages/sprite_1bit_monochrome_native/guild_hall_mages/sheets/PNG/Mage3_without_shadow_1bit_native.png",
+      "width" : 21
     },
     {
+      "height" : 31,
       "image" : "/showcase/characters/guild-mage-4.png",
       "key" : "npc:guild_mage_4",
       "label" : "Guild Mage 4",
       "slug" : "guild-mage-4",
-      "sourcePath" : "games/opiphilus/visible_cast/walking_mages/sprite_1bit_monochrome_native/guild_hall_mages/sheets/PNG/Mage4_without_shadow_1bit_native.png"
+      "sourcePath" : "games/opiphilus/visible_cast/walking_mages/sprite_1bit_monochrome_native/guild_hall_mages/sheets/PNG/Mage4_without_shadow_1bit_native.png",
+      "width" : 19
     },
     {
+      "height" : 32,
       "image" : "/showcase/characters/herbalist.png",
       "key" : "npc:herbalist",
       "label" : "Herbalist",
       "slug" : "herbalist",
-      "sourcePath" : "games/luciphilus/player_roles/healer_support_placeholders/sprite_1bit_monochrome_native/herbalist_npcs/sheets/Tiled_files/Herbalist_Idle_1bit_native.png"
+      "sourcePath" : "games/luciphilus/player_roles/healer_support_placeholders/sprite_1bit_monochrome_native/herbalist_npcs/sheets/Tiled_files/Herbalist_Idle_1bit_native.png",
+      "width" : 19
     },
     {
+      "height" : 31,
       "image" : "/showcase/characters/monk-1.png",
       "key" : "npc:monk_1",
       "label" : "Monk 1",
       "slug" : "monk-1",
-      "sourcePath" : "games/tenebrio/actors/shrine_identity/sprite_1bit_monochrome_native/chapel_npcs/sheets/PNG/Animation/Mon1k_Idle_without_shadow_1bit_native.png"
+      "sourcePath" : "games/tenebrio/actors/shrine_identity/sprite_1bit_monochrome_native/chapel_npcs/sheets/PNG/Animation/Mon1k_Idle_without_shadow_1bit_native.png",
+      "width" : 19
     },
     {
+      "height" : 31,
       "image" : "/showcase/characters/monk-2.png",
       "key" : "npc:monk_2",
       "label" : "Monk 2",
       "slug" : "monk-2",
-      "sourcePath" : "games/tenebrio/actors/shrine_identity/sprite_1bit_monochrome_native/chapel_npcs/sheets/PNG/Animation/Mon2k_Idle_without_shadow_1bit_native.png"
+      "sourcePath" : "games/tenebrio/actors/shrine_identity/sprite_1bit_monochrome_native/chapel_npcs/sheets/PNG/Animation/Mon2k_Idle_without_shadow_1bit_native.png",
+      "width" : 19
     },
     {
+      "height" : 31,
       "image" : "/showcase/characters/monk-3.png",
       "key" : "npc:monk_3",
       "label" : "Monk 3",
       "slug" : "monk-3",
-      "sourcePath" : "games/tenebrio/actors/shrine_identity/sprite_1bit_monochrome_native/chapel_npcs/sheets/PNG/Animation/Mon3k_Idle_without_shadow_1bit_native.png"
+      "sourcePath" : "games/tenebrio/actors/shrine_identity/sprite_1bit_monochrome_native/chapel_npcs/sheets/PNG/Animation/Mon3k_Idle_without_shadow_1bit_native.png",
+      "width" : 21
     },
     {
+      "height" : 27,
       "image" : "/showcase/characters/old-man.png",
       "key" : "npc:old_man",
       "label" : "Old Man",
       "slug" : "old-man",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/fishing_village_npcs/sheets/PNG/Characters/Old_man_idle_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/fishing_village_npcs/sheets/PNG/Characters/Old_man_idle_without_shadow_1bit_native.png",
+      "width" : 21
     },
     {
+      "height" : 26,
       "image" : "/showcase/characters/poor-man.png",
       "key" : "npc:poor_man",
       "label" : "Poor Man",
       "slug" : "poor-man",
-      "sourcePath" : "games/tenebrio/effects_ui/effects/sprite_1bit_monochrome_native/sewer_npcs_effects/sheets/PNG/Animation_packed_version/Poor_man_without_shadow_1bit_native.png"
+      "sourcePath" : "games/tenebrio/effects_ui/effects/sprite_1bit_monochrome_native/sewer_npcs_effects/sheets/PNG/Animation_packed_version/Poor_man_without_shadow_1bit_native.png",
+      "width" : 24
     },
     {
+      "height" : 33,
       "image" : "/showcase/characters/priest.png",
       "key" : "npc:priest",
       "label" : "Priest",
       "slug" : "priest",
-      "sourcePath" : "games/tenebrio/actors/shrine_identity/sprite_1bit_monochrome_native/chapel_npcs/sheets/PNG/Animation/Priest_Idle_without_shadow_1bit_native.png"
+      "sourcePath" : "games/tenebrio/actors/shrine_identity/sprite_1bit_monochrome_native/chapel_npcs/sheets/PNG/Animation/Priest_Idle_without_shadow_1bit_native.png",
+      "width" : 23
     },
     {
+      "height" : 31,
       "image" : "/showcase/characters/smith.png",
       "key" : "npc:smith",
       "label" : "Smith",
       "slug" : "smith",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/blacksmith_npcs/sheets/PNG/Smith/Idle_Walk/Smith_idle_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/blacksmith_npcs/sheets/PNG/Smith/Idle_Walk/Smith_idle_without_shadow_1bit_native.png",
+      "width" : 23
     },
     {
+      "height" : 28,
       "image" : "/showcase/characters/swordsman-l1.png",
       "key" : "player:swordsman_l1",
       "label" : "Swordsman L1",
       "slug" : "swordsman-l1",
-      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl1/without_shadow/frames/idle/front/swordsman_lvl1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl1/without_shadow/frames/idle/front/swordsman_lvl1_idle_front_01_64x64_edges.png",
+      "width" : 23
     },
     {
+      "height" : 29,
       "image" : "/showcase/characters/swordsman-l2.png",
       "key" : "player:swordsman_l2",
       "label" : "Swordsman L2",
       "slug" : "swordsman-l2",
-      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl2/without_shadow/frames/idle/front/swordsman_lvl2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl2/without_shadow/frames/idle/front/swordsman_lvl2_idle_front_01_64x64_edges.png",
+      "width" : 22
     },
     {
+      "height" : 30,
       "image" : "/showcase/characters/swordsman-l3.png",
       "key" : "player:swordsman_l3",
       "label" : "Swordsman L3",
       "slug" : "swordsman-l3",
-      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl3/without_shadow/frames/idle/front/swordsman_lvl3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl3/without_shadow/frames/idle/front/swordsman_lvl3_idle_front_01_64x64_edges.png",
+      "width" : 24
     },
     {
+      "height" : 31,
       "image" : "/showcase/characters/swordsman-l4.png",
       "key" : "player:swordsman_l4",
       "label" : "Swordsman L4",
       "slug" : "swordsman-l4",
-      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl4/without_shadow/frames/idle/front/swordsman_lvl4_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl4/without_shadow/frames/idle/front/swordsman_lvl4_idle_front_01_64x64_edges.png",
+      "width" : 27
     },
     {
+      "height" : 32,
       "image" : "/showcase/characters/swordsman-l5.png",
       "key" : "player:swordsman_l5",
       "label" : "Swordsman L5",
       "slug" : "swordsman-l5",
-      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl5/without_shadow/frames/idle/front/swordsman_lvl5_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl5/without_shadow/frames/idle/front/swordsman_lvl5_idle_front_01_64x64_edges.png",
+      "width" : 27
     },
     {
+      "height" : 32,
       "image" : "/showcase/characters/swordsman-l6.png",
       "key" : "player:swordsman_l6",
       "label" : "Swordsman L6",
       "slug" : "swordsman-l6",
-      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl6/without_shadow/frames/idle/front/swordsman_lvl6_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl6/without_shadow/frames/idle/front/swordsman_lvl6_idle_front_01_64x64_edges.png",
+      "width" : 29
     },
     {
+      "height" : 30,
       "image" : "/showcase/characters/swordsman-l7.png",
       "key" : "player:swordsman_l7",
       "label" : "Swordsman L7",
       "slug" : "swordsman-l7",
-      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl7/without_shadow/frames/idle/front/swordsman_lvl7_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl7/without_shadow/frames/idle/front/swordsman_lvl7_idle_front_01_64x64_edges.png",
+      "width" : 32
     },
     {
+      "height" : 31,
       "image" : "/showcase/characters/swordsman-l8.png",
       "key" : "player:swordsman_l8",
       "label" : "Swordsman L8",
       "slug" : "swordsman-l8",
-      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl8/without_shadow/frames/idle/front/swordsman_lvl8_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl8/without_shadow/frames/idle/front/swordsman_lvl8_idle_front_01_64x64_edges.png",
+      "width" : 33
     },
     {
+      "height" : 31,
       "image" : "/showcase/characters/swordsman-l9.png",
       "key" : "player:swordsman_l9",
       "label" : "Swordsman L9",
       "slug" : "swordsman-l9",
-      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl9/without_shadow/frames/idle/front/swordsman_lvl9_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/luciphilus/player_roles/main_melee_dd/sprite_edges_64x64/swordsman_lvl9/without_shadow/frames/idle/front/swordsman_lvl9_idle_front_01_64x64_edges.png",
+      "width" : 37
     },
     {
+      "height" : 27,
       "image" : "/showcase/characters/tavern-drinker.png",
       "key" : "npc:drinker",
       "label" : "Tavern Drinker",
       "slug" : "tavern-drinker",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_drinker5_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_drinker5_1bit_native.png",
+      "width" : 20
     },
     {
+      "height" : 27,
       "image" : "/showcase/characters/tavern-drow-player.png",
       "key" : "npc:drow_player",
       "label" : "Tavern Drow Player",
       "slug" : "tavern-drow-player",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_player_drow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_player_drow_1bit_native.png",
+      "width" : 27
     },
     {
+      "height" : 27,
       "image" : "/showcase/characters/tavern-dwarf-player.png",
       "key" : "npc:dwarf_player",
       "label" : "Tavern Dwarf Player",
       "slug" : "tavern-dwarf-player",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_dwarf_player_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_dwarf_player_1bit_native.png",
+      "width" : 21
     },
     {
+      "height" : 31,
       "image" : "/showcase/characters/tavern-killer.png",
       "key" : "npc:killer",
       "label" : "Tavern Killer",
       "slug" : "tavern-killer",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_killer_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_killer_1bit_native.png",
+      "width" : 29
     },
     {
+      "height" : 27,
       "image" : "/showcase/characters/tavern-knight.png",
       "key" : "npc:knight",
       "label" : "Tavern Knight",
       "slug" : "tavern-knight",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_knight_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_knight_1bit_native.png",
+      "width" : 26
     },
     {
+      "height" : 29,
       "image" : "/showcase/characters/tavern-orc-player.png",
       "key" : "npc:orc_player",
       "label" : "Tavern Orc Player",
       "slug" : "tavern-orc-player",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_orc_player_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_orc_player_1bit_native.png",
+      "width" : 26
     },
     {
+      "height" : 23,
       "image" : "/showcase/characters/tavern-thinker.png",
       "key" : "npc:think_guy",
       "label" : "Tavern Thinker",
       "slug" : "tavern-thinker",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_think_guy_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_think_guy_1bit_native.png",
+      "width" : 20
     },
     {
+      "height" : 36,
       "image" : "/showcase/characters/tavern-watcher.png",
       "key" : "npc:watcher",
       "label" : "Tavern Watcher",
       "slug" : "tavern-watcher",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_watcher_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/tavern_npcs/sheets/Tiled_files/Animation_watcher_1bit_native.png",
+      "width" : 25
     },
     {
+      "height" : 28,
       "image" : "/showcase/characters/thief.png",
       "key" : "npc:thief",
       "label" : "Thief",
       "slug" : "thief",
-      "sourcePath" : "games/tenebrio/effects_ui/effects/sprite_1bit_monochrome_native/sewer_npcs_effects/sheets/PNG/Animation_packed_version/Thief_idle_without_shadow_1bit_native.png"
+      "sourcePath" : "games/tenebrio/effects_ui/effects/sprite_1bit_monochrome_native/sewer_npcs_effects/sheets/PNG/Animation_packed_version/Thief_idle_without_shadow_1bit_native.png",
+      "width" : 44
     },
     {
+      "height" : 30,
       "image" : "/showcase/characters/tower-mage-1.png",
       "key" : "npc:tower_mage_1",
       "label" : "Tower Mage 1",
       "slug" : "tower-mage-1",
-      "sourcePath" : "games/luciphilus/player_roles/healer_support_placeholders/sprite_1bit_monochrome_native/mage_tower_support_sprites/sheets/PNG/Mages/Mage1_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/player_roles/healer_support_placeholders/sprite_1bit_monochrome_native/mage_tower_support_sprites/sheets/PNG/Mages/Mage1_without_shadow_1bit_native.png",
+      "width" : 26
     },
     {
+      "height" : 35,
       "image" : "/showcase/characters/tower-mage-2.png",
       "key" : "npc:tower_mage_2",
       "label" : "Tower Mage 2",
       "slug" : "tower-mage-2",
-      "sourcePath" : "games/luciphilus/player_roles/healer_support_placeholders/sprite_1bit_monochrome_native/mage_tower_support_sprites/sheets/PNG/Mages/Mage2_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/player_roles/healer_support_placeholders/sprite_1bit_monochrome_native/mage_tower_support_sprites/sheets/PNG/Mages/Mage2_without_shadow_1bit_native.png",
+      "width" : 26
     },
     {
+      "height" : 32,
       "image" : "/showcase/characters/tower-reader.png",
       "key" : "npc:tower_reader_1",
       "label" : "Tower Reader",
       "slug" : "tower-reader",
-      "sourcePath" : "games/luciphilus/player_roles/healer_support_placeholders/sprite_1bit_monochrome_native/mage_tower_support_sprites/sheets/PNG/Readers/Reader1_1bit_native.png"
+      "sourcePath" : "games/luciphilus/player_roles/healer_support_placeholders/sprite_1bit_monochrome_native/mage_tower_support_sprites/sheets/PNG/Readers/Reader1_1bit_native.png",
+      "width" : 23
     },
     {
+      "height" : 29,
       "image" : "/showcase/characters/trader.png",
       "key" : "npc:trader",
       "label" : "Trader",
       "slug" : "trader",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/market_square_npcs/sheets/PNG/Characters/Character_others_animation/Without_shadow/Trader_weapon_animation_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/market_square_npcs/sheets/PNG/Characters/Character_others_animation/Without_shadow/Trader_weapon_animation_without_shadow_1bit_native.png",
+      "width" : 29
     },
     {
+      "height" : 26,
       "image" : "/showcase/characters/trainer.png",
       "key" : "npc:trainer",
       "label" : "Trainer",
       "slug" : "trainer",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/training_arena_characters/sheets/PNG/Characters/Other_fighters/Without_shadow/Trainer_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/training_arena_characters/sheets/PNG/Characters/Other_fighters/Without_shadow/Trainer_without_shadow_1bit_native.png",
+      "width" : 19
     },
     {
+      "height" : 29,
       "image" : "/showcase/characters/village-boy.png",
       "key" : "npc:village_boy",
       "label" : "Village Boy",
       "slug" : "village-boy",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/fishing_village_npcs/sheets/PNG/Characters/Boy_amazed_without_shadow_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/fishing_village_npcs/sheets/PNG/Characters/Boy_amazed_without_shadow_1bit_native.png",
+      "width" : 26
     },
     {
+      "height" : 26,
       "image" : "/showcase/characters/village-seller.png",
       "key" : "npc:seller_gramma",
       "label" : "Village Seller",
       "slug" : "village-seller",
-      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/fishing_village_npcs/sheets/PNG/Characters/Seller_gramma_1bit_native.png"
+      "sourcePath" : "games/luciphilus/support_npcs/sprite_1bit_monochrome_native/fishing_village_npcs/sheets/PNG/Characters/Seller_gramma_1bit_native.png",
+      "width" : 16
     }
   ],
   "monsters" : [
     {
+      "height" : 43,
       "image" : "/showcase/monsters/beholder-1.png",
       "key" : "monster:beholder1",
       "label" : "Beholder 1",
       "slug" : "beholder-1",
-      "sourcePath" : "games/luciphilus/player_roles/caster_dd/sprite_edges_64x64/beholder1/without_shadow/frames/idle/front/beholder1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/luciphilus/player_roles/caster_dd/sprite_edges_64x64/beholder1/without_shadow/frames/idle/front/beholder1_idle_front_01_64x64_edges.png",
+      "width" : 43
     },
     {
+      "height" : 52,
       "image" : "/showcase/monsters/beholder-2.png",
       "key" : "monster:beholder2",
       "label" : "Beholder 2",
       "slug" : "beholder-2",
-      "sourcePath" : "games/luciphilus/player_roles/caster_dd/sprite_edges_64x64/beholder2/without_shadow/frames/idle/front/beholder2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/luciphilus/player_roles/caster_dd/sprite_edges_64x64/beholder2/without_shadow/frames/idle/front/beholder2_idle_front_01_64x64_edges.png",
+      "width" : 49
     },
     {
+      "height" : 59,
       "image" : "/showcase/monsters/beholder-3.png",
       "key" : "monster:beholder3",
       "label" : "Beholder 3",
       "slug" : "beholder-3",
-      "sourcePath" : "games/luciphilus/player_roles/caster_dd/sprite_edges_64x64/beholder3/without_shadow/frames/idle/front/beholder3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/luciphilus/player_roles/caster_dd/sprite_edges_64x64/beholder3/without_shadow/frames/idle/front/beholder3_idle_front_01_64x64_edges.png",
+      "width" : 62
     },
     {
+      "height" : 60,
       "image" : "/showcase/monsters/demon-1.png",
       "key" : "monster:demon1",
       "label" : "Demon 1",
       "slug" : "demon-1",
-      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/demon1/without_shadow/frames/idle/front/demon1_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/demon1/without_shadow/frames/idle/front/demon1_idle_front_01_128x128_edges_native.png",
+      "width" : 37
     },
     {
+      "height" : 54,
       "image" : "/showcase/monsters/demon-2.png",
       "key" : "monster:demon2",
       "label" : "Demon 2",
       "slug" : "demon-2",
-      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/demon2/without_shadow/frames/idle/front/demon2_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/demon2/without_shadow/frames/idle/front/demon2_idle_front_01_128x128_edges_native.png",
+      "width" : 39
     },
     {
+      "height" : 66,
       "image" : "/showcase/monsters/demon-3.png",
       "key" : "monster:demon3",
       "label" : "Demon 3",
       "slug" : "demon-3",
-      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/demon3/without_shadow/frames/idle/front/demon3_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/demon3/without_shadow/frames/idle/front/demon3_idle_front_01_128x128_edges_native.png",
+      "width" : 55
     },
     {
+      "height" : 53,
       "image" : "/showcase/monsters/ent-1.png",
       "key" : "monster:ent1",
       "label" : "Ent 1",
       "slug" : "ent-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/ent1/without_shadow/frames/idle/front/ent1_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/ent1/without_shadow/frames/idle/front/ent1_idle_front_01_128x128_edges_native.png",
+      "width" : 43
     },
     {
+      "height" : 71,
       "image" : "/showcase/monsters/ent-2.png",
       "key" : "monster:ent2",
       "label" : "Ent 2",
       "slug" : "ent-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/ent2/without_shadow/frames/idle/front/ent2_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/ent2/without_shadow/frames/idle/front/ent2_idle_front_01_128x128_edges_native.png",
+      "width" : 52
     },
     {
+      "height" : 75,
       "image" : "/showcase/monsters/ent-3.png",
       "key" : "monster:ent3",
       "label" : "Ent 3",
       "slug" : "ent-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/ent3/without_shadow/frames/idle/front/ent3_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/ent3/without_shadow/frames/idle/front/ent3_idle_front_01_128x128_edges_native.png",
+      "width" : 63
     },
     {
+      "height" : 24,
       "image" : "/showcase/monsters/free-slime-1.png",
       "key" : "monster:free_slime1",
       "label" : "Free Slime 1",
       "slug" : "free-slime-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/free_slime1/without_shadow/frames/idle/front/free_slime1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/free_slime1/without_shadow/frames/idle/front/free_slime1_idle_front_01_64x64_edges.png",
+      "width" : 23
     },
     {
+      "height" : 25,
       "image" : "/showcase/monsters/free-slime-2.png",
       "key" : "monster:free_slime2",
       "label" : "Free Slime 2",
       "slug" : "free-slime-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/free_slime2/without_shadow/frames/idle/front/free_slime2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/free_slime2/without_shadow/frames/idle/front/free_slime2_idle_front_01_64x64_edges.png",
+      "width" : 27
     },
     {
+      "height" : 19,
       "image" : "/showcase/monsters/free-slime-3.png",
       "key" : "monster:free_slime3",
       "label" : "Free Slime 3",
       "slug" : "free-slime-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/free_slime3/without_shadow/frames/idle/front/free_slime3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/free_slime3/without_shadow/frames/idle/front/free_slime3_idle_front_01_64x64_edges.png",
+      "width" : 21
     },
     {
+      "height" : 32,
       "image" : "/showcase/monsters/ghost-1.png",
       "key" : "monster:ghost1",
       "label" : "Ghost 1",
       "slug" : "ghost-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/ghost1/without_shadow/frames/idle/front/ghost1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/ghost1/without_shadow/frames/idle/front/ghost1_idle_front_01_64x64_edges.png",
+      "width" : 24
     },
     {
+      "height" : 33,
       "image" : "/showcase/monsters/ghost-2.png",
       "key" : "monster:ghost2",
       "label" : "Ghost 2",
       "slug" : "ghost-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/ghost2/without_shadow/frames/idle/front/ghost2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/ghost2/without_shadow/frames/idle/front/ghost2_idle_front_01_64x64_edges.png",
+      "width" : 24
     },
     {
+      "height" : 38,
       "image" : "/showcase/monsters/ghost-3.png",
       "key" : "monster:ghost3",
       "label" : "Ghost 3",
       "slug" : "ghost-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/ghost3/without_shadow/frames/idle/front/ghost3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/ghost3/without_shadow/frames/idle/front/ghost3_idle_front_01_64x64_edges.png",
+      "width" : 34
     },
     {
+      "height" : 30,
       "image" : "/showcase/monsters/giant-rat-1.png",
       "key" : "monster:giant_rat1",
       "label" : "Giant Rat 1",
       "slug" : "giant-rat-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/giant_rat1/without_shadow/frames/idle/front/giant_rat1_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/giant_rat1/without_shadow/frames/idle/front/giant_rat1_idle_front_01_128x128_edges_native.png",
+      "width" : 34
     },
     {
+      "height" : 33,
       "image" : "/showcase/monsters/giant-rat-2.png",
       "key" : "monster:giant_rat2",
       "label" : "Giant Rat 2",
       "slug" : "giant-rat-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/giant_rat2/without_shadow/frames/idle/front/giant_rat2_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/giant_rat2/without_shadow/frames/idle/front/giant_rat2_idle_front_01_128x128_edges_native.png",
+      "width" : 41
     },
     {
+      "height" : 35,
       "image" : "/showcase/monsters/giant-rat-3.png",
       "key" : "monster:giant_rat3",
       "label" : "Giant Rat 3",
       "slug" : "giant-rat-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/giant_rat3/without_shadow/frames/idle/front/giant_rat3_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/giant_rat3/without_shadow/frames/idle/front/giant_rat3_idle_front_01_128x128_edges_native.png",
+      "width" : 35
     },
     {
+      "height" : 36,
       "image" : "/showcase/monsters/gnoll-1.png",
       "key" : "monster:gnoll1",
       "label" : "Gnoll 1",
       "slug" : "gnoll-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/gnoll1/without_shadow/frames/idle/front/gnoll1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/gnoll1/without_shadow/frames/idle/front/gnoll1_idle_front_01_64x64_edges.png",
+      "width" : 39
     },
     {
+      "height" : 36,
       "image" : "/showcase/monsters/gnoll-2.png",
       "key" : "monster:gnoll2",
       "label" : "Gnoll 2",
       "slug" : "gnoll-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/gnoll2/without_shadow/frames/idle/front/gnoll2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/gnoll2/without_shadow/frames/idle/front/gnoll2_idle_front_01_64x64_edges.png",
+      "width" : 39
     },
     {
+      "height" : 37,
       "image" : "/showcase/monsters/gnoll-3.png",
       "key" : "monster:gnoll3",
       "label" : "Gnoll 3",
       "slug" : "gnoll-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/gnoll3/without_shadow/frames/idle/front/gnoll3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/gnoll3/without_shadow/frames/idle/front/gnoll3_idle_front_01_64x64_edges.png",
+      "width" : 39
     },
     {
+      "height" : 32,
       "image" : "/showcase/monsters/goblin-1.png",
       "key" : "monster:goblin1",
       "label" : "Goblin 1",
       "slug" : "goblin-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/goblin1/without_shadow/frames/idle/front/goblin1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/goblin1/without_shadow/frames/idle/front/goblin1_idle_front_01_64x64_edges.png",
+      "width" : 25
     },
     {
+      "height" : 34,
       "image" : "/showcase/monsters/goblin-2.png",
       "key" : "monster:goblin2",
       "label" : "Goblin 2",
       "slug" : "goblin-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/goblin2/without_shadow/frames/idle/front/goblin2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/goblin2/without_shadow/frames/idle/front/goblin2_idle_front_01_64x64_edges.png",
+      "width" : 23
     },
     {
+      "height" : 37,
       "image" : "/showcase/monsters/goblin-3.png",
       "key" : "monster:goblin3",
       "label" : "Goblin 3",
       "slug" : "goblin-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/goblin3/without_shadow/frames/idle/front/goblin3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/goblin3/without_shadow/frames/idle/front/goblin3_idle_front_01_64x64_edges.png",
+      "width" : 25
     },
     {
+      "height" : 39,
       "image" : "/showcase/monsters/golem-1.png",
       "key" : "monster:golem1",
       "label" : "Golem 1",
       "slug" : "golem-1",
-      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/golem1/without_shadow/frames/idle/front/golem1_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/golem1/without_shadow/frames/idle/front/golem1_idle_front_01_128x128_edges_native.png",
+      "width" : 50
     },
     {
+      "height" : 46,
       "image" : "/showcase/monsters/golem-2.png",
       "key" : "monster:golem2",
       "label" : "Golem 2",
       "slug" : "golem-2",
-      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/golem2/without_shadow/frames/idle/front/golem2_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/golem2/without_shadow/frames/idle/front/golem2_idle_front_01_128x128_edges_native.png",
+      "width" : 56
     },
     {
+      "height" : 53,
       "image" : "/showcase/monsters/golem-3.png",
       "key" : "monster:golem3",
       "label" : "Golem 3",
       "slug" : "golem-3",
-      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/golem3/without_shadow/frames/idle/front/golem3_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/luciphilus/player_roles/tank_bruiser/sprite_edges_native/golem3/without_shadow/frames/idle/front/golem3_idle_front_01_128x128_edges_native.png",
+      "width" : 55
     },
     {
+      "height" : 27,
       "image" : "/showcase/monsters/imp-1.png",
       "key" : "monster:imp1",
       "label" : "Imp 1",
       "slug" : "imp-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/imp1/without_shadow/frames/idle/front/imp1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/imp1/without_shadow/frames/idle/front/imp1_idle_front_01_64x64_edges.png",
+      "width" : 38
     },
     {
+      "height" : 30,
       "image" : "/showcase/monsters/imp-2.png",
       "key" : "monster:imp2",
       "label" : "Imp 2",
       "slug" : "imp-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/imp2/without_shadow/frames/idle/front/imp2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/imp2/without_shadow/frames/idle/front/imp2_idle_front_01_64x64_edges.png",
+      "width" : 39
     },
     {
+      "height" : 31,
       "image" : "/showcase/monsters/imp-3.png",
       "key" : "monster:imp3",
       "label" : "Imp 3",
       "slug" : "imp-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/imp3/without_shadow/frames/idle/front/imp3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/imp3/without_shadow/frames/idle/front/imp3_idle_front_01_64x64_edges.png",
+      "width" : 41
     },
     {
+      "height" : 37,
       "image" : "/showcase/monsters/lich-1.png",
       "key" : "monster:lich1",
       "label" : "Lich 1",
       "slug" : "lich-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/lich1/without_shadow/frames/idle/front/lich1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/lich1/without_shadow/frames/idle/front/lich1_idle_front_01_64x64_edges.png",
+      "width" : 25
     },
     {
+      "height" : 39,
       "image" : "/showcase/monsters/lich-2.png",
       "key" : "monster:lich2",
       "label" : "Lich 2",
       "slug" : "lich-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/lich2/without_shadow/frames/idle/front/lich2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/lich2/without_shadow/frames/idle/front/lich2_idle_front_01_64x64_edges.png",
+      "width" : 30
     },
     {
+      "height" : 41,
       "image" : "/showcase/monsters/lich-3.png",
       "key" : "monster:lich3",
       "label" : "Lich 3",
       "slug" : "lich-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/lich3/without_shadow/frames/idle/front/lich3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/lich3/without_shadow/frames/idle/front/lich3_idle_front_01_64x64_edges.png",
+      "width" : 33
     },
     {
+      "height" : 33,
       "image" : "/showcase/monsters/mushroom-1.png",
       "key" : "monster:mushroom1",
       "label" : "Mushroom 1",
       "slug" : "mushroom-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/mushroom1/without_shadow/frames/idle/front/mushroom1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/mushroom1/without_shadow/frames/idle/front/mushroom1_idle_front_01_64x64_edges.png",
+      "width" : 27
     },
     {
+      "height" : 34,
       "image" : "/showcase/monsters/mushroom-2.png",
       "key" : "monster:mushroom2",
       "label" : "Mushroom 2",
       "slug" : "mushroom-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/mushroom2/without_shadow/frames/idle/front/mushroom2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/mushroom2/without_shadow/frames/idle/front/mushroom2_idle_front_01_64x64_edges.png",
+      "width" : 30
     },
     {
+      "height" : 41,
       "image" : "/showcase/monsters/mushroom-3.png",
       "key" : "monster:mushroom3",
       "label" : "Mushroom 3",
       "slug" : "mushroom-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/mushroom3/without_shadow/frames/idle/front/mushroom3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/mushroom3/without_shadow/frames/idle/front/mushroom3_idle_front_01_64x64_edges.png",
+      "width" : 41
     },
     {
+      "height" : 32,
       "image" : "/showcase/monsters/orc-1.png",
       "key" : "monster:orc1",
       "label" : "Orc 1",
       "slug" : "orc-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/orc1/without_shadow/frames/idle/front/orc1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/orc1/without_shadow/frames/idle/front/orc1_idle_front_01_64x64_edges.png",
+      "width" : 38
     },
     {
+      "height" : 34,
       "image" : "/showcase/monsters/orc-2.png",
       "key" : "monster:orc2",
       "label" : "Orc 2",
       "slug" : "orc-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/orc2/without_shadow/frames/idle/front/orc2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/orc2/without_shadow/frames/idle/front/orc2_idle_front_01_64x64_edges.png",
+      "width" : 40
     },
     {
+      "height" : 39,
       "image" : "/showcase/monsters/orc-3.png",
       "key" : "monster:orc3",
       "label" : "Orc 3",
       "slug" : "orc-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/orc3/without_shadow/frames/idle/front/orc3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/orc3/without_shadow/frames/idle/front/orc3_idle_front_01_64x64_edges.png",
+      "width" : 42
     },
     {
+      "height" : 39,
       "image" : "/showcase/monsters/predator-plant-1.png",
       "key" : "monster:predator_plant1",
       "label" : "Predator Plant 1",
       "slug" : "predator-plant-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/predator_plant1/without_shadow/frames/idle/front/predator_plant1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/predator_plant1/without_shadow/frames/idle/front/predator_plant1_idle_front_01_64x64_edges.png",
+      "width" : 33
     },
     {
+      "height" : 36,
       "image" : "/showcase/monsters/predator-plant-2.png",
       "key" : "monster:predator_plant2",
       "label" : "Predator Plant 2",
       "slug" : "predator-plant-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/predator_plant2/without_shadow/frames/idle/front/predator_plant2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/predator_plant2/without_shadow/frames/idle/front/predator_plant2_idle_front_01_64x64_edges.png",
+      "width" : 34
     },
     {
+      "height" : 37,
       "image" : "/showcase/monsters/predator-plant-3.png",
       "key" : "monster:predator_plant3",
       "label" : "Predator Plant 3",
       "slug" : "predator-plant-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/predator_plant3/without_shadow/frames/idle/front/predator_plant3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/predator_plant3/without_shadow/frames/idle/front/predator_plant3_idle_front_01_64x64_edges.png",
+      "width" : 29
     },
     {
+      "height" : 25,
       "image" : "/showcase/monsters/skeleton-1.png",
       "key" : "monster:skeleton1",
       "label" : "Skeleton 1",
       "slug" : "skeleton-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/skeleton1/without_shadow/frames/idle/front/skeleton1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/skeleton1/without_shadow/frames/idle/front/skeleton1_idle_front_01_64x64_edges.png",
+      "width" : 28
     },
     {
+      "height" : 26,
       "image" : "/showcase/monsters/skeleton-2.png",
       "key" : "monster:skeleton2",
       "label" : "Skeleton 2",
       "slug" : "skeleton-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/skeleton2/without_shadow/frames/idle/front/skeleton2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/skeleton2/without_shadow/frames/idle/front/skeleton2_idle_front_01_64x64_edges.png",
+      "width" : 31
     },
     {
+      "height" : 30,
       "image" : "/showcase/monsters/skeleton-3.png",
       "key" : "monster:skeleton3",
       "label" : "Skeleton 3",
       "slug" : "skeleton-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/skeleton3/without_shadow/frames/idle/front/skeleton3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/skeleton3/without_shadow/frames/idle/front/skeleton3_idle_front_01_64x64_edges.png",
+      "width" : 31
     },
     {
+      "height" : 39,
       "image" : "/showcase/monsters/slime-boss-1.png",
       "key" : "monster:slime_boss1",
       "label" : "Slime Boss 1",
       "slug" : "slime-boss-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/slime_boss1/without_shadow/frames/idle/front/slime_boss1_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/slime_boss1/without_shadow/frames/idle/front/slime_boss1_idle_front_01_128x128_edges_native.png",
+      "width" : 38
     },
     {
+      "height" : 39,
       "image" : "/showcase/monsters/slime-boss-2.png",
       "key" : "monster:slime_boss2",
       "label" : "Slime Boss 2",
       "slug" : "slime-boss-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/slime_boss2/without_shadow/frames/idle/front/slime_boss2_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/slime_boss2/without_shadow/frames/idle/front/slime_boss2_idle_front_01_128x128_edges_native.png",
+      "width" : 45
     },
     {
+      "height" : 39,
       "image" : "/showcase/monsters/slime-boss-3.png",
       "key" : "monster:slime_boss3",
       "label" : "Slime Boss 3",
       "slug" : "slime-boss-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/slime_boss3/without_shadow/frames/idle/front/slime_boss3_idle_front_01_128x128_edges_native.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_native/slime_boss3/without_shadow/frames/idle/front/slime_boss3_idle_front_01_128x128_edges_native.png",
+      "width" : 39
     },
     {
+      "height" : 21,
       "image" : "/showcase/monsters/slime-monster-1.png",
       "key" : "monster:slime_monster1",
       "label" : "Slime Monster 1",
       "slug" : "slime-monster-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/slime_monster1/without_shadow/frames/idle/front/slime_monster1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/slime_monster1/without_shadow/frames/idle/front/slime_monster1_idle_front_01_64x64_edges.png",
+      "width" : 21
     },
     {
+      "height" : 42,
       "image" : "/showcase/monsters/slime-monster-2.png",
       "key" : "monster:slime_monster2",
       "label" : "Slime Monster 2",
       "slug" : "slime-monster-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/slime_monster2/without_shadow/frames/idle/front/slime_monster2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/slime_monster2/without_shadow/frames/idle/front/slime_monster2_idle_front_01_64x64_edges.png",
+      "width" : 23
     },
     {
+      "height" : 24,
       "image" : "/showcase/monsters/slime-monster-3.png",
       "key" : "monster:slime_monster3",
       "label" : "Slime Monster 3",
       "slug" : "slime-monster-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/slime_monster3/without_shadow/frames/idle/front/slime_monster3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/slime_monster3/without_shadow/frames/idle/front/slime_monster3_idle_front_01_64x64_edges.png",
+      "width" : 26
     },
     {
+      "height" : 30,
       "image" : "/showcase/monsters/vampire-1.png",
       "key" : "monster:vampire1",
       "label" : "Vampire 1",
       "slug" : "vampire-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/vampire1/without_shadow/frames/idle/front/vampire1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/vampire1/without_shadow/frames/idle/front/vampire1_idle_front_01_64x64_edges.png",
+      "width" : 27
     },
     {
+      "height" : 32,
       "image" : "/showcase/monsters/vampire-2.png",
       "key" : "monster:vampire2",
       "label" : "Vampire 2",
       "slug" : "vampire-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/vampire2/without_shadow/frames/idle/front/vampire2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/vampire2/without_shadow/frames/idle/front/vampire2_idle_front_01_64x64_edges.png",
+      "width" : 31
     },
     {
+      "height" : 31,
       "image" : "/showcase/monsters/vampire-3.png",
       "key" : "monster:vampire3",
       "label" : "Vampire 3",
       "slug" : "vampire-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/vampire3/without_shadow/frames/idle/front/vampire3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/vampire3/without_shadow/frames/idle/front/vampire3_idle_front_01_64x64_edges.png",
+      "width" : 43
     },
     {
+      "height" : 29,
       "image" : "/showcase/monsters/zombie-1.png",
       "key" : "monster:zombie1",
       "label" : "Zombie 1",
       "slug" : "zombie-1",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/zombie1/without_shadow/frames/idle/front/zombie1_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/zombie1/without_shadow/frames/idle/front/zombie1_idle_front_01_64x64_edges.png",
+      "width" : 23
     },
     {
+      "height" : 27,
       "image" : "/showcase/monsters/zombie-2.png",
       "key" : "monster:zombie2",
       "label" : "Zombie 2",
       "slug" : "zombie-2",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/zombie2/without_shadow/frames/idle/front/zombie2_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/zombie2/without_shadow/frames/idle/front/zombie2_idle_front_01_64x64_edges.png",
+      "width" : 22
     },
     {
+      "height" : 29,
       "image" : "/showcase/monsters/zombie-3.png",
       "key" : "monster:zombie3",
       "label" : "Zombie 3",
       "slug" : "zombie-3",
-      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/zombie3/without_shadow/frames/idle/front/zombie3_idle_front_01_64x64_edges.png"
+      "sourcePath" : "games/tenebrio/actors/transformation_families/sprite_edges_64x64/zombie3/without_shadow/frames/idle/front/zombie3_idle_front_01_64x64_edges.png",
+      "width" : 23
     }
   ]
 }
