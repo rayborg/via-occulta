@@ -543,31 +543,31 @@
       "width" : 62
     },
     {
-      "height" : 32,
+      "height" : 60,
       "image" : "/showcase/monsters/demon-1.png",
       "key" : "monster:demon1",
       "label" : "Demon 1",
       "slug" : "demon-1",
-      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/demon1/without_shadow/frames/idle/front/demon1_idle_front_01_64x64_edges.png",
-      "width" : 20
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/demon1/without_shadow/frames/idle/front/demon1_idle_front_01_128x128_edges_native.png",
+      "width" : 37
     },
     {
-      "height" : 29,
+      "height" : 54,
       "image" : "/showcase/monsters/demon-2.png",
       "key" : "monster:demon2",
       "label" : "Demon 2",
       "slug" : "demon-2",
-      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/demon2/without_shadow/frames/idle/front/demon2_idle_front_01_64x64_edges.png",
-      "width" : 21
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/demon2/without_shadow/frames/idle/front/demon2_idle_front_01_128x128_edges_native.png",
+      "width" : 39
     },
     {
-      "height" : 55,
+      "height" : 86,
       "image" : "/showcase/monsters/demon-3.png",
       "key" : "monster:demon3",
       "label" : "Demon 3",
       "slug" : "demon-3",
-      "sourcePath" : "games/shared/monster_families/sprite_edges_64x64/demon3/without_shadow/frames/idle/front/demon3_idle_front_01_64x64_edges.png",
-      "width" : 50
+      "sourcePath" : "games/shared/monster_families/sprite_edges_native/demon3/without_shadow/frames/idle/front/demon3_idle_front_01_128x128_edges_native.png",
+      "width" : 75
     },
     {
       "height" : 53,
