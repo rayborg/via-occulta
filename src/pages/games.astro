@@ -3,28 +3,60 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const gameLines = [
   {
-    name: 'Tenebrio',
-    kicker: 'Shriner scout',
-    role: 'A weak shriner maps forbidden routes and survives through rites, maps, disguise, transformation, and forbidden knowledge.',
-    cast: 'Main candidates: base male unarmed and base female unarmed, with sword variants reserved for later defensive or disguise-capable states. Support: priests, monks, shrine keepers, pilgrims, road-bound spirits, disguised monsters, and cursed locals.',
-    fantasy: 'You are weak, but you know the rites.',
-    contributes: ['Map fragments', 'Shrine keys', 'Disguise rites', 'Occult warnings', 'Route unlocks']
-  },
-  {
     name: 'Luciphilus',
     kicker: 'Paid adventurer escort',
     role: 'An adventurer, escort, and monster-clearer accepts contracts, clears threats, escorts fragile travelers, fights bosses, and recovers relics.',
-    cast: 'Main candidate: the Swordsman line as the clearest active player hero. Support: guards, fighters, archers, expedition members, lantern-company adventurers, monster hunters, mages, and dungeon parties.',
+    cast: 'Current roster: Swordsman L1-L9, Female Mage Level 1-3, and Male Mage Level 1-3. Mage level 3 forms use Dragon Head and the selected Priest-spell subset as battle apparitions.',
     fantasy: 'You carry the light into the road after someone else has found it.',
     contributes: ['Cleared routes', 'Boss relics', 'Monster parts', 'Recovered weapons', 'Proof an area can be rebuilt']
   },
   {
+    name: 'Tenebrio',
+    kicker: 'Shriner transformation route',
+    role: 'A weak shriner maps forbidden routes and survives through rites, maps, disguise, transformation, and forbidden knowledge.',
+    cast: 'Current roster: bare male unarmed, bare male armed, Imp 1-3, Lich 1-3, and a Mage Tower ritual-demon final form using selected character-sprite frames.',
+    fantasy: 'You are weak, but you know the rites.',
+    contributes: ['Map fragments', 'Shrine keys', 'Disguise rites', 'Occult warnings', 'Route unlocks']
+  },
+  {
     name: 'Opiphilus',
-    kicker: 'Guild crafter / trader',
-    role: 'A guild worker, crafter, or trade traveler is fragile outside settlements, posts escort requests, travels for shops and craft jobs, and rebuilds civilization.',
-    cast: 'Main candidates: Smith and Herbalist. Support, escort, and NPC roles: priests, ritual helpers, guild mages, monks, glassblowers, shopkeepers, traders, market workers, guild clerks, blacksmiths, villagers, and escorted clients.',
+    kicker: 'Guild crafter / monk route',
+    role: 'A guild worker, crafter, monk, or trade traveler is fragile outside settlements, posts escort requests, travels for shops and craft jobs, and rebuilds civilization.',
+    cast: 'Current roster: Smith, Herbalist, and a product-assigned Monk Level 1-4 route from Mon1k-Mon4k. Priest is not part of the current Opiphilus roster.',
     fantasy: 'You make the tools that let the town endure the abyss.',
     contributes: ['Road lanterns', 'Shrine repair kits', 'Guild orders', 'Town upgrades', 'Market circulation']
+  }
+];
+
+const currentRoster = [
+  {
+    game: 'Luciphilus',
+    route: 'Swordsman and Mage routes',
+    entries: [
+      'Swordsman L1-L9',
+      'Female Mage Level 1-2, then animated Dragon Head at Level 3',
+      'Male Mage Level 1-2, then selected Priest-spell apparition subset at Level 3'
+    ]
+  },
+  {
+    game: 'Tenebrio',
+    route: 'Shriner transformation route',
+    entries: [
+      'Level 1: bare male unarmed',
+      'Level 2: bare male armed',
+      'Levels 3-5: Imp 1-3',
+      'Levels 6-8: Lich 1-3',
+      'Level 9: Mage Tower ritual demon, selected frames 6-15'
+    ]
+  },
+  {
+    game: 'Opiphilus',
+    route: 'Guild craft and monk route',
+    entries: [
+      'Smith',
+      'Herbalist',
+      'Monk Level 1-4 from Mon1k-Mon4k prayer/ritual variants'
+    ]
   }
 ];
 
@@ -61,20 +93,20 @@ const forces = [
 
 <BaseLayout
   title="Games | Via Occulta"
-  description="The three linked Via Occulta game lines: Tenebrio discovers, Luciphilus fights, and Opiphilus builds."
+  description="The three linked Via Occulta game lines: Luciphilus fights, Tenebrio transforms, and Opiphilus builds."
 >
   <section class="page-hero">
     <div class="shell">
       <p class="eyebrow">Three linked game lines</p>
       <h1>Discovery, battle, and craft share one wounded map.</h1>
       <p>
-        Via Occulta is not one generic online role with different skins. Tenebrio, Luciphilus, and
-        Opiphilus are distinct ways of serving the same hidden-road world: find what vanished, survive
-        what guards it, and rebuild the civic systems that keep it open.
+        Via Occulta is not one generic online role with different skins. Luciphilus, Tenebrio, and
+        Opiphilus are distinct ways of serving the same hidden-road world: fight through what guards
+        it, learn the rites that reveal it, and rebuild the civic systems that keep it open.
       </p>
       <div class="pill-row">
-        <span class="pill">Tenebrio discovers</span>
         <span class="pill">Luciphilus fights</span>
+        <span class="pill">Tenebrio transforms</span>
         <span class="pill">Opiphilus builds</span>
       </div>
     </div>
@@ -96,6 +128,24 @@ const forces = [
             <h4>Contributes</h4>
             <ul>
               {line.contributes.map((item) => <li>{item}</li>)}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="shell">
+      <p class="eyebrow">Current playable roster</p>
+      <h2>Three routes, now cast as concrete level lines.</h2>
+      <div class="card-grid">
+        {currentRoster.map((line) => (
+          <article class="info-card panel">
+            <p class="card-kicker">{line.game}</p>
+            <h3>{line.route}</h3>
+            <ul>
+              {line.entries.map((entry) => <li>{entry}</li>)}
             </ul>
           </article>
         ))}

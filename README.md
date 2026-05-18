@@ -6,8 +6,8 @@ This is more specific than simply saying “top-down.” The intended feel is a 
 
 The world is designed as three linked role lenses sharing one setting, economy, and restoration arc:
 
-- **Tenebrio** — a weak shriner exploration game about mapping forbidden places, shrine rites, disguise, and monster transformation.
 - **Luciphilus** — the adventurer / escort lens about clearing threats, guarding routes, escorting fragile travelers, getting paid, recovering relics, and fighting monsters.
+- **Tenebrio** — a weak shriner exploration game about mapping forbidden places, shrine rites, disguise, and monster transformation.
 - **Opiphilus** — the crafter / guild lens about fragile travel outside settlements, posting escort requests, reaching villages, accessing shops and guild jobs, crafting, repairs, trade orders, and restoration projects.
 
 ---
@@ -40,13 +40,13 @@ Short version:
 
 ## Hero Roles
 
-- **Tenebrio hero:** weak shriner / forbidden-route mapper. Main candidates are base male unarmed and base female unarmed, with sword variants reserved for later defensive or disguise-capable states.
-- **Luciphilus hero:** adventurer / escort / monster-clearer. The Swordsman line is the clearest active player hero, supported by guards, fighters, archers, expedition members, mages, and dungeon parties.
-- **Opiphilus hero:** guild worker / crafter / trade traveler. Official playable candidates are Smith and Herbalist for now because both have walk animation and same-identity craft/work loops; Priest, Monk, Guild Mage, Citizen, Glassblower, and Blacksmith Girl remain support or escorted NPC candidates.
+- **Luciphilus hero:** adventurer / escort / monster-clearer. Current roster is Swordsman L1-L9, Female Mage Level 1-3, and Male Mage Level 1-3.
+- **Tenebrio hero:** weak shriner / forbidden-route mapper. Current progression is bare male unarmed, bare male armed, Imp 1-3, Lich 1-3, and a Mage Tower ritual demon final form.
+- **Opiphilus hero:** guild worker / crafter / monk route. Current roster is Smith, Herbalist, and Monk Level 1-4 from Mon1k-Mon4k; Priest is not part of the current Opiphilus roster.
 
 Short trio:
 
-> **Tenebrio = shriner scout. Luciphilus = paid adventurer escort. Opiphilus = guild crafter / trader.**
+> **Luciphilus = paid adventurer escort. Tenebrio = shriner transformation route. Opiphilus = guild craft / monk route.**
 
 ---
 

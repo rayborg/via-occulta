@@ -4,21 +4,21 @@ import { withBase } from '../paths';
 
 const gameLines = [
   {
-    name: 'Tenebrio',
-    action: 'Discovers',
-    copy: 'A weak shriner maps forbidden routes, survives by rites and disguise, and brings back proof that a road still exists.',
-    payoff: 'You are weak, but you know the rites.'
-  },
-  {
     name: 'Luciphilus',
     action: 'Fights',
-    copy: 'An expedition party carries light into the revealed dungeon, clears the threat, and recovers relics that make repair possible.',
+    copy: 'An expedition party carries light into the revealed dungeon, with Swordsman and Mage routes that culminate in occult battle forms.',
     payoff: 'You carry the light after someone else found the door.'
+  },
+  {
+    name: 'Tenebrio',
+    action: 'Transforms',
+    copy: 'A weak shriner begins unarmed, survives by rites and disguise, and climbs toward imp, lich, and ritual-demon forms.',
+    payoff: 'You are weak, but you know the rites.'
   },
   {
     name: 'Opiphilus',
     action: 'Builds',
-    copy: 'Guild workers craft lanterns, fulfill orders, reopen workshops, and turn danger into civic infrastructure.',
+    copy: 'Guild workers and a four-rank monk route craft, pray, fulfill orders, reopen workshops, and turn danger into civic infrastructure.',
     payoff: 'You make the tools that let the town endure.'
   }
 ];
@@ -69,9 +69,9 @@ const openingBeats = [
           and restoring the town with proof brought back alive.
         </p>
         <div class="hero-proof" aria-label="Core promise">
-          <span>Read the map</span>
-          <span>Enter the chapel</span>
-          <span>Bring proof home</span>
+          <span>Carry the light</span>
+          <span>Learn the rite</span>
+          <span>Rebuild the road</span>
         </div>
         <div class="hero-actions" aria-label="Primary paths">
           <a class="button button--primary" href={withBase('/world')}>Enter the world</a>
