@@ -24,7 +24,7 @@ This is not a Tibia-style real-time top-down MMO and not a generic open-world MM
 
 ## Core Direction
 
-> **A 1-bit occult shared-world JRPG: Tenebrio discovers, Luciphilus secures, Opiphilus rebuilds.**
+> **A 1-bit occult shared-world JRPG: Luciphilus secures, Tenebrio discovers, Opiphilus rebuilds.**
 
 The earlier “online FF4-style structure + guild economy + instanced dungeons” idea remains useful, but the artwork direction points toward something more distinctive than a generic FF4 clone: a monochrome occult world where exploration, dungeon combat, crafting, shrine restoration, maps, and guild projects reinforce each other.
 
@@ -32,7 +32,7 @@ The earlier “online FF4-style structure + guild economy + instanced dungeons�
 
 Via Occulta uses **one canonical shared world map / area graph**.
 
-Tenebrio, Luciphilus, and Opiphilus are role lenses on the same world, not separate maps. A shrine road, guild gate, village, cave, chapel, dungeon, or workshop exists once in the shared world and is used differently depending on role.
+Luciphilus, Tenebrio, and Opiphilus are role lenses on the same world, not separate maps. A shrine road, guild gate, village, cave, chapel, dungeon, or workshop exists once in the shared world and is used differently depending on role.
 
 Short version:
 
@@ -40,13 +40,13 @@ Short version:
 
 ## Hero Roles
 
-- **Luciphilus hero:** adventurer / escort / monster-clearer. Current roster is Swordsman L1-L9, Female Mage Level 1-3, and Male Mage Level 1-3.
+- **Luciphilus hero:** adventurer / escort / monster-clearer. Current roster is Swordsman L1-L9, Female Mage Level 1-3, and Male Mage Level 1-3; both mage Level 3 paths use the selected Priest-spell-derived dragon hover loop.
 - **Tenebrio hero:** weak shriner / forbidden-route mapper. Current progression is bare male unarmed, bare male armed, Imp 1-3, Lich 1-3, and a Mage Tower ritual demon final form.
-- **Opiphilus hero:** guild worker / crafter / monk route. Current roster is Smith, Herbalist, and Monk Level 1-4 from Mon1k-Mon4k; Priest is not part of the current Opiphilus roster.
+- **Opiphilus hero:** guild worker / crafter / priest route. Current roster is Smith Level 0 base plus Levels 1-9 always-visible overlays, Herbalist Level 0 base plus Levels 1-9 always-visible overlays, and Priest Level 0 base plus Levels 1-9 progression; Smith Level 1 uses a small floating flame, Smith Levels 2-3 use a no-shield straight-handle Thor-style hammer mark and clear flame, Smith and Herbalist Levels 4-8 use emblem-only badges, Smith Level 5 reads as a flame badge, Herbalist Levels 1-3 build from one to three flapping butterflies and badge levels retain two off-shield butterflies, Priest uses the Mon1k body for every level, then adds one tiny lit candle, two floating lit candles, candle badge, open Bible badge, dove badge, olive-branch badge, and olive-wreath crest, ending with a thicker centered radiant head halo at Level 9, Mon2k, Mon3k, and Mon4k are skipped as level bodies, Smith Level 9 is companion-only with a flying forge bat, and Herbalist Level 9 is companion-only with a flying garden bird.
 
 Short trio:
 
-> **Luciphilus = paid adventurer escort. Tenebrio = shriner transformation route. Opiphilus = guild craft / monk route.**
+> **Luciphilus = paid adventurer escort. Tenebrio = shriner transformation route. Opiphilus = guild craft / priest route.**
 
 ---
 
@@ -189,7 +189,7 @@ This region avoids unsupported castle/palace promises while still feeling like a
 ## Design Pillars
 
 1. **Tile-based JRPG readability** — clear overhead maps, strong 1-bit silhouettes, readable interiors, clean UI, and minimal clutter.
-2. **Three role lenses on one map** — Tenebrio discovers routes and shrine secrets; Luciphilus clears, guards, and escorts through them for pay; Opiphilus posts escort requests, travels to villages, and turns access into crafting, guild jobs, repairs, and restoration.
+2. **Three role lenses on one map** — Luciphilus clears, guards, and escorts through routes for pay; Tenebrio discovers routes and shrine secrets; Opiphilus posts escort requests, travels to villages, and turns access into crafting, guild jobs, repairs, and restoration.
 3. **Online without chaos** — shared towns and guild spaces, but private party-based dungeons, story rooms, shrine trials, and key combat encounters.
 4. **Guilds shape the world** — players restore shrines, reopen routes, build workshops, craft equipment, recover relics, and unlock new expeditions.
 5. **Occult story first** — the world is built around hidden roads, failing shrines, forbidden maps, monster disguises, cursed ruins, guild politics, and a veiled lunar / underworld threat.
@@ -200,12 +200,12 @@ This region avoids unsupported castle/palace promises while still feeling like a
 
 Build a vertical slice that proves the shared-world loop at small scale.
 
-Minimum loop:
+Minimum proof points:
 
 1. A player starts in **Shrine-Town Hub**.
-2. Tenebrio-style exploration reveals a hidden route or shrine fragment in **Chapel Ruins** or **Cave and Sewer**.
-3. Luciphilus-style adventuring clears a small dungeon threat, guards the route, or accepts an escort request.
-4. An Opiphilus character becomes visible at the guild or gate when the escort is accepted.
+2. Luciphilus-style adventuring clears a small dungeon threat, guards the route, or accepts an escort request.
+3. Tenebrio-style exploration reveals a hidden route or shrine fragment in **Chapel Ruins** or **Cave and Sewer**.
+4. Opiphilus becomes visible at the guild or gate when the escort is accepted.
 5. The escort reaches a destination village, where Opiphilus accesses local shops, guild jobs, crafting stations, repairs, or restoration work.
 6. The restored object unlocks **Ruins Gate** or a new route off **Road and Forest**.
 
