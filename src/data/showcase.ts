@@ -76,12 +76,12 @@ const characterPageDefs = [
   {
     slug: 'guild-mage',
     title: 'Guild Mage',
-    summary: 'The clearest walk-capable mage line for Opiphilus, presented as four readable guild-hall silhouettes.',
+    summary: 'The clearest mage line for Luciphilus, now treated as Female/Male Level 1-9 overlay routes instead of shared battle-form bodies.',
     description: [
-      'The Guild Mages represent the practical magical side of Opiphilus rather than the remote, ritual-heavy mystery of the tower rooms. They belong in halls, ledgers, workshops, archives, and contracts, where magic is a trained profession instead of a haunted inheritance.',
-      'They make the world feel inhabited by learned workers, not only priests and warriors. They suggest a town that studies, records, and administers power instead of merely surviving it.'
+      'The Guild Mage bodies now anchor Luciphilus magic progression. Female Mage starts on Mage4 and moves to Mage3 overlays; Male Mage starts on Mage2 and moves to Mage1 overlays, keeping readable route identity through Level 9.',
+      'This keeps magic as a trained expedition role rather than replacing both mage routes with the same spell-effect body. Priest_spell remains effect material layered separately from the playable mage silhouettes.'
     ],
-    tags: ['Guild Houses', 'Road Charters', 'Mage Line', 'Variants 1-4'],
+    tags: ['Luciphilus', 'Mage Route', 'Levels 1-9', 'Overlays'],
     entrySlugs: ['guild-mage-1', 'guild-mage-2', 'guild-mage-3', 'guild-mage-4']
   },
   {
@@ -109,23 +109,23 @@ const characterPageDefs = [
   {
     slug: 'priest',
     title: 'Priest',
-    summary: 'The clearest shrine authority in the cast, standing at the line between community ritual and failing road-law.',
+    summary: 'The actual Luciphilus support/combat-caster route, with idle, walk, invocation, casting, and spell-effect material.',
     description: [
-      'Priests in Via Occulta are not merely flavor NPCs. They embody the old compact that once kept the roads legible, the shrines maintained, and the threshold rites trustworthy.',
-      'The Priest is a reminder that the crisis of the world is spiritual and infrastructural at once: if the priesthood forgets the road, the town itself begins to lose direction.'
+      'The Priest is strong enough to move from passive shrine authority into Luciphilus because the source set covers a full support-caster language: walking, speaking/invoking, casting, and a separate spell-effect sheet.',
+      'Priest_spell is treated as effect material for runtime composition, not as a shared mage battle body. The Priest itself remains the human religious caster silhouette.'
     ],
-    tags: ['Shrine Orders', 'Ritual Authority', 'Disguise Rites'],
+    tags: ['Luciphilus', 'Shrine Orders', 'Support Caster'],
     entrySlugs: ['priest']
   },
   {
     slug: 'monk',
     title: 'Monk',
-    summary: 'A disciplined shrine-adjacent line whose forms suggest different temperaments of devotion, labor, and guarded restraint.',
+    summary: 'The Opiphilus pilgrimage/shrine-worker route, using Mon1k as the body for a Level 1-9 overlay progression.',
     description: [
-      'The Monk variants feel less ceremonial than the Priest and more bodily tied to the maintenance of place: carrying things, watching doors, tending routines, and enduring fear through repetition.',
-      'Grouped together, they suggest a living order rather than a single hero figure. Via Occulta depends on institutions, not only protagonists.'
+      'The Monk route fits Opiphilus because it reads as disciplined labor and shrine maintenance rather than battlefield attack. The active route uses Mon1k and adds prayer-bead, prayer-wisp, scripture, bell, branch, vow-vessel, prayer-aura, and vigil-aura overlays.',
+      'Mon2k, Mon3k, and Mon4k stay as support/reference variants unless promoted later, preserving the route as one readable body with an overlay ladder.'
     ],
-    tags: ['Shrine Orders', 'Threshold Customs', 'Variants'],
+    tags: ['Opiphilus', 'Shrine Orders', 'Monk Route', 'Levels 1-9'],
     entrySlugs: ['monk-1', 'monk-2', 'monk-3']
   },
   {
@@ -530,7 +530,7 @@ export const monsterPages: ShowcasePage[] = monsterPageDefs.map((page) => ({
   entries: resolveEntries(page.entrySlugs)
 }));
 
-export const homepageFeaturedCharacters = characterPages.filter((page) => ['swordsman', 'guild-mage', 'blacksmith', 'herbalist', 'priest'].includes(page.slug));
+export const homepageFeaturedCharacters = characterPages.filter((page) => ['swordsman', 'guild-mage', 'priest', 'blacksmith', 'herbalist', 'monk'].includes(page.slug));
 export const homepageFeaturedMonsters = monsterPages.filter((page) => ['goblin', 'ghost', 'demon', 'slime-boss'].includes(page.slug));
 
 export function getCharacterPage(slug: string): ShowcasePage | undefined {

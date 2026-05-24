@@ -40,13 +40,13 @@ Short version:
 
 ## Hero Roles
 
-- **Luciphilus hero:** adventurer / escort / monster-clearer. Current roster is Swordsman L1-L9, Female Mage Level 1-3, and Male Mage Level 1-3; both mage Level 3 paths use the selected Priest-spell-derived dragon hover loop.
+- **Luciphilus hero:** adventurer / escort / monster-clearer. Current roster is Swordsman L1-L9, Female Mage Level 1-9 overlays, Male Mage Level 1-9 overlays, and the actual Priest support/combat-caster route. Female Mage Level 1 uses Mage4, Female Mage Levels 2-9 use Mage3, Male Mage Level 1 uses Mage2, and Male Mage Levels 2-9 use Mage1; `Priest_spell` remains spell-effect material rather than a shared playable dragon body.
 - **Tenebrio hero:** weak shriner / forbidden-route mapper. Current progression is bare male unarmed, bare male armed, Imp 1-3, Lich 1-3, and a Mage Tower ritual demon final form.
-- **Opiphilus hero:** guild worker / crafter / priest route. Current roster is Smith Level 0 base plus Levels 1-9 always-visible overlays, Herbalist Level 0 base plus Levels 1-9 always-visible overlays, and Priest Level 0 base plus Levels 1-9 progression; Smith Level 1 uses a small floating flame, Smith Levels 2-3 use a no-shield straight-handle Thor-style hammer mark and clear flame, Smith and Herbalist Levels 4-8 use emblem-only badges, Smith Level 5 reads as a flame badge, Herbalist Levels 1-3 build from one to three flapping butterflies and badge levels retain two off-shield butterflies, Priest uses the Mon1k body for every level, only Level 0 is unadorned, Levels 1-2 add one tiny lit candle and two floating lit candles, Levels 3-7 add candle, open Bible, dove, olive-branch, and olive-wreath badges, Level 8 adds a centered radiant head halo, and Level 9 thickens the final halo, Mon2k, Mon3k, and Mon4k are skipped as level bodies, Smith Level 9 is companion-only with a flying forge bat, and Herbalist Level 9 is companion-only with a flying garden bird.
+- **Opiphilus hero:** guild worker / crafter / monk route. Current roster is Smith Level 0 base plus Levels 1-9 always-visible overlays, Herbalist Level 0 base plus Levels 1-9 always-visible overlays, and Monk Level 1-9 progression on the Mon1k body; Smith Level 1 uses a small floating flame, Smith Levels 2-3 use a no-shield straight-handle Thor-style hammer mark and clear flame, Smith and Herbalist Levels 4-8 use emblem-only badges, Smith Level 5 reads as a flame badge, Herbalist Levels 1-3 build from one to three flapping butterflies and badge levels retain two off-shield butterflies, Monk Levels 2-3 add a prayer-bead mark and prayer wisp, Monk Levels 4-7 add scripture, bell, branch, and vow-vessel badges, Monk Levels 8-9 add prayer/vigil auras, Smith Level 9 is companion-only with a flying forge bat, and Herbalist Level 9 is companion-only with a flying garden bird.
 
 Short trio:
 
-> **Luciphilus = paid adventurer escort. Tenebrio = shriner transformation route. Opiphilus = guild craft / priest route.**
+> **Luciphilus = paid adventurer escort. Tenebrio = shriner transformation route. Opiphilus = guild craft / monk route.**
 
 ---
 

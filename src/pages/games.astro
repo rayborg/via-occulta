@@ -6,7 +6,7 @@ const gameLines = [
     name: 'Luciphilus',
     kicker: 'Paid adventurer escort',
     role: 'An adventurer, escort, and monster-clearer accepts contracts, clears threats, escorts fragile travelers, fights bosses, and recovers relics.',
-    cast: 'Current roster: Swordsman L1-L9, Female Mage Level 1-3, and Male Mage Level 1-3. Both Female Mage Level 3 and Male Mage Level 3 use a selected Priest-spell-derived dragon hover loop as battle forms.',
+    cast: 'Current roster: Swordsman L1-L9, Female Mage Level 1-9 overlays, Male Mage Level 1-9 overlays, and the actual Priest support/combat-caster route. Female Mage Level 1 uses Mage4, Female Mage Levels 2-9 use Mage3, Male Mage Level 1 uses Mage2, and Male Mage Levels 2-9 use Mage1; Priest_spell remains separate spell-effect material rather than a shared playable dragon body.',
     fantasy: 'You carry the light into the road after someone else has found it.',
     contributes: ['Cleared routes', 'Boss relics', 'Monster parts', 'Recovered weapons', 'Proof an area can be rebuilt']
   },
@@ -20,9 +20,9 @@ const gameLines = [
   },
   {
     name: 'Opiphilus',
-    kicker: 'Guild crafter / priest route',
-    role: 'A guild worker, crafter, priest, or trade traveler is fragile outside settlements, posts escort requests, travels for shops and craft jobs, and rebuilds civilization.',
-    cast: 'Current roster: product-defined Smith Level 0 base plus Levels 1-9 overlays, Herbalist Level 0 base plus Levels 1-9 overlays, and Priest Level 0 base plus Levels 1-9 progression. Smith Level 1 uses a small floating flame; Smith Levels 2-3 use a no-shield straight-handle Thor-style hammer mark and clear flame; Smith and Herbalist Levels 4-8 use emblem-only badges; Smith Level 5 reads as a flame badge; Herbalist Levels 1-3 build from one to three flapping butterflies and badge levels retain two off-shield butterflies. Priest uses the Mon1k body for every level; only Level 0 is unadorned, then Levels 1-2 add one tiny lit candle and two floating lit candles, Levels 3-7 add candle, open Bible, dove, olive-branch, and olive-wreath badges, Level 8 adds a centered radiant head halo, and Level 9 thickens the final halo; Mon2k, Mon3k, and Mon4k are intentionally skipped as level bodies. Smith and Herbalist Level 9 are companion-only, using a flying forge bat for Smith and a flying garden bird for Herbalist.',
+    kicker: 'Guild crafter / monk route',
+    role: 'A guild worker, crafter, monk, or trade traveler is fragile outside settlements, posts escort requests, travels for shops and craft jobs, and rebuilds civilization.',
+    cast: 'Current roster: product-defined Smith Level 0 base plus Levels 1-9 overlays, Herbalist Level 0 base plus Levels 1-9 overlays, and Monk Level 1-9 progression on the Mon1k body. Smith Level 1 uses a small floating flame; Smith Levels 2-3 use a no-shield straight-handle Thor-style hammer mark and clear flame; Smith and Herbalist Levels 4-8 use emblem-only badges; Smith Level 5 reads as a flame badge; Herbalist Levels 1-3 build from one to three flapping butterflies and badge levels retain two off-shield butterflies. Monk Levels 2-3 add a prayer-bead mark and prayer wisp; Monk Levels 4-7 add scripture, bell, branch, and vow-vessel badges; Monk Levels 8-9 add prayer/vigil auras. Smith and Herbalist Level 9 are companion-only, using a flying forge bat for Smith and a flying garden bird for Herbalist.',
     fantasy: 'You make the tools that let the town endure the abyss.',
     contributes: ['Road lanterns', 'Shrine repair kits', 'Guild orders', 'Town upgrades', 'Market circulation']
   }
@@ -31,11 +31,12 @@ const gameLines = [
 const currentRoster = [
   {
     game: 'Luciphilus',
-    route: 'Swordsman and Mage routes',
+    route: 'Swordsman, Mage, and Priest routes',
     entries: [
       'Swordsman L1-L9',
-      'Female Mage Level 1-2, then selected Priest-spell-derived dragon hover loop at Level 3',
-      'Male Mage Level 1-2, then selected Priest-spell-derived dragon hover loop at Level 3'
+      'Female Mage Level 1-9 overlays: Mage4 at Level 1, then Mage3 with focus glow, twin sparks, badges, and final auras',
+      'Male Mage Level 1-9 overlays: Mage2 at Level 1, then Mage1 with the same overlay ladder',
+      'Actual Priest support/combat-caster route with idle, walk, invocation, casting, and separate spell-effect material'
     ]
   },
   {
@@ -51,11 +52,11 @@ const currentRoster = [
   },
   {
     game: 'Opiphilus',
-    route: 'Guild craft and priest route',
+    route: 'Guild craft and monk route',
     entries: [
       'Smith Level 0 base plus Levels 1-9 always-visible overlays: floating flame, no-shield straight-handle Thor-style hammer mark, clear flame, then hammer, flame, anvil, master anvil, and grand forge badges, ending with a flying forge bat companion-only Level 9',
       'Herbalist Level 0 base plus Levels 1-9 always-visible overlays: one, two, then three flapping butterflies, followed by leaf, vial, mortar, bloom, and grand bloom badges with two off-shield butterflies, ending with a flying garden bird companion-only Level 9',
-      'Priest Level 0 base plus Levels 1-9 progression: only Level 0 is unadorned; Level 1 adds one tiny lit candle, Level 2 adds two floating lit candles, Levels 3-7 add candle, open Bible, dove, olive-branch, and olive-wreath badges, Level 8 adds a centered radiant head halo, and Level 9 thickens the final halo; Mon2k, Mon3k, and Mon4k are skipped as level bodies'
+      'Monk Level 1-9 progression on the Mon1k body: base shrine traveler, prayer-bead mark, prayer wisp, scripture badge, bell badge, branch badge, vow-vessel badge, prayer aura, and final vigil aura; Mon2k, Mon3k, and Mon4k remain support/reference variants'
     ]
   }
 ];
