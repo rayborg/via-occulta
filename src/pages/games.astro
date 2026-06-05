@@ -6,7 +6,7 @@ const gameLines = [
     name: 'Luciphilus',
     kicker: 'Paid adventurer escort',
     role: 'An adventurer, escort, and monster-clearer accepts contracts, clears threats, escorts fragile travelers, fights bosses, and recovers relics.',
-    cast: 'Current roster: Swordsman L1-L9, Female Mage Level 1-9 overlays, Male Mage Level 1-9 overlays, and the actual Priest support/combat-caster route. Female Mage Level 1 uses Mage4, Female Mage Levels 2-9 use Mage3, Male Mage Level 1 uses Mage2, and Male Mage Levels 2-9 use Mage1; Priest_spell remains separate spell-effect material rather than a shared playable dragon body.',
+    cast: 'Current roster: Swordsman L1-L9, Female Mage Level 1-9, Male Mage Level 1-9, and the actual Priest sprite route. Female Mage Levels 1-3 use Mage4 and Levels 4-9 use Mage3; Male Mage Levels 1-3 use Mage2 and Levels 4-9 use Mage1. Mage overlays start at Level 3, Level 8 is the dragon-eye glyph, and Level 9 keeps the final grand magic aura. Priest now uses the finalized healer overlay ladder from healing mote through winged holy grail.',
     fantasy: 'You carry the light into the road after someone else has found it.',
     contributes: ['Cleared routes', 'Boss relics', 'Monster parts', 'Recovered weapons', 'Proof an area can be rebuilt']
   },
@@ -14,7 +14,7 @@ const gameLines = [
     name: 'Tenebrio',
     kicker: 'Shriner transformation route',
     role: 'A weak shriner maps forbidden routes and survives through rites, maps, disguise, transformation, and forbidden knowledge.',
-    cast: 'Current roster: bare male unarmed, bare male armed, Imp 1-3, Lich 1-3, and a Mage Tower ritual-demon final form using a stable support/materialization standing loop.',
+    cast: 'Current roster: bare male unarmed, bare male armed, Imp 1-3, Lich 1-3, and the selected Mage Tower ritual-demon final form.',
     fantasy: 'You are weak, but you know the rites.',
     contributes: ['Map fragments', 'Shrine keys', 'Disguise rites', 'Occult warnings', 'Route unlocks']
   },
@@ -22,7 +22,7 @@ const gameLines = [
     name: 'Opiphilus',
     kicker: 'Guild crafter / monk route',
     role: 'A guild worker, crafter, monk, or trade traveler is fragile outside settlements, posts escort requests, travels for shops and craft jobs, and rebuilds civilization.',
-    cast: 'Current roster: product-defined Smith Level 0 base plus Levels 1-9 overlays, Herbalist Level 0 base plus Levels 1-9 overlays, and Monk Level 1-9 progression on the Mon1k body. Smith Level 1 uses a small floating flame; Smith Levels 2-3 use a no-shield straight-handle Thor-style hammer mark and clear flame; Smith and Herbalist Levels 4-8 use emblem-only badges; Smith Level 5 reads as a flame badge; Herbalist Levels 1-3 build from one to three flapping butterflies and badge levels retain two off-shield butterflies. Monk Levels 2-3 add a prayer-bead mark and prayer wisp; Monk Levels 4-7 add scripture, bell, branch, and vow-vessel badges; Monk Levels 8-9 add prayer/vigil auras. Smith and Herbalist Level 9 are companion-only, using a flying forge bat for Smith and a flying garden bird for Herbalist.',
+    cast: 'Current roster: product-defined Smith Level 0 base plus Levels 1-9 overlays, Herbalist Level 0 base plus Levels 1-9 overlays, and Monk Level 1-9 progression on the Mon1k body. Smith Level 1 uses a small floating flame; Smith Levels 2-3 use a no-shield straight-handle Thor-style hammer mark and clear flame; Smith and Herbalist Levels 4-8 use emblem-only badges; Smith Level 5 reads as a flame badge; Herbalist Levels 1-3 build from one to three flapping butterflies and badge levels retain two off-shield butterflies. Monk Level 1 uses one lit candle, Level 2 uses two candles, Levels 3-7 use candle, Bible, lantern, olive-branch, and vow-vessel badges, and Levels 8-9 use the final radiant and thick halo treatments. Smith and Herbalist Level 9 are companion-only, using a flying forge bat for Smith and a flying garden bird for Herbalist.',
     fantasy: 'You make the tools that let the town endure the abyss.',
     contributes: ['Road lanterns', 'Shrine repair kits', 'Guild orders', 'Town upgrades', 'Market circulation']
   }
@@ -34,9 +34,9 @@ const currentRoster = [
     route: 'Swordsman, Mage, and Priest routes',
     entries: [
       'Swordsman L1-L9',
-      'Female Mage Level 1-9 overlays: Mage4 at Level 1, then Mage3 with focus glow, twin sparks, badges, and final auras',
-      'Male Mage Level 1-9 overlays: Mage2 at Level 1, then Mage1 with the same overlay ladder',
-      'Actual Priest support/combat-caster route with idle, walk, invocation, casting, and separate spell-effect material'
+      'Female Mage Level 1-9: Mage4 body at Levels 1-3, Mage3 body at Levels 4-9, with overlays from Level 3 through the final Level 9 grand magic aura',
+      'Male Mage Level 1-9: Mage2 body at Levels 1-3, Mage1 body at Levels 4-9, with the same overlay ladder from Level 3 through Level 9',
+      'Actual Priest sprite route with finalized healer overlays from healing mote through winged holy grail'
     ]
   },
   {
@@ -56,7 +56,7 @@ const currentRoster = [
     entries: [
       'Smith Level 0 base plus Levels 1-9 always-visible overlays: floating flame, no-shield straight-handle Thor-style hammer mark, clear flame, then hammer, flame, anvil, master anvil, and grand forge badges, ending with a flying forge bat companion-only Level 9',
       'Herbalist Level 0 base plus Levels 1-9 always-visible overlays: one, two, then three flapping butterflies, followed by leaf, vial, mortar, bloom, and grand bloom badges with two off-shield butterflies, ending with a flying garden bird companion-only Level 9',
-      'Monk Level 1-9 progression on the Mon1k body: base shrine traveler, prayer-bead mark, prayer wisp, scripture badge, bell badge, branch badge, vow-vessel badge, prayer aura, and final vigil aura; Mon2k, Mon3k, and Mon4k remain support/reference variants'
+      'Monk Level 1-9 progression on the Mon1k body: one lit candle, two candles, candle badge, Bible badge, lantern badge, olive-branch badge, vow-vessel badge, radiant halo, and thick halo; Mon2k, Mon3k, and Mon4k remain support/reference variants'
     ]
   }
 ];

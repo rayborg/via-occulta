@@ -86,7 +86,7 @@ The current art does **not** support every place equally inside and outside. Som
 
 These areas are directly supported by named current art groups and should be safe for early prototypes.
 
-Area feasibility should assume **one canonical shared map / area graph**. Tenebrio, Luciphilus, and Opiphilus differences should usually be stored as lens data over the same area geometry. When the fiction requires different geometry, model it as a separate canonical shared area, such as a chapel surface versus an undercrypt, not as a per-game duplicate map.
+Area feasibility should assume **one canonical shared map / area graph**. Luciphilus, Tenebrio, and Opiphilus differences should usually be stored as lens data over the same area geometry. When the fiction requires different geometry, model it as a separate canonical shared area, such as a chapel surface versus an undercrypt, not as a per-game duplicate map.
 
 ### 1. Shrine-Town Hub
 

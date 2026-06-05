@@ -76,10 +76,10 @@ const characterPageDefs = [
   {
     slug: 'guild-mage',
     title: 'Guild Mage',
-    summary: 'The clearest mage line for Luciphilus, now treated as Female/Male Level 1-9 overlay routes instead of shared battle-form bodies.',
+    summary: 'The clearest mage line for Luciphilus, now treated as Female/Male Level 1-9 routes with body upgrades at Level 4 and overlays beginning at Level 3.',
     description: [
-      'The Guild Mage bodies now anchor Luciphilus magic progression. Female Mage starts on Mage4 and moves to Mage3 overlays; Male Mage starts on Mage2 and moves to Mage1 overlays, keeping readable route identity through Level 9.',
-      'This keeps magic as a trained expedition role rather than replacing both mage routes with the same spell-effect body. Priest_spell remains effect material layered separately from the playable mage silhouettes.'
+      'The Guild Mage bodies now anchor Luciphilus magic progression. Female Mage keeps Mage4 through Levels 1-3, upgrades to Mage3 at Level 4, and holds Mage3 through Level 9; Male Mage keeps Mage2 through Levels 1-3, upgrades to Mage1 at Level 4, and holds Mage1 through Level 9.',
+      'The overlay ladder runs from the Level 3 focus glow through the Level 4 twin sparks, Level 8 dragon-eye glyph, and Level 9 grand magic aura without replacing the mage silhouettes.'
     ],
     tags: ['Luciphilus', 'Mage Route', 'Levels 1-9', 'Overlays'],
     entrySlugs: ['guild-mage-1', 'guild-mage-2', 'guild-mage-3', 'guild-mage-4']
@@ -109,12 +109,12 @@ const characterPageDefs = [
   {
     slug: 'priest',
     title: 'Priest',
-    summary: 'The actual Luciphilus support/combat-caster route, with idle, walk, invocation, casting, and spell-effect material.',
+    summary: 'The actual Luciphilus Priest sprite route, now finalized as a healer overlay progression.',
     description: [
-      'The Priest is strong enough to move from passive shrine authority into Luciphilus because the source set covers a full support-caster language: walking, speaking/invoking, casting, and a separate spell-effect sheet.',
-      'Priest_spell is treated as effect material for runtime composition, not as a shared mage battle body. The Priest itself remains the human religious caster silhouette.'
+      'The Priest moves from passive shrine authority into Luciphilus as the actual human religious sprite route. The hero roster sheet now shows the sprite with a healer-specific progression rather than a block of animation-reference cards.',
+      'The finalized overlay ladder runs from healing mote and twin motes through healer cross, remedy vial, healing staff, mending hands, life chalice, two holy grails, and a winged holy grail.'
     ],
-    tags: ['Luciphilus', 'Shrine Orders', 'Support Caster'],
+    tags: ['Luciphilus', 'Shrine Orders', 'Priest Route'],
     entrySlugs: ['priest']
   },
   {
@@ -122,7 +122,7 @@ const characterPageDefs = [
     title: 'Monk',
     summary: 'The Opiphilus pilgrimage/shrine-worker route, using Mon1k as the body for a Level 1-9 overlay progression.',
     description: [
-      'The Monk route fits Opiphilus because it reads as disciplined labor and shrine maintenance rather than battlefield attack. The active route uses Mon1k and adds prayer-bead, prayer-wisp, scripture, bell, branch, vow-vessel, prayer-aura, and vigil-aura overlays.',
+      'The Monk route fits Opiphilus because it reads as disciplined labor and shrine maintenance rather than battlefield attack. The active route uses Mon1k and adds one lit candle, then two candles, then candle, Bible, lantern, olive-branch, and vow-vessel badges before ending with the radiant and thicker halo treatments at Levels 8-9.',
       'Mon2k, Mon3k, and Mon4k stay as support/reference variants unless promoted later, preserving the route as one readable body with an overlay ladder.'
     ],
     tags: ['Opiphilus', 'Shrine Orders', 'Monk Route', 'Levels 1-9'],

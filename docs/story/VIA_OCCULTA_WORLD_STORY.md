@@ -6,7 +6,7 @@
 
 Combat-heavy scenes, especially in **Luciphilus**, may transition into a separate side-view or dedicated battle-screen presentation. The world itself remains primarily tile-based and overhead.
 
-Via Occulta uses **one canonical shared world map / area graph**. Tenebrio, Luciphilus, and Opiphilus are role lenses on the same towns, roads, gates, villages, guild halls, caves, ruins, and dungeons, not separate overworlds or duplicate per-game maps.
+Via Occulta uses **one canonical shared world map / area graph**. Luciphilus, Tenebrio, and Opiphilus are role lenses on the same towns, roads, gates, villages, guild halls, caves, ruins, and dungeons, not separate overworlds or duplicate per-game maps.
 
 A location has one canonical identity in the shared world. Each game line changes what is visible, risky, useful, or available there: actors, jobs, prompts, routes, combat, escort requests, shops, guild services, repairs, and unlock states.
 
@@ -77,8 +77,8 @@ The world is not ending all at once. It is being quietly rerouted.
 
 To survive, three kinds of work become necessary:
 
-- **Tenebrio** — the weak shriner enters forbidden routes, maps what others cannot see, and survives through rites, disguise, and transformation.
 - **Luciphilus** — the adventurer clears dungeon threats, guards discovered routes, accepts paid escort work, recovers relics, fights monsters, and confronts crystal-era conflicts.
+- **Tenebrio** — the weak shriner enters forbidden routes, maps what others cannot see, and survives through rites, disguise, and transformation.
 - **Opiphilus** — the crafter and guild worker repairs towns, restores workshops, posts escort requests, travels to destination villages for shops and jobs, and turns recovered fragments into usable civilization.
 
 Together, they do not merely save the world by defeating a final boss. They rebuild the hidden infrastructure of the world one shrine, road, workshop, and guild project at a time.
@@ -111,7 +111,7 @@ The central fantasy is:
 
 Via Occulta uses **one canonical shared world map / area graph**.
 
-Tenebrio, Luciphilus, and Opiphilus are not separate maps or separate continuities. They are role lenses on the same shrine towns, roads, gates, villages, guild halls, caves, ruins, and dungeons.
+Luciphilus, Tenebrio, and Opiphilus are not separate maps or separate continuities. They are role lenses on the same shrine towns, roads, gates, villages, guild halls, caves, ruins, and dungeons.
 
 ### Tenebrio — The Shriner Exploration Lens
 
@@ -198,7 +198,7 @@ Core fantasy:
 
 Each game line should have a distinct heroic identity while still belonging to the same world. The strongest trio concept is:
 
-> **Tenebrio = shriner scout. Luciphilus = paid adventurer escort. Opiphilus = guild crafter / trader.**
+> **Luciphilus = paid adventurer escort. Tenebrio = shriner scout. Opiphilus = guild crafter / trader.**
 
 ### Tenebrio Hero Set
 
@@ -327,15 +327,14 @@ Identity:
 
 ## Shared-World Loop
 
-The three game lines should reinforce one another.
+The three game lines should reinforce one another. Listed in roster order, the contribution beats are:
 
 1. **Tenebrio discovers** a hidden shrine route, forbidden door, monster disguise, or map fragment.
 2. **Opiphilus creates demand** for the route through a delivery, repair, trade order, village shop need, guild job, craft request, or settlement reopening.
 3. **Opiphilus posts an escort request** at a guild board, gate board, market board, or village notice point.
-4. **Luciphilus accepts the request** and the Opiphilus traveler becomes visible at the origin guild or gate.
-5. **Luciphilus clears, guards, or escorts** through the revealed route and receives guild pay, bounty rewards, road fees, route standing, materials, or village payment.
-6. **Opiphilus travels, crafts, and rebuilds** by reaching destination villages, fulfilling guild jobs, restoring workshops, restocking shops, and stabilizing routes.
-7. The shared world unlocks a new room, road, recipe, guild project, village service, shop inventory, or story chapter.
+4. **Luciphilus clears, guards, or escorts** through the revealed route and receives guild pay, bounty rewards, road fees, route standing, materials, or village payment.
+5. **Opiphilus travels, crafts, and rebuilds** by reaching destination villages, fulfilling guild jobs, restoring workshops, restocking shops, and stabilizing routes.
+6. The shared world unlocks a new room, road, recipe, guild project, village service, shop inventory, or story chapter.
 
 Short version:
 
