@@ -76,10 +76,10 @@ const characterPageDefs = [
   {
     slug: 'guild-mage',
     title: 'Guild Mage',
-    summary: 'The clearest mage line for Luciphilus, now treated as Female/Male Level 1-9 routes with body upgrades at Level 4 and overlays beginning at Level 3.',
+    summary: 'The clearest mage line for Luciphilus, now treated as Female/Male Level 1-9 routes with route-specific early overlays and body upgrades at Level 4.',
     description: [
-      'The Guild Mage bodies now anchor Luciphilus magic progression. Female Mage keeps Mage4 through Levels 1-3, upgrades to Mage3 at Level 4, and holds Mage3 through Level 9; Male Mage keeps Mage2 through Levels 1-3, upgrades to Mage1 at Level 4, and holds Mage1 through Level 9.',
-      'The overlay ladder runs from the Level 3 focus glow through the Level 4 twin sparks, Level 8 dragon-eye glyph, and Level 9 grand magic aura without replacing the mage silhouettes.'
+      'The Guild Mage bodies now anchor Luciphilus magic progression. Female Mage keeps Mage4 through Levels 1-3, adds one spark at Level 2, adds the same twin sparks later kept by Level 4 at Level 3, upgrades to Mage3 at Level 4, and holds Mage3 through Level 9; Male Mage keeps Mage2 through Levels 1-3, upgrades to Mage1 at Level 4, and holds Mage1 through Level 9.',
+      'The ladder then runs through the Level 8 dragon-eye glyph and Level 9 grand magic aura without replacing the mage silhouettes.'
     ],
     tags: ['Luciphilus', 'Mage Route', 'Levels 1-9', 'Overlays'],
     entrySlugs: ['guild-mage-1', 'guild-mage-2', 'guild-mage-3', 'guild-mage-4']
